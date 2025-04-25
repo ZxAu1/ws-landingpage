@@ -1,0 +1,12 @@
+.btn-contact-you-back{
+    background: var(--redges-color-1);
+    width: 195px;
+    height: 50px;
+    border-radius: 50px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.btn-contact-you-back:hover{
+    background: #ffffff;
+    color: #181C32 !important;
+}
