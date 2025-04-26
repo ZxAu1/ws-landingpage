@@ -1,0 +1,11 @@
+{
+    "nav": {
+      "home": "Home",
+      "about": "About Us"
+    },
+    "home": {
+    },
+    "blog": {
+      "title": "BBB"
+    }
+  }

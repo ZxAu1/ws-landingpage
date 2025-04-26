@@ -1,0 +1,40 @@
+
+&amp; เครื่องหมาย &
+<br   เว้นบรรทัด
+
+====================================
+** Class เงา 
+    shadow       เงาเข้ม
+     shadow-sm   เงาปานกลาง
+    shadow-soft  เงาอ่อน
+bg-white
+======================================
+** icon
+
+*boostrap icon => https://icons.getbootstrap.com/?q=arr
+ <i class="bi bi-arrow-up-left-square"></i>
+
+ *Themify Icons => https://themify.me/themify-icons
+<i class="ti-arrow-right"></i>
+
+*FontAwsome icon => https://fontawesome.com/v5/search?ic=free
+<i class="fas fa-wifi"></i>
+============================================
+** เรียกใช้ libary แปลภาษา
+  1. import script
+      <script src="libs/i18n/i18next.min.js"></script>
+      <script src="libs/i18n/i18nextHttpBackend.min.js"></script>
+      <script src="libs/i18n/i18nextBrowserLanguageDetector.min.js"></script>
+      <script src="assets/js/i18n.js"></script>
+
+  1. การใช้งาน ใช้ propoty => data-i18n ตามด้วยตัวแปลในไฟล์ แปลภาษา  อย่างเช่น blog.title 
+       <div class="container mt-5">
+              <h1 data-i18n="blog.title">ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+        </div>
+
+  EX ในไฟล์แปลภาษา translation.json
+{
+    "blog": {
+      "title": "BBB"
+    }   
+}   
