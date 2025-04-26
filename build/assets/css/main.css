@@ -16470,8 +16470,8 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #ffffff;
-  background-color: #1A2C79;
-  border-color: #1A2C79;
+  background-color: var(--redges-color-1);
+  border-color: var(--redges-color-1)
 }
 
 /* line 53, src/assets/scss/bootstrap/_pagination.scss */
@@ -19650,7 +19650,7 @@ a.close.disabled {
 
 /* line 6, src/assets/scss/bootstrap/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: #1A2C79 !important;
+  background-color: var(--redges-color-2) !important
 }
 
 /* line 17, src/assets/scss/bootstrap/mixins/_hover.scss */
@@ -37551,6 +37551,10 @@ button.section-gray-800:focus {
 /* line 2, src/assets/scss/utilities/_borders.scss */
 .border-variant-warning {
   border-color: #f4ad41 !important;
+}
+
+.border-variant-redges {
+  border-color: var(--redges-color-1) !important
 }
 
 /* line 2, src/assets/scss/utilities/_borders.scss */
@@ -56504,7 +56508,7 @@ img.flex-fill {
 
 /* line 5, src/assets/scss/corporx/_header.scss */
 .navbar-theme-primary.affix {
-  background-color: #1A2C79;
+  background-color: var(--redges-color-2);
 }
 
 /* line 5, src/assets/scss/corporx/_header.scss */

@@ -1,25 +1,28 @@
 :root {
 
-/*
+    /*
 =========================================================
 ================== Background Colors ====================
 =========================================================
 */
+    --primary-gradient-color: linear-gradient(85deg, rgba(26, 44, 121, 0.8) -10%, rgba(180, 23, 23, 0.9) 100%);
+    --secondary-gradient-color: linear-gradient(85deg, rgba(26, 44, 121, 0.8) -10%, rgba(146, 3, 3, 0.9) 100%);
     --redges-color-1: #FF3A3A;
     --redges-color-2: #E30E0F;
-    --white-color:#ffffff;
+    --redges-color-3: #F13321;
+    --white-color: #ffffff;
     /* --secondary-color: ; */
 
-/*
+    /*
 =========================================================
 ===================== Text Colors =======================
 =========================================================
 */
     --text-ct-drak: #303030;
-    --text-ct-white:#ffffff;
+    --text-ct-white: #ffffff;
     --text-ct-yellow: #FFDD00;
 
-/*
+    /*
 =========================================================
 ===================== Font-Weight =======================
 =========================================================
@@ -30,4 +33,10 @@
     --text-medium: 500;
     --text-bold: 700;
 
+}
+
+
+.bg-gradient-custom-primary { 
+    background: var(--primary-gradient-color) !important;
+    /* background: var(--secondary-gradient-color) !important; */
 }

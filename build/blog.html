@@ -10,12 +10,20 @@
     <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
 
     <!--title-->
-    <title>Blog Default - Corporate and Business HTML Template</title>
+    <title>Blog</title>
 
+    <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/main.min.css">
     <link rel="stylesheet" href="assets/css/custom-global.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
 
-    
+    <!-- เพิ่ม script i18n -->
+    <script src="libs/i18n/i18next.min.js"></script>
+    <script src="libs/i18n/i18nextHttpBackend.min.js"></script>
+    <script src="libs/i18n/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="assets/js/i18n.js"></script>
+
+
 </head>
 
 <body>
@@ -31,6 +39,7 @@
         </div>
     </div>
     <!--preloader end-->
+
     <!--header section start-->
     <header class="header position-relative z-9">
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-primary fixed-top headroom">
@@ -49,8 +58,8 @@
                             </div>
                             <div class="col-6 collapse-close">
                                 <i class="fas fa-times" data-toggle="collapse" role="button"
-                                   data-target="#navbar-default-primary" aria-controls="navbar-default-primary"
-                                   aria-expanded="false" aria-label="Toggle navigation"></i>
+                                    data-target="#navbar-default-primary" aria-controls="navbar-default-primary"
+                                    aria-expanded="false" aria-label="Toggle navigation"></i>
                             </div>
                         </div>
                     </div>
@@ -68,9 +77,12 @@
                                 <li><a class="dropdown-item" href="index-5.html">Home Page 05</a></li>
                                 <li><a class="dropdown-item" href="index-6.html">Home Page 06</a></li>
                                 <li><a class="dropdown-item" href="index-7.html">Home Page 07</a></li>
-                                <li><a class="dropdown-item" href="index-8.html">Home Page 08 <span class="badge badge-danger ml-2">New</span></a></li>
-                                <li><a class="dropdown-item" href="index-9.html">Home Page 09 <span class="badge badge-danger ml-2">New</span></a></li>
-                                <li><a class="dropdown-item" href="index-10.html">Home Page 10 <span class="badge badge-danger ml-2">New</span></a></li>
+                                <li><a class="dropdown-item" href="index-8.html">Home Page 08 <span
+                                            class="badge badge-danger ml-2">New</span></a></li>
+                                <li><a class="dropdown-item" href="index-9.html">Home Page 09 <span
+                                            class="badge badge-danger ml-2">New</span></a></li>
+                                <li><a class="dropdown-item" href="index-10.html">Home Page 10 <span
+                                            class="badge badge-danger ml-2">New</span></a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -83,18 +95,25 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center" aria-haspopup="true" aria-expanded="false">Login & Signup <i class="fas fa-angle-right nav-link-arrow"></i></a>
+                                    <a href="#"
+                                        class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
+                                        aria-haspopup="true" aria-expanded="false">Login & Signup <i
+                                            class="fas fa-angle-right nav-link-arrow"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="basic-login.html">Login Page 1</a></li>
                                         <li><a class="dropdown-item" href="login.html">Login Page 2</a></li>
                                         <li><a class="dropdown-item" href="basic-sign-up.html">Signup Page 1</a></li>
                                         <li><a class="dropdown-item" href="sign-up.html">Signup Page 2</a></li>
                                         <li><a class="dropdown-item" href="password-reset.html">Reset Password</a></li>
-                                        <li><a class="dropdown-item" href="change-password.html">Change Password</a></li>
+                                        <li><a class="dropdown-item" href="change-password.html">Change Password</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center" aria-haspopup="true" aria-expanded="false">Utilities <i class="fas fa-angle-right nav-link-arrow"></i></a>
+                                    <a href="#"
+                                        class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
+                                        aria-haspopup="true" aria-expanded="false">Utilities <i
+                                            class="fas fa-angle-right nav-link-arrow"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="download.html">Download Page</a></li>
                                         <li><a class="dropdown-item" href="review.html">Review Page</a></li>
@@ -105,10 +124,14 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center" aria-haspopup="true" aria-expanded="false">Team <i class="fas fa-angle-right nav-link-arrow"></i></a>
+                                    <a href="#"
+                                        class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
+                                        aria-haspopup="true" aria-expanded="false">Team <i
+                                            class="fas fa-angle-right nav-link-arrow"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="team.html">Our Team Members</a></li>
-                                        <li><a class="dropdown-item" href="team-single.html">Team Member Profile</a></li>
+                                        <li><a class="dropdown-item" href="team-single.html">Team Member Profile</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li><a class="dropdown-item" href="project-details.html">Project Details </a></li>
@@ -134,25 +157,34 @@
                                 <li><a class="dropdown-item" href="blog-no-sidebar.html">Blog No Sidebar</a></li>
                                 <li><a class="dropdown-item" href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
                                 <li><a class="dropdown-item" href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-single-left-sidebar.html">Details Left Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-single-right-sidebar.html">Details Right Sidebar</a></li>
+                                <li><a class="dropdown-item" href="blog-single-left-sidebar.html">Details Left
+                                        Sidebar</a></li>
+                                <li><a class="dropdown-item" href="blog-single-right-sidebar.html">Details Right
+                                        Sidebar</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="d-flex align-items-center">
-                    <!-- <a href="#" class="btn btn-contact-you-back" >
+                    <a href="#" class="btn btn-contact-you-back">
                         <span class="mr-2" style="color: white;">ให้เราติดต่อกลับ</span>
                         <i class="ti-arrow-top-right"></i>
                     </a>
-                    <div class="language-switcher d-flex align-items-center">
-                        <span class="text-white mr-1">TH</span>
-                        <img src="assets/img/th-flag.png" alt="TH" style="width: 20px; height: auto; margin-right: 8px;">
-                        <span class="text-white mr-1">EN</span>
-                        <img src="assets/img/en-flag.png" alt="EN" style="width: 20px; height: auto;">
-                    </div> -->
-                    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-default-primary" aria-controls="navbar-default-primary" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- ปุ่ม dropdown -->
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img id="current-flag" src="https://flagcdn.com/w40/th.png" alt="TH" class="flag-icon mr-2">
+                            <span id="current-lang">TH</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown" id="language-dropdown">
+                            <!-- dropdown จะถูก generate ใหม่จาก i18n.js -->
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse"
+                        data-target="#navbar-default-primary" aria-controls="navbar-default-primary"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
@@ -163,21 +195,26 @@
 
     <div class="main">
 
+<!-- test i18n -->
+<div class="container mt-5">
+    <h1 data-i18n="blog.title">ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+</div>
+
+
         <!--page header section start-->
         <section class="" style="background: url('assets/img/header-bg-5.jpg')no-repeat center center / cover">
-            <div class="section-lg bg-gradient-primary text-white section-header">
+            <div class="section-lg bg-gradient-custom-primary text-white section-header">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col-lg-7">
                             <div class="page-header-content text-center">
-                                <h1>Blog Default</h1>
-                                <nav aria-label="breadcrumb" class="d-flex justify-content-center">
-                                    <ol class="breadcrumb breadcrumb-transparent breadcrumb-text-light">
-                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Blog</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Blog Default</li>
-                                    </ol>
-                                </nav>
+                                <h1>Blog</h1>
+                                <p class="lead">
+                                    ศูนย์กลางความรู้และแรงบันดาลใจด้านการตลาดดิจิทัลของเรา:<br>
+                                    ติดตามบล็อกของเราเพื่อรับข้อมูลอันมีค่า<br>
+                                    ไอเดียสร้างสรรค์ และกรณีศึกษาที่น่าสนใจ<br>
+                                    เพื่อยกระดับกลยุทธ์การตลาดของคุณ
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -189,170 +226,54 @@
         <!--blog section start-->
         <section class="section section-lg ">
             <div class="container">
+                <div class="row pb-4 justify-content-center justify-content-lg-start">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="section-heading">
+                            <h2>blog</h2>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-4">
-                        <div class="card bg-white border-variant-soft shadow-soft">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3  mb-4 mb-md-4 mb-4">
+                        <div class="card bg-white border-variant-soft shadow-sm bg-white">
                             <div class="blog-img position-relative">
-                                <img src="assets/img/blog/4.jpg" class="card-img-top rounded-top" alt="themetags office">
-                                <a href="#" class="position-absolute category-text small badge badge-secondary">SEO, Analytics</a>
+                                <img src="assets/img/blog/blog-img-1.png" class="card-img-top rounded-top"
+                                    alt="themetags office">
                             </div>
                             <div class="card-body">
-                                <div class="media d-flex align-items-center justify-content-between">
-                                    <div class="post-group">
-                                        <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
-                                            <img class="avatar avatar-xs mr-2 img-fluid rounded-circle border border-variant-primary p-1" src="assets/img/clients/client-1.jpg" alt="admin"> <span class="font-small">Admin</span>
-                                        </a>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
-                                    </div>
-                                </div>
-                                <h3 class="h5 card-title mt-3"><a href="#">Holisticly promote enabled</a></h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="services-details.html" class="link-with-icon text-default font-small font-weight-bold" target="_blank">Read more <span> <i class="fas fa-angle-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-4">
-                        <div class="card bg-white border-variant-soft shadow-soft">
-                            <div class="blog-img position-relative">
-                                <img src="assets/img/blog/2.jpg" class="card-img-top rounded-top" alt="themetags office">
-                                <a href="#" class="position-absolute category-text small badge badge-secondary">SEO, Marketing</a>
-                            </div>
-                            <div class="card-body">
-                                <div class="media d-flex align-items-center justify-content-between">
-                                    <div class="post-group">
-                                        <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
-                                            <img class="avatar avatar-xs mr-2 img-fluid rounded-circle border border-variant-primary p-1" src="assets/img/clients/client-2.jpg" alt="admin"> <span class="font-small">Writer</span>
-                                        </a>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
-                                    </div>
-                                </div>
-                                <h3 class="h5 card-title mt-3"><a href="#">Authoritatively unleash fully</a></h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="services-details.html" class="link-with-icon text-default font-small font-weight-bold" target="_blank">Read more <span> <i class="fas fa-angle-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-4">
-                        <div class="card bg-white border-variant-soft shadow-soft">
-                            <div class="blog-img position-relative">
-                                <img src="assets/img/blog/1.jpg" class="card-img-top rounded-top" alt="themetags office">
-                                <a href="#" class="position-absolute category-text small badge badge-secondary">Business</a>
-                            </div>
-                            <div class="card-body">
-                                <div class="media d-flex align-items-center justify-content-between">
-                                    <div class="post-group">
-                                        <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
-                                            <img class="avatar avatar-xs mr-2 img-fluid rounded-circle border border-variant-primary p-1" src="assets/img/clients/client-5.jpg" alt="admin"> <span class="font-small">Joe B</span>
-                                        </a>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
-                                    </div>
-                                </div>
-                                <h3 class="h5 card-title mt-3"><a href="#">We partnered up with Google</a></h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="services-details.html" class="link-with-icon text-default font-small font-weight-bold" target="_blank">Read more <span> <i class="fas fa-angle-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-4">
-                        <div class="card bg-white border-variant-soft shadow-soft">
-                            <div class="blog-img position-relative">
-                                <img src="assets/img/blog/3.jpg" class="card-img-top rounded-top" alt="themetags office">
-                                <a href="#" class="position-absolute category-text small badge badge-secondary">Marketing</a>
-                            </div>
-                            <div class="card-body">
-                                <div class="media d-flex align-items-center justify-content-between">
-                                    <div class="post-group">
-                                        <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
-                                            <img class="avatar avatar-xs mr-2 img-fluid rounded-circle border border-variant-primary p-1" src="assets/img/clients/client-2.jpg" alt="admin"> <span class="font-small">Admin</span>
-                                        </a>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
-                                    </div>
-                                </div>
-                                <h3 class="h5 card-title mt-3"><a href="#">Holisticly promote enabled</a></h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="services-details.html" class="link-with-icon text-default font-small font-weight-bold" target="_blank">Read more <span> <i class="fas fa-angle-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-4">
-                        <div class="card bg-white border-variant-soft shadow-soft">
-                            <div class="blog-img position-relative">
-                                <img src="assets/img/blog/5.jpg" class="card-img-top rounded-top" alt="themetags office">
-                                <a href="#" class="position-absolute category-text small badge badge-secondary">SEO, Business</a>
-                            </div>
-                            <div class="card-body">
-                                <div class="media d-flex align-items-center justify-content-between">
-                                    <div class="post-group">
-                                        <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
-                                            <img class="avatar avatar-xs mr-2 img-fluid rounded-circle border border-variant-primary p-1" src="assets/img/clients/client-3.jpg" alt="admin"> <span class="font-small">Writer</span>
-                                        </a>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
-                                    </div>
-                                </div>
-                                <h3 class="h5 card-title mt-3"><a href="#">Authoritatively unleash fully</a></h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="services-details.html" class="link-with-icon text-default font-small font-weight-bold" target="_blank">Read more <span> <i class="fas fa-angle-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-4">
-                        <div class="card bg-white border-variant-soft shadow-soft">
-                            <div class="blog-img position-relative">
-                                <img src="assets/img/blog/6.jpg" class="card-img-top rounded-top" alt="themetags office">
-                                <a href="#" class="position-absolute category-text small badge badge-secondary">Analytics</a>
-                            </div>
-                            <div class="card-body">
-                                <div class="media d-flex align-items-center justify-content-between">
-                                    <div class="post-group">
-                                        <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="23k followers">
-                                            <img class="avatar avatar-xs mr-2 img-fluid rounded-circle border border-variant-primary p-1" src="assets/img/clients/client-1.jpg" alt="admin"> <span class="font-small">Joe B</span>
-                                        </a>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <span class="small"><span class="far fa-calendar-alt mr-2"></span>15 March 2020</span>
-                                    </div>
-                                </div>
-                                <h3 class="h5 card-title mt-3"><a href="#">We partnered up with Google</a></h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="services-details.html" class="link-with-icon text-default font-small font-weight-bold" target="_blank">Read more <span> <i class="fas fa-angle-right"></i></span></a>
+                                <h3 class="h6 card-title mt-3">
+                                    UGC (User-Generated Content) พลังรีวิวจากลูกค้าจริง
+                                    <span class="icon icon-xs font-small "><i class="ti-star"></i></span>
+                                </h3>
+
+                                <p class="card-text">การให้ลูกค้าเป็นกระบอกเสียงให้แบรนด์ของคุณ
+                                    อาจส่งผลดีมากกว่าการโฆษณาแบบเดิม ๆ UGC หรือเนื้อหาที่ผู้ใช้สร้างขึ้นเอง เช่น
+                                    รีวิวสินค้า วิดีโอแกะกล่อง หรือโพสต์จากลูกค้าจริง สามารถสร้างความน่าเชื่อถือ
+                                    และกระตุ้นการตัดสินใจซื้อได้ดีกว่าที่คุณคิด</p>
+                                <a class="link-with-icon text-default font-small font-weight-bold read-more"
+                                    target="_blank">Read
+                                    more <span> <i class="fas fa-angle-right"></i></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <nav class="mt-4">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link border border-variant-redges rounded" href="#">Previous</a>
-                            </li>
-                            <li class="page-item active">
-                                <a class="page-link border border-variant-redges rounded" href="#">1</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link border border-variant-redges rounded" href="#">2</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link border border-variant-redges rounded" href="#">3</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link border border-variant-redges rounded" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
+
+                <div class="row" id="blog-container">
+                    <!-- Blog posts จะถูกแสดงที่นี่ -->
                 </div>
+
+                <!-- Pagination -->
+                <nav class="mt-4">
+                    <ul class="pagination justify-content-center mt-4" id="pagination">
+                        <!-- ปุ่ม pagination จะถูกเพิ่มที่นี่ -->
+                    </ul>
+                </nav>
+
             </div>
-        </section>
-        <!--blog section end-->
+    </div>
+    </section>
+    <!--blog section end-->
 
 
     </div>
@@ -366,18 +287,27 @@
                         <a class="footer-brand mr-lg-5 d-flex" href="index.html">
                             <img src="assets/img/logo-white.png" class="mr-3" alt="Footer logo">
                         </a>
-                        <p class="my-4">Interactively unleash interactive best practices before technically sound portals.</p>
+                        <p class="my-4">Interactively unleash interactive best practices before technically sound
+                            portals.</p>
                         <div class="btn-wrapper mt-4">
-                            <button class="btn btn-icon-only btn-pill btn-twitter mr-2 icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="40k Followers">
+                            <button class="btn btn-icon-only btn-pill btn-twitter mr-2 icon icon-xs icon-shape"
+                                type="button" data-toggle="tooltip" data-placement="top" title=""
+                                data-original-title="40k Followers">
                                 <span aria-hidden="true" class="fab fa-twitter"></span>
                             </button>
-                            <button class="btn btn-icon-only btn-pill btn-facebook mr-2 icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="50k Like">
+                            <button class="btn btn-icon-only btn-pill btn-facebook mr-2 icon icon-xs icon-shape"
+                                type="button" data-toggle="tooltip" data-placement="top" title=""
+                                data-original-title="50k Like">
                                 <span aria-hidden="true" class="fab fa-facebook-f"></span>
                             </button>
-                            <button class="btn btn-icon-only btn-pill btn-youtube mr-2 icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="25k Subscribe">
+                            <button class="btn btn-icon-only btn-pill btn-youtube mr-2 icon icon-xs icon-shape"
+                                type="button" data-toggle="tooltip" data-placement="top" title=""
+                                data-original-title="25k Subscribe">
                                 <span aria-hidden="true" class="fab fa-youtube"></span>
                             </button>
-                            <button class="btn btn-icon-only btn-pill btn-dribbble icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="2k Project">
+                            <button class="btn btn-icon-only btn-pill btn-dribbble icon icon-xs icon-shape"
+                                type="button" data-toggle="tooltip" data-placement="top" title=""
+                                data-original-title="2k Project">
                                 <span aria-hidden="true" class="fab fa-dribbble"></span>
                             </button>
                         </div>
@@ -448,6 +378,10 @@
     <script src="assets/js/vendors/jquery.jquery.countdown.min.js"></script>
     <script src="assets/js/vendors/validator.min.js"></script>
     <script src="assets/js/app.min.js"></script>
+
+    <script src="assets/js/blog.js"></script>
+
+
 </body>
 
 </html>
