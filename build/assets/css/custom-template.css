@@ -5,8 +5,8 @@
 ================== Background Colors ====================
 =========================================================
 */
-    --primary-gradient-color: linear-gradient(85deg, rgba(26, 44, 121, 0.8) -10%, rgba(180, 23, 23, 0.9) 100%);
-    --secondary-gradient-color: linear-gradient(85deg, rgba(26, 44, 121, 0.8) -10%, rgba(146, 3, 3, 0.9) 100%);
+    --primary-gradient-color: linear-gradient(85deg, rgba(26, 44, 121, 0.8) -10%, rgba(180, 23, 23, 0.9) 100%); 
+    --secondary-gradient-color: linear-gradient(85deg,rgba(180, 23, 23, 0.9) 100% , rgba(26, 44, 121, 0.8) -10%); 
     --redges-color-1: #FF3A3A;
     --redges-color-2: #E30E0F;
     --redges-color-3: #F13321;
@@ -36,7 +36,20 @@
 }
 
 
-.bg-gradient-custom-primary { 
+.bg-gradient-custom-primary {
     background: var(--primary-gradient-color) !important;
-    /* background: var(--secondary-gradient-color) !important; */
+}
+.bg-gradient-custom-secondary {
+    background: var(--secondary-gradient-color) !important;
+}
+
+.text-medium {
+    font-weight: var(--text-medium) !important;
+}
+.text-bold {
+    font-weight: var(--text-bold) !important;
+}
+
+.shadow-custom-1{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }

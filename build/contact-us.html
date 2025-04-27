@@ -10,9 +10,22 @@
     <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
 
     <!--title-->
-    <title>Contact Us - Corporate and Business HTML Template</title>
+    <title>Contact Us</title>
 
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/css/custom-global.css">
+    <link rel="stylesheet" href="assets/css/contact-us.css">
+
+    <!-- เพิ่ม script i18n -->
+    <script src="libs/i18n/i18next.min.js"></script>
+    <script src="libs/i18n/i18nextHttpBackend.min.js"></script>
+    <script src="libs/i18n/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="assets/js/i18n.js"></script>
+
 </head>
 
 <body>
@@ -28,6 +41,7 @@
         </div>
     </div>
     <!--preloader end-->
+
     <!--header section start-->
     <header class="header position-relative z-9">
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-primary fixed-top headroom">
@@ -46,12 +60,12 @@
                             </div>
                             <div class="col-6 collapse-close">
                                 <i class="fas fa-times" data-toggle="collapse" role="button"
-                                   data-target="#navbar-default-primary" aria-controls="navbar-default-primary"
-                                   aria-expanded="false" aria-label="Toggle navigation"></i>
+                                    data-target="#navbar-default-primary" aria-controls="navbar-default-primary"
+                                    aria-expanded="false" aria-label="Toggle navigation"></i>
                             </div>
                         </div>
                     </div>
-                    <ul class="navbar-nav navbar-nav-hover ml-auto">
+                    <ul class="header-nav navbar-nav navbar-nav-hover ml-auto">
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                                 <span class="nav-link-inner-text">Home</span>
@@ -65,9 +79,12 @@
                                 <li><a class="dropdown-item" href="index-5.html">Home Page 05</a></li>
                                 <li><a class="dropdown-item" href="index-6.html">Home Page 06</a></li>
                                 <li><a class="dropdown-item" href="index-7.html">Home Page 07</a></li>
-                                <li><a class="dropdown-item" href="index-8.html">Home Page 08 <span class="badge badge-danger ml-2">New</span></a></li>
-                                <li><a class="dropdown-item" href="index-9.html">Home Page 09 <span class="badge badge-danger ml-2">New</span></a></li>
-                                <li><a class="dropdown-item" href="index-10.html">Home Page 10 <span class="badge badge-danger ml-2">New</span></a></li>
+                                <li><a class="dropdown-item" href="index-8.html">Home Page 08 <span
+                                            class="badge badge-danger ml-2">New</span></a></li>
+                                <li><a class="dropdown-item" href="index-9.html">Home Page 09 <span
+                                            class="badge badge-danger ml-2">New</span></a></li>
+                                <li><a class="dropdown-item" href="index-10.html">Home Page 10 <span
+                                            class="badge badge-danger ml-2">New</span></a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -80,18 +97,25 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center" aria-haspopup="true" aria-expanded="false">Login & Signup <i class="fas fa-angle-right nav-link-arrow"></i></a>
+                                    <a href="#"
+                                        class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
+                                        aria-haspopup="true" aria-expanded="false">Login & Signup <i
+                                            class="fas fa-angle-right nav-link-arrow"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="basic-login.html">Login Page 1</a></li>
                                         <li><a class="dropdown-item" href="login.html">Login Page 2</a></li>
                                         <li><a class="dropdown-item" href="basic-sign-up.html">Signup Page 1</a></li>
                                         <li><a class="dropdown-item" href="sign-up.html">Signup Page 2</a></li>
                                         <li><a class="dropdown-item" href="password-reset.html">Reset Password</a></li>
-                                        <li><a class="dropdown-item" href="change-password.html">Change Password</a></li>
+                                        <li><a class="dropdown-item" href="change-password.html">Change Password</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center" aria-haspopup="true" aria-expanded="false">Utilities <i class="fas fa-angle-right nav-link-arrow"></i></a>
+                                    <a href="#"
+                                        class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
+                                        aria-haspopup="true" aria-expanded="false">Utilities <i
+                                            class="fas fa-angle-right nav-link-arrow"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="download.html">Download Page</a></li>
                                         <li><a class="dropdown-item" href="review.html">Review Page</a></li>
@@ -102,10 +126,14 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center" aria-haspopup="true" aria-expanded="false">Team <i class="fas fa-angle-right nav-link-arrow"></i></a>
+                                    <a href="#"
+                                        class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
+                                        aria-haspopup="true" aria-expanded="false">Team <i
+                                            class="fas fa-angle-right nav-link-arrow"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="team.html">Our Team Members</a></li>
-                                        <li><a class="dropdown-item" href="team-single.html">Team Member Profile</a></li>
+                                        <li><a class="dropdown-item" href="team-single.html">Team Member Profile</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li><a class="dropdown-item" href="project-details.html">Project Details </a></li>
@@ -116,27 +144,32 @@
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="project.html">Project</a>
+                            <a class="nav-link" href="blog.html">Blog</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                                <span class="nav-link-inner-text">Blog</span>
-                                <i class="fas fa-angle-down nav-link-arrow ml-1"></i>
-                            </a>
-                            <ul class="sub-menu dropdown-menu">
-                                <li><a class="dropdown-item" href="blog-default.html">Blog Grid</a></li>
-                                <li><a class="dropdown-item" href="blog-no-sidebar.html">Blog No Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-single-left-sidebar.html">Details Left Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-single-right-sidebar.html">Details Right Sidebar</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact-us.html">Contact Us</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="d-flex align-items-center">
-                    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-default-primary" aria-controls="navbar-default-primary" aria-expanded="false" aria-label="Toggle navigation">
+                    <a href="#" class="btn btn-contact-you-back">
+                        <span class="mr-2 text-bold">ให้เราติดต่อกลับ</span>
+                        <i class="bi bi-arrow-up-right-circle-fill"></i>
+                    </a>
+                    <!-- ปุ่ม dropdown -->
+                    <div class="dropdown ml-md-2">
+                        <button class="btn btn-change-language dropdown-toggle" type="button" id="languageDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img id="current-flag" src="https://flagcdn.com/w40/th.png" alt="TH" class="flag-icon mr-2">
+                            <span id="current-lang">TH</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown" id="language-dropdown">
+                            <!-- dropdown จะถูก generate ใหม่จาก i18n.js -->
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse"
+                        data-target="#navbar-default-primary" aria-controls="navbar-default-primary"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
@@ -148,20 +181,19 @@
     <div class="main">
 
         <!--page header section start-->
-        <section class="" style="background: url('assets/img/slider-img-4.jpg')no-repeat center center / cover">
-            <div class="section-lg bg-gradient-primary text-white section-header">
+        <section class="" style="background: url('assets/img/blog/blog-header-img.png')no-repeat center center / cover">
+            <div class="section-lg bg-gradient-custom-primary text-white section-header">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col-lg-7">
                             <div class="page-header-content text-center">
                                 <h1>Contact US</h1>
-                                <nav aria-label="breadcrumb" class="d-flex justify-content-center">
-                                    <ol class="breadcrumb breadcrumb-transparent breadcrumb-text-light">
-                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Contact US</li>
-                                    </ol>
-                                </nav>
+                                <p data-i18n="contact_us.sub_header" class="lead">
+                                    ศูนย์กลางความรู้และแรงบันดาลใจด้านการตลาดดิจิทัลของเรา:<br>
+                                    ติดตามบล็อกของเราเพื่อรับข้อมูลอันมีค่า<br>
+                                    ไอเดียสร้างสรรค์ และกรณีศึกษาที่น่าสนใจ<br>
+                                    เพื่อยกระดับกลยุทธ์การตลาดของคุณ
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -171,11 +203,11 @@
         <!--page header section end-->
 
         <!--promo section start-->
-        <section class="section section-lg pb-0">
+        <section class="section section-lg py-6">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-md-4 mb-lg-0">
-                        <div class="rounded-custom text-center shadow-sm">
+                        <div class="rounded-custom text-center shadow-custom-1">
                             <div class="card-body py-5">
                                 <div class="icon icon-md text-secondary">
                                     <i class="ti-mobile"></i>
@@ -188,7 +220,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-md-4 mb-lg-0">
-                        <div class="rounded-custom text-center shadow-sm">
+                        <div class="rounded-custom text-center shadow-custom-1">
                             <div class="card-body py-5">
                                 <div class="icon icon-md text-secondary">
                                     <i class="ti-location-pin"></i>
@@ -201,7 +233,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-md-4 mb-lg-0">
-                        <div class="rounded-custom text-center shadow-sm">
+                        <div class="rounded-custom text-center shadow-custom-1">
                             <div class="card-body py-5">
                                 <div class="icon icon-md text-secondary">
                                     <i class="ti-email"></i>
@@ -214,7 +246,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-md-4 mb-lg-0">
-                        <div class="rounded-custom text-center shadow-sm">
+                        <div class="rounded-custom text-center shadow-custom-1">
                             <div class="card-body py-5">
                                 <div class="icon icon-md text-secondary">
                                     <i class="ti-headphone-alt"></i>
@@ -231,14 +263,25 @@
         </section>
         <!--promo section end-->
 
+        <!--contact map section start-->
+        <div class="section py-0 pb-5">
+            <div class="google-map mb-n2 opacity-9 w-100">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.2640680985237!2d100.62808967102319!3d13.883152386522516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29de57b255793%3A0xb81383fdd9a93ce9!2z4Lia4Lij4Li04Lip4Lix4LiXIOC4lOC4seC4muC4muC4peC4tOC4py7guYDguK3guKogNzc3IOC4iOC4s-C4geC4seC4lA!5e0!3m2!1sth!2sth!4v1745736072491!5m2!1sth!2sth" 
+                height="450" style="border:0;" allowfullscreen="" ></iframe>
+            </div>
+        </div>
+        <!--contact map section end-->
+
+       
+
         <!--contact us section start-->
-        <section class="section section-lg">
+        <section class="section section-lg pt-0 pb-6">
             <div class="container contact">
                 <div class="col-12 pb-3 message-box d-none">
                     <div class="alert alert-danger"></div>
                 </div>
-                <div class="row justify-content-around">
-                    <div class="col-md-6">
+                <div class="row custom-box-contact-us justify-content-around">
+                    <div class="col-md-5">
                         <div class="contact-us-form bg-soft rounded p-5">
                             <h4>Ready to get started?</h4>
                             <form action="#" method="POST" id="contactForm" class="contact-us-form mt-4">
@@ -267,24 +310,12 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-5">
-                        <div class="contact-us-content">
-                            <h2>Looking for a excellent Business idea?</h2>
-                            <p class="lead">Seamlessly deliver pandemic e-services and next-generation initiatives.</p>
-
-                            <a href="#" class="btn btn-outline-secondary align-items-center">Get Directions <span class="ti-arrow-right pl-2"></span></a>
-
-                            <hr class="my-5">
-
-                            <h5>Our Headquarters</h5>
-                            <address>
-                                100 Yellow House, Mn <br>
-                                Factory, United State, 13420
-                            </address>
-                            <br>
-                            <span>Phone: +1234567890123</span> <br>
-                            <span>Email: <a href="mailto:email@yourdomain.com" class="link-color">email@yourdomain.com</a></span>
-
+                    <div class="col-md-7 d-flex justify-content-center align-items-center" style="background: url('assets/img/contact-us/contact-us-footer.png')no-repeat center center / cover"
+                    >
+                    
+                        <div class="contact-us-content text-center" >
+                            <h1 class="text-white">Unlock</h1><br>
+                            <h2 class="text-white" style="line-height: 3;">Your Business<br>Potential<br>With Us</h2>
                         </div>
                     </div>
                 </div>
@@ -292,13 +323,7 @@
         </section>
         <!--contact us section end-->
 
-        <!--contact map section start-->
-        <div class="section py-0">
-            <div class="google-map mb-n2 opacity-9 w-100">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450937!2d144.953735315922!3d-37.817323442021234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sbd!4v1571030260624!5m2!1sen!2sbd" height="450" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-        </div>
-        <!--contact map section end-->
+
 
 
     </div>

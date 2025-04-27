@@ -6,6 +6,11 @@
     "home": {
     },
     "blog": {
-      "title": "BBB"
+      "title": "BBB",
+      "sub_header":"our Hub for Digital Marketing Knowledge and Inspiration: Follow our blog for valuable information, creative ideas, and insightful case studies to elevate your marketing efforts"
+    },
+    "contact_us": {
+      "title": "BB",
+      "sub_header":"our Hub for Digital Marketing Knowledge and Inspiration: Follow our blog for valuable information, creative ideas, and insightful case studies to elevate your marketing efforts"
     }
   }

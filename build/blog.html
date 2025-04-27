@@ -12,6 +12,9 @@
     <!--title-->
     <title>Blog</title>
 
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/main.min.css">
     <link rel="stylesheet" href="assets/css/custom-global.css">
@@ -142,38 +145,19 @@
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="project.html">Project</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link active" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                                <span class="nav-link-inner-text">Blog Demo</span>
-                                <i class="fas fa-angle-down nav-link-arrow ml-1"></i>
-                            </a>
-                            <ul class="sub-menu dropdown-menu">
-                                <li><a class="dropdown-item" href="blog-default.html">Blog Grid</a></li>
-                                <li><a class="dropdown-item" href="blog-no-sidebar.html">Blog No Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-single-left-sidebar.html">Details Left
-                                        Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-single-right-sidebar.html">Details Right
-                                        Sidebar</a></li>
-                            </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="d-flex align-items-center">
                     <a href="#" class="btn btn-contact-you-back">
-                        <span class="mr-2" style="color: white;">ให้เราติดต่อกลับ</span>
-                        <i class="ti-arrow-top-right"></i>
+                        <span class="mr-2 text-bold">ให้เราติดต่อกลับ</span>
+                        <i class="bi bi-arrow-up-right-circle-fill"></i>
                     </a>
                     <!-- ปุ่ม dropdown -->
-                    <div class="dropdown">
-                        <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown"
+                    <div class="dropdown ml-md-2">
+                        <button class="btn btn-change-language dropdown-toggle" type="button" id="languageDropdown"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img id="current-flag" src="https://flagcdn.com/w40/th.png" alt="TH" class="flag-icon mr-2">
                             <span id="current-lang">TH</span>
@@ -195,18 +179,15 @@
 
     <div class="main">
 
-
-
-
         <!--page header section start-->
-        <section class="" style="background: url('assets/img/header-bg-5.jpg')no-repeat center center / cover">
+        <section class="" style="background: url('assets/img/blog/blog-header-img.png')no-repeat center center / cover">
             <div class="section-lg bg-gradient-custom-primary text-white section-header">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-8 col-lg-7">
                             <div class="page-header-content text-center">
                                 <h1>Blog</h1>
-                                <p class="lead">
+                                <p data-i18n="blog.sub_header" class="lead">
                                     ศูนย์กลางความรู้และแรงบันดาลใจด้านการตลาดดิจิทัลของเรา:<br>
                                     ติดตามบล็อกของเราเพื่อรับข้อมูลอันมีค่า<br>
                                     ไอเดียสร้างสรรค์ และกรณีศึกษาที่น่าสนใจ<br>
@@ -231,7 +212,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-12 col-md-6 col-lg-4 col-xl-3  mb-4 mb-md-4 mb-4">
                         <div class="card bg-white border-variant-soft shadow-sm bg-white">
                             <div class="blog-img position-relative">
@@ -254,7 +235,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="row" id="blog-container">
                     <!-- Blog posts จะถูกแสดงที่นี่ -->
@@ -266,11 +247,6 @@
                         <!-- ปุ่ม pagination จะถูกเพิ่มที่นี่ -->
                     </ul>
                 </nav>
-
-                <!-- test i18n -->
-                <div class="container mt-5">
-                    <h1 data-i18n="blog.title">ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
-                </div>
 
             </div>
     </div>

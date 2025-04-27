@@ -1,12 +1,54 @@
-.btn-contact-you-back{
+/* ============== button ให้เราติดต่อกลับ ======= */
+.btn-contact-you-back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding: 7px 9px;
     background: var(--redges-color-1);
-    width: 195px;
-    height: 50px;
+    min-width: 195px;
+    height: 52px;
     border-radius: 50px;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-.btn-contact-you-back:hover{
-    background: #ffffff;
-    color: #181C32 !important;
+
+.btn-contact-you-back span {
+    color: var(--text-ct-white);
+}
+
+.btn-contact-you-back i {
+    font-size: 38px;
+    color: var(--text-ct-white);
+    transition: all 0.35s ease;
+    /* เพิ่มให้ smooth เวลา icon หมุน */
+    transform: rotate(0deg);
+    /* ตอนปกติไม่หมุน */
+}
+
+.btn-contact-you-back:hover {
+    background: var(--white-color);
+}
+
+.btn-contact-you-back:hover span {
+    color: var(--text-ct-drak);
+}
+
+.btn-contact-you-back:hover i {
+    color: var(--redges-color-2);
+    transform: rotate(45deg);
+    /* ตอน hover หมุนไป 45 องศา */
+}
+
+/* =============== button เปลี่ยนภาษา ============ */
+.btn-change-language {
+    min-width: 100px;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.btn-change-language span{
+    font-size: 1.125rem;
+    color: var(--white-color);
 }
