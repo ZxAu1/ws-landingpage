@@ -51,6 +51,10 @@ color: var(--redges-color-2);
 
 /* font-weight custom  */
 
+.text-ct-light{
+    
+    font-weight: var(--text-light) !important;
+}
 .text-medium {
     font-weight: var(--text-medium) !important;
 }

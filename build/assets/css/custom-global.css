@@ -104,3 +104,8 @@
     font-size: 0.875em;
     margin-top: 0.25rem;
 }
+
+.footer p ,
+.footer ul li a {
+    opacity: 1;
+}
