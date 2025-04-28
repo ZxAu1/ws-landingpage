@@ -48,7 +48,59 @@
     justify-content: flex-start;
     align-items: center;
 }
-.btn-change-language span{
+
+.btn-change-language span {
     font-size: 1.125rem;
     color: var(--white-color);
+}
+
+
+/* ============ Custom Dropdown select-country =========== */
+
+.dropdown.select-country-code {
+    padding: 0;
+    max-width: 150px;
+    margin-right: 0.5rem;
+    border-radius: 8px;
+    height: 45px;
+
+}
+.dropdown.select-country-code .dropdown-toggle{
+    background: transparent;
+    padding: 8px 15px;
+    border-style: none;
+    border-radius: 8px;
+    height: 45px;
+    box-shadow: none;
+}
+.dropdown.select-country-code .dropdown-toggle:hover,
+.dropdown.select-country-code .dropdown-toggle:focus,
+.dropdown.select-country-code .dropdown-toggle:active{
+    color: var(--text-ct-drak);
+}
+
+.dropdown.select-country-code.for-modal .dropdown-menu.show{
+    transform: none !important;
+    top: 50px !important; 
+}
+.dropdown.select-country-code.for-modal .dropdown-menu.show .inner.show{
+    max-height: 200px !important; 
+}
+
+
+.btn-closed{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #ffffff;
+    z-index: 999;
+    background: transparent;
+    box-shadow: none;
+    border-style: none;
+}
+
+.is-invalid {
+    color: #dc3545;
+    font-size: 0.875em;
+    margin-top: 0.25rem;
 }

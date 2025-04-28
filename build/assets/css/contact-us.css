@@ -1,12 +1,6 @@
 .custom-box-contact-us{
-    background: plum;
+    /* background: plum; */
 }
 .contact-us-content{
-    background: gold;
-}
-.contact-us-content span:first-child{
-  font-size: 8rem;
-}
-.contact-us-content span:last-child{
-    font-size: 4.875rem;
+
 }
