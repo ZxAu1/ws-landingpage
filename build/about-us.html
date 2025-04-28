@@ -15,10 +15,44 @@
     <link rel="stylesheet" href="assets/css/main.min.css">
 
     <style>
-                @media (min-width: 1200px) {
+              @font-face {
+            font-family: 'Kanit';
+            src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Kanit';
+            src: url('assets/fonts/Kanit-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Kanit';
+            src: url('assets/fonts/Kanit-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+
+/* 1. กำหนดฟอนต์หลัก (ไม่ต้อง !important) */
+body {
+  font-family: 'Kanit', sans-serif ;
+}
+
+/* 2. กำหนดฟอนต์พิเศษสำหรับ Tag ที่ต้องการ */
+i,
+button {
+    font-family: "Open Sans", sans-serif; /* ไม่ต้อง !important */
+}
+
+
+        @media (min-width: 1200px) {
             .custom-container {
                 padding-left: 0px;
-                padding-right:0px;
+                padding-right: 0px;
             }
 
 
@@ -32,7 +66,7 @@
                 padding-right: 20px;
             }
 
-          
+
         }
     </style>
 </head>
@@ -68,8 +102,8 @@
                             </div>
                             <div class="col-6 collapse-close">
                                 <i class="fas fa-times" data-toggle="collapse" role="button"
-                                   data-target="#navbar-default-primary" aria-controls="navbar-default-primary"
-                                   aria-expanded="false" aria-label="Toggle navigation"></i>
+                                    data-target="#navbar-default-primary" aria-controls="navbar-default-primary"
+                                    aria-expanded="false" aria-label="Toggle navigation"></i>
                             </div>
                         </div>
                     </div>
@@ -87,9 +121,12 @@
                                 <li><a class="dropdown-item" href="index-5.html">Home Page 05</a></li>
                                 <li><a class="dropdown-item" href="index-6.html">Home Page 06</a></li>
                                 <li><a class="dropdown-item" href="index-7.html">Home Page 07</a></li>
-                                <li><a class="dropdown-item" href="index-8.html">Home Page 08 <span class="badge badge-danger ml-2">New</span></a></li>
-                                <li><a class="dropdown-item" href="index-9.html">Home Page 09 <span class="badge badge-danger ml-2">New</span></a></li>
-                                <li><a class="dropdown-item" href="index-10.html">Home Page 10 <span class="badge badge-danger ml-2">New</span></a></li>
+                                <li><a class="dropdown-item" href="index-8.html">Home Page 08 <span
+                                            class="badge badge-danger ml-2">New</span></a></li>
+                                <li><a class="dropdown-item" href="index-9.html">Home Page 09 <span
+                                            class="badge badge-danger ml-2">New</span></a></li>
+                                <li><a class="dropdown-item" href="index-10.html">Home Page 10 <span
+                                            class="badge badge-danger ml-2">New</span></a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -102,18 +139,25 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center" aria-haspopup="true" aria-expanded="false">Login & Signup <i class="fas fa-angle-right nav-link-arrow"></i></a>
+                                    <a href="#"
+                                        class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
+                                        aria-haspopup="true" aria-expanded="false">Login & Signup <i
+                                            class="fas fa-angle-right nav-link-arrow"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="basic-login.html">Login Page 1</a></li>
                                         <li><a class="dropdown-item" href="login.html">Login Page 2</a></li>
                                         <li><a class="dropdown-item" href="basic-sign-up.html">Signup Page 1</a></li>
                                         <li><a class="dropdown-item" href="sign-up.html">Signup Page 2</a></li>
                                         <li><a class="dropdown-item" href="password-reset.html">Reset Password</a></li>
-                                        <li><a class="dropdown-item" href="change-password.html">Change Password</a></li>
+                                        <li><a class="dropdown-item" href="change-password.html">Change Password</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center" aria-haspopup="true" aria-expanded="false">Utilities <i class="fas fa-angle-right nav-link-arrow"></i></a>
+                                    <a href="#"
+                                        class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
+                                        aria-haspopup="true" aria-expanded="false">Utilities <i
+                                            class="fas fa-angle-right nav-link-arrow"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="download.html">Download Page</a></li>
                                         <li><a class="dropdown-item" href="review.html">Review Page</a></li>
@@ -124,10 +168,14 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu">
-                                    <a href="#" class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center" aria-haspopup="true" aria-expanded="false">Team <i class="fas fa-angle-right nav-link-arrow"></i></a>
+                                    <a href="#"
+                                        class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
+                                        aria-haspopup="true" aria-expanded="false">Team <i
+                                            class="fas fa-angle-right nav-link-arrow"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="team.html">Our Team Members</a></li>
-                                        <li><a class="dropdown-item" href="team-single.html">Team Member Profile</a></li>
+                                        <li><a class="dropdown-item" href="team-single.html">Team Member Profile</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li><a class="dropdown-item" href="project-details.html">Project Details </a></li>
@@ -150,15 +198,19 @@
                                 <li><a class="dropdown-item" href="blog-no-sidebar.html">Blog No Sidebar</a></li>
                                 <li><a class="dropdown-item" href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
                                 <li><a class="dropdown-item" href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-single-left-sidebar.html">Details Left Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-single-right-sidebar.html">Details Right Sidebar</a></li>
+                                <li><a class="dropdown-item" href="blog-single-left-sidebar.html">Details Left
+                                        Sidebar</a></li>
+                                <li><a class="dropdown-item" href="blog-single-right-sidebar.html">Details Right
+                                        Sidebar</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="d-flex align-items-center">
-                    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-default-primary" aria-controls="navbar-default-primary" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse"
+                        data-target="#navbar-default-primary" aria-controls="navbar-default-primary"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
@@ -170,7 +222,8 @@
     <div class="main">
 
         <!--page header section start-->
-        <section class="" style="background: linear-gradient(90deg,rgba(155, 42, 42, 0.81) 0%, rgba(255, 0, 0, 0.43) 60%, rgba(83, 121, 237, 0.81) 100%),url('assets/img/aboutus/aboutus-background.png')no-repeat center center / cover">
+        <section class=""
+            style="background: linear-gradient(90deg,rgba(155, 42, 42, 0.81) 0%, rgba(255, 0, 0, 0.43) 60%, rgba(83, 121, 237, 0.81) 100%),url('assets/img/aboutus/aboutus-background.png')no-repeat center center / cover">
             <div class="section-lg  text-white section-header">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -191,70 +244,80 @@
             </div>
         </section>
         <!--page header section end-->
-<!-- About Section Start -->
-<section style="background: url('assets/img/aboutus/bg-section1.png') center center/cover no-repeat; padding: 100px 0;">
-    <div class="container text-center">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <h2 class="font-weight-bold mb-4" style="font-size: 36px;">เราคือใคร?</h2>
-          <p style="font-size: 18px; line-height: 1.8;">
-            <strong>W.S.777 Digital Marketing Agency</strong> คือพันธมิตรที่ช่วยให้ธุรกิจของคุณเติบโตในโลกดิจิทัล เราผสมผสานกลยุทธ์การตลาดที่ขับเคลื่อนด้วยข้อมูล (Data-Driven) กับความคิดสร้างสรรค์ที่โดดเด่น เพื่อให้แน่ใจว่าธุรกิจของคุณจะเข้าถึงกลุ่มเป้าหมายที่ใช่ และสร้างผลลัพธ์ที่วัดผลได้จริง
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- About Section End -->
-  <!-- Vision and Mission Section Start -->
-<section style="padding: 100px 0; background-color: #fff;">
-    <div class=" custom-container text-center">
-  
-      <!-- Vision -->
-      <div class="mb-5">
-        <h2 class="font-weight-bold mb-3">วิสัยทัศน์ (Vision)</h2>
-        <p class=" mb-3" style="font-size: 20px; font-weight: bold; color:black">
-          " มุ่งมั่นเป็นผู้นำด้านการตลาดดิจิทัล ที่ช่วยให้ธุรกิจทุกขนาดเติบโตได้อย่างมั่นคงและยั่งยืน "
-        </p>
-        <p style="font-size: 16px; line-height: 1.8; color: #555;">
-          เราเชื่อในมณฑลที่ธุรกิจไม่เพียงแค่แข่งขันได้ แต่สามารถสร้างแบรนด์ที่แข็งแรงและเชื่อมต่อกับลูกค้าได้อย่างแท้จริงผ่านข้อมูลเชิงลึกที่มีประสิทธิภาพ
-        </p>
-      </div>
-  
-      <!-- Mission -->
-      <div>
-        <h2 class="font-weight-bold mb-4">พันธกิจ (Mission)</h2>
-        <ul class="list-unstyled d-inline-block text-left" style=" max-width: 900px;">
-          <li class="mb-3">
-            <i class="bi bi-check-circle-fill text-success mr-2"></i>
-            สร้างกลยุทธ์การตลาดที่ตรงจุด – วิเคราะห์ข้อมูลเชิงลึกและใช้เครื่องมือที่เหมาะสม เพื่อให้การตลาดของคุณคุ้มค่าที่สุด
-          </li>
-          <li class="mb-3">
-            <i class="bi bi-check-circle-fill text-success mr-2"></i>
-            ช่วยให้ธุรกิจของลูกค้าเติบโต – มุ่งเน้นผลลัพธ์ที่วัดผลได้ ไม่เน้นตัวเลข Engagement แต่เน้นยอดขายและ ROI
-          </li>
-          <li class="mb-3">
-            <i class="bi bi-check-circle-fill text-success mr-2"></i>
-            พัฒนานวัตกรรมและเทคโนโลยี – ใช้เครื่องมือ AI, Automation และแพลตฟอร์มใหม่ๆ เพื่อเพิ่มประสิทธิภาพการตลาด
-          </li>
-          <li class="mb-3">
-            <i class="bi bi-check-circle-fill text-success mr-2"></i>
-            ให้บริการด้วยความเป็นมืออาชีพ – ทีมงานของเราช่วยขับเคลื่อนกลยุทธ์เพื่อมอบผลลัพธ์เชิงบวกอย่างต่อเนื่อง
-          </li>
-        </ul>
-      </div>
-  
-    </div>
-  </section>
-  
-  <!-- Vision and Mission Section End -->
+        <!-- About Section Start -->
+        <section
+            style="background: url('assets/img/aboutus/bg-section1.png') center center/cover no-repeat; padding: 100px 0;">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="font-weight-bold mb-4" style="font-size: 36px;">เราคือใคร?</h2>
+                        <p style="font-size: 18px; line-height: 1.8;">
+                            <strong>W.S.777 Digital Marketing Agency</strong>
+                            คือพันธมิตรที่ช่วยให้ธุรกิจของคุณเติบโตในโลกดิจิทัล
+                            เราผสมผสานกลยุทธ์การตลาดที่ขับเคลื่อนด้วยข้อมูล (Data-Driven) กับความคิดสร้างสรรค์ที่โดดเด่น
+                            เพื่อให้แน่ใจว่าธุรกิจของคุณจะเข้าถึงกลุ่มเป้าหมายที่ใช่ และสร้างผลลัพธ์ที่วัดผลได้จริง
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End -->
+        <!-- Vision and Mission Section Start -->
+        <section style="padding: 100px 0; background-color: #fff;">
+            <div class=" custom-container text-center">
+
+                <!-- Vision -->
+                <div class="mb-5">
+                    <h2 class="font-weight-bold mb-3">วิสัยทัศน์ (Vision)</h2>
+                    <p class=" mb-3" style="font-size: 20px; font-weight: bold; color:black">
+                        " มุ่งมั่นเป็นผู้นำด้านการตลาดดิจิทัล ที่ช่วยให้ธุรกิจทุกขนาดเติบโตได้อย่างมั่นคงและยั่งยืน "
+                    </p>
+                    <p style="font-size: 16px; line-height: 1.8; color: #555;">
+                        เราเชื่อในมณฑลที่ธุรกิจไม่เพียงแค่แข่งขันได้
+                        แต่สามารถสร้างแบรนด์ที่แข็งแรงและเชื่อมต่อกับลูกค้าได้อย่างแท้จริงผ่านข้อมูลเชิงลึกที่มีประสิทธิภาพ
+                    </p>
+                </div>
+
+                <!-- Mission -->
+                <div>
+                    <h2 class="font-weight-bold mb-4">พันธกิจ (Mission)</h2>
+                    <ul class="list-unstyled d-inline-block text-left" style=" max-width: 900px;">
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-success mr-2"></i>
+                            สร้างกลยุทธ์การตลาดที่ตรงจุด – วิเคราะห์ข้อมูลเชิงลึกและใช้เครื่องมือที่เหมาะสม
+                            เพื่อให้การตลาดของคุณคุ้มค่าที่สุด
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-success mr-2"></i>
+                            ช่วยให้ธุรกิจของลูกค้าเติบโต – มุ่งเน้นผลลัพธ์ที่วัดผลได้ ไม่เน้นตัวเลข Engagement
+                            แต่เน้นยอดขายและ ROI
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-success mr-2"></i>
+                            พัฒนานวัตกรรมและเทคโนโลยี – ใช้เครื่องมือ AI, Automation และแพลตฟอร์มใหม่ๆ
+                            เพื่อเพิ่มประสิทธิภาพการตลาด
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-success mr-2"></i>
+                            ให้บริการด้วยความเป็นมืออาชีพ –
+                            ทีมงานของเราช่วยขับเคลื่อนกลยุทธ์เพื่อมอบผลลัพธ์เชิงบวกอย่างต่อเนื่อง
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Vision and Mission Section End -->
         <!--work process section start-->
-        <section class="section section-lg"  style="background-color: #F3F6F8;">
+        <section class="section section-lg" style="background-color: #F3F6F8;">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <div class="section-heading text-center mb-5">
                             <h2>How Does it Work?</h2>
-                            <p class="lead">Distinctively grow go forward manufactured products and enthusiastically disseminate outsourcing customer service.</p>
+                            <p class="lead">Distinctively grow go forward manufactured products and enthusiastically
+                                disseminate outsourcing customer service.</p>
                         </div>
                     </div>
                 </div>
@@ -266,7 +329,8 @@
                             </div>
                             <div class="widget-text">
                                 <h3 class="h5">Generate Ideas</h3>
-                                <p class="mb-0">Appropriately restore mission-critical strategic theme areas rather than visionary ideas.</p>
+                                <p class="mb-0">Appropriately restore mission-critical strategic theme areas rather than
+                                    visionary ideas.</p>
                             </div>
                         </div>
                     </div>
@@ -277,7 +341,8 @@
                             </div>
                             <div class="widget-text">
                                 <h3 class="h5">Create Design</h3>
-                                <p class="mb-0">Quickly redefine granular schemas after top-line total linkage. Appropriately foster team driven.</p>
+                                <p class="mb-0">Quickly redefine granular schemas after top-line total linkage.
+                                    Appropriately foster team driven.</p>
                             </div>
                         </div>
                     </div>
@@ -288,7 +353,8 @@
                             </div>
                             <div class="widget-text">
                                 <h3 class="h5">Launch Project</h3>
-                                <p class="mb-0">Seamlessly deploy impactful schemas without initiatives. Interactively utilize scalable initiatives.</p>
+                                <p class="mb-0">Seamlessly deploy impactful schemas without initiatives. Interactively
+                                    utilize scalable initiatives.</p>
                             </div>
                         </div>
                     </div>
@@ -305,7 +371,8 @@
                     <div class="col-lg-8">
                         <div class="section-heading text-center mb-5">
                             <h2>Meet our lovely team</h2>
-                            <p class="lead">Dynamically pursue reliable convergence rather than 24/7 process improvements develop end-to-end customer service.</p>
+                            <p class="lead">Dynamically pursue reliable convergence rather than 24/7 process
+                                improvements develop end-to-end customer service.</p>
                         </div>
                     </div>
                 </div>
@@ -321,22 +388,34 @@
                                     <span class="font-small font-weight-normal text-gray mb-3">Developer</span>
                                     <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
                                         <li>
-                                            <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="50k Like">
+                                            <a href="#" target="_blank" aria-label="facebook social link"
+                                                class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="50k Like">
                                                 <span class="fab fa-facebook-f"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="40k Followers" aria-describedby="tooltip927904">
+                                            <a href="#" target="_blank" aria-label="twitter social link"
+                                                class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="40k Followers" aria-describedby="tooltip927904">
                                                 <span class="fab fa-twitter"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="slack social link" class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="25k Subscribe">
+                                            <a href="#" target="_blank" aria-label="slack social link"
+                                                class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="25k Subscribe">
                                                 <span class="fab fa-youtube"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="2k Project">
+                                            <a href="#" target="_blank" aria-label="dribbble social link"
+                                                class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="2k Project">
                                                 <span class="fab fa-dribbble"></span>
                                             </a>
                                         </li>
@@ -356,22 +435,34 @@
                                     <span class="font-small font-weight-normal text-gray mb-3">Lead Developer</span>
                                     <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
                                         <li>
-                                            <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="50k Like">
+                                            <a href="#" target="_blank" aria-label="facebook social link"
+                                                class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="50k Like">
                                                 <span class="fab fa-facebook-f"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="40k Followers" aria-describedby="tooltip927904">
+                                            <a href="#" target="_blank" aria-label="twitter social link"
+                                                class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="40k Followers" aria-describedby="tooltip927904">
                                                 <span class="fab fa-twitter"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="slack social link" class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="25k Subscribe">
+                                            <a href="#" target="_blank" aria-label="slack social link"
+                                                class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="25k Subscribe">
                                                 <span class="fab fa-youtube"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="2k Project">
+                                            <a href="#" target="_blank" aria-label="dribbble social link"
+                                                class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="2k Project">
                                                 <span class="fab fa-dribbble"></span>
                                             </a>
                                         </li>
@@ -391,22 +482,34 @@
                                     <span class="font-small font-weight-normal text-gray mb-3">Support Engineer</span>
                                     <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
                                         <li>
-                                            <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="50k Like">
+                                            <a href="#" target="_blank" aria-label="facebook social link"
+                                                class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="50k Like">
                                                 <span class="fab fa-facebook-f"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="40k Followers" aria-describedby="tooltip927904">
+                                            <a href="#" target="_blank" aria-label="twitter social link"
+                                                class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="40k Followers" aria-describedby="tooltip927904">
                                                 <span class="fab fa-twitter"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="slack social link" class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="25k Subscribe">
+                                            <a href="#" target="_blank" aria-label="slack social link"
+                                                class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="25k Subscribe">
                                                 <span class="fab fa-youtube"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="2k Project">
+                                            <a href="#" target="_blank" aria-label="dribbble social link"
+                                                class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="2k Project">
                                                 <span class="fab fa-dribbble"></span>
                                             </a>
                                         </li>
@@ -426,22 +529,34 @@
                                     <span class="font-small font-weight-normal text-gray mb-3">Developer</span>
                                     <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
                                         <li>
-                                            <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="50k Like">
+                                            <a href="#" target="_blank" aria-label="facebook social link"
+                                                class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="50k Like">
                                                 <span class="fab fa-facebook-f"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="40k Followers" aria-describedby="tooltip927904">
+                                            <a href="#" target="_blank" aria-label="twitter social link"
+                                                class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="40k Followers" aria-describedby="tooltip927904">
                                                 <span class="fab fa-twitter"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="slack social link" class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="25k Subscribe">
+                                            <a href="#" target="_blank" aria-label="slack social link"
+                                                class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="25k Subscribe">
                                                 <span class="fab fa-youtube"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="2k Project">
+                                            <a href="#" target="_blank" aria-label="dribbble social link"
+                                                class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="2k Project">
                                                 <span class="fab fa-dribbble"></span>
                                             </a>
                                         </li>
@@ -461,22 +576,34 @@
                                     <span class="font-small font-weight-normal text-gray mb-3">Lead Developer</span>
                                     <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
                                         <li>
-                                            <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="50k Like">
+                                            <a href="#" target="_blank" aria-label="facebook social link"
+                                                class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="50k Like">
                                                 <span class="fab fa-facebook-f"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="40k Followers" aria-describedby="tooltip927904">
+                                            <a href="#" target="_blank" aria-label="twitter social link"
+                                                class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="40k Followers" aria-describedby="tooltip927904">
                                                 <span class="fab fa-twitter"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="slack social link" class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="25k Subscribe">
+                                            <a href="#" target="_blank" aria-label="slack social link"
+                                                class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="25k Subscribe">
                                                 <span class="fab fa-youtube"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="2k Project">
+                                            <a href="#" target="_blank" aria-label="dribbble social link"
+                                                class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="2k Project">
                                                 <span class="fab fa-dribbble"></span>
                                             </a>
                                         </li>
@@ -496,22 +623,34 @@
                                     <span class="font-small font-weight-normal text-gray mb-3">Support Engineer</span>
                                     <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
                                         <li>
-                                            <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="50k Like">
+                                            <a href="#" target="_blank" aria-label="facebook social link"
+                                                class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="50k Like">
                                                 <span class="fab fa-facebook-f"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="40k Followers" aria-describedby="tooltip927904">
+                                            <a href="#" target="_blank" aria-label="twitter social link"
+                                                class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="40k Followers" aria-describedby="tooltip927904">
                                                 <span class="fab fa-twitter"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="slack social link" class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="25k Subscribe">
+                                            <a href="#" target="_blank" aria-label="slack social link"
+                                                class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="25k Subscribe">
                                                 <span class="fab fa-youtube"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="2k Project">
+                                            <a href="#" target="_blank" aria-label="dribbble social link"
+                                                class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="2k Project">
                                                 <span class="fab fa-dribbble"></span>
                                             </a>
                                         </li>
@@ -531,22 +670,34 @@
                                     <span class="font-small font-weight-normal text-gray mb-3">Developer</span>
                                     <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
                                         <li>
-                                            <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="50k Like">
+                                            <a href="#" target="_blank" aria-label="facebook social link"
+                                                class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="50k Like">
                                                 <span class="fab fa-facebook-f"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mrx-1data-toggle=" tooltip" data-placement="top" title="" data-original-title="40k Followers" aria-describedby="tooltip927904">
+                                            <a href="#" target="_blank" aria-label="twitter social link"
+                                                class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mrx-1data-toggle="
+                                                tooltip" data-placement="top" title=""
+                                                data-original-title="40k Followers" aria-describedby="tooltip927904">
                                                 <span class="fab fa-twitter"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="slack social link" class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="25k Subscribe">
+                                            <a href="#" target="_blank" aria-label="slack social link"
+                                                class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="25k Subscribe">
                                                 <span class="fab fa-youtube"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="2k Project">
+                                            <a href="#" target="_blank" aria-label="dribbble social link"
+                                                class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="2k Project">
                                                 <span class="fab fa-dribbble"></span>
                                             </a>
                                         </li>
@@ -566,22 +717,34 @@
                                     <span class="font-small font-weight-normal text-gray mb-3">Lead Developer</span>
                                     <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
                                         <li>
-                                            <a href="#" target="_blank" aria-label="facebook social link" class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="50k Like">
+                                            <a href="#" target="_blank" aria-label="facebook social link"
+                                                class="icon icon-shape icon-xs bg-facebook-alt rounded-circle icon-facebook brand-facebook mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="50k Like">
                                                 <span class="fab fa-facebook-f"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="40k Followers" aria-describedby="tooltip927904">
+                                            <a href="#" target="_blank" aria-label="twitter social link"
+                                                class="icon icon-shape icon-xs bg-twitch-alt rounded-circle brand-twitter icon-twitter mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="40k Followers" aria-describedby="tooltip927904">
                                                 <span class="fab fa-twitter"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="slack social link" class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="25k Subscribe">
+                                            <a href="#" target="_blank" aria-label="slack social link"
+                                                class="icon icon-shape icon-xs bg-youtube-alt rounded-circle brand-youtube icon-youtube mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="25k Subscribe">
                                                 <span class="fab fa-youtube"></span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" target="_blank" aria-label="dribbble social link" class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="2k Project">
+                                            <a href="#" target="_blank" aria-label="dribbble social link"
+                                                class="icon icon-shape icon-xs bg-dribbble-alt rounded-circle brand-dribbble icon-dribbble mx-1"
+                                                data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="2k Project">
                                                 <span class="fab fa-dribbble"></span>
                                             </a>
                                         </li>
@@ -595,49 +758,53 @@
         </section>
         <!--team section end-->
 
-<!-- Why Choose Us Section Start -->
-<section style="padding: 100px 0; background-color: #fff;">
-    <div class="container text-center">
-  
-      <!-- Section Heading -->
-      <div class="mb-5">
-        <h2 class="font-weight-bold">ทําไมต้องเลือกเรา? (Why Choose Us?)</h2>
-      </div>
-  
-      <!-- Bullet Points -->
-      <div class="d-flex justify-content-center">
-        <ul class="list-unstyled text-left" style="max-width: 900px;">
-          <li class="mb-3">
-            <span style="color: #007bff; font-size: 18px;">&#9670;</span>
-            <span style="color: #666; font-size: 18px;"> Data-Driven Strategy – เราใช้ข้อมูลเป็นหัวใจหลักในการวางแผน เพื่อให้ทุกการลงทุนโฆษณาคุ้มค่าที่สุด</span>
-          </li>
-          <li class="mb-3">
-            <span style="color: #007bff; font-size: 18px;">&#9670;</span>
-            <span style="color: #666; font-size: 18px;"> Result-Oriented Approach – เน้นผลลัพธ์ที่จับต้องได้ เช่น ยอดขาย การเติบโตของแบรนด์ และ ROI</span>
-          </li>
-          <li class="mb-3">
-            <span style="color: #007bff; font-size: 18px;">&#9670;</span>
-            <span style="color: #666; font-size: 18px;"> ทีมงานมืออาชีพ – ผู้เชี่ยวชาญด้าน Digital Marketing ที่มีประสบการณ์มากกว่า 10 ปี</span>
-          </li>
-          <li class="mb-3">
-            <span style="color: #007bff; font-size: 18px;">&#9670;</span>
-            <span style="color: #666; font-size: 18px;"> โซลูชันครบวงจร – จากการสร้างแบรนด์, SEO, Social Media, ไปจนถึง Web Development</span>
-          </li>
-        </ul>
-      </div>
-  
-      <!-- Highlight Section -->
-      <div class="mt-5">
-        <h3 class="font-weight-bold">
-          
-          พร้อมให้ธุรกิจของคุณเติบโตไปกับเรา!
-        </h3>
-      </div>
-  
-    </div>
-  </section>
-  <!-- Why Choose Us Section End -->
-  
+        <!-- Why Choose Us Section Start -->
+        <section style="padding: 100px 0; background-color: #fff;">
+            <div class="container text-center">
+
+                <!-- Section Heading -->
+                <div class="mb-5">
+                    <h2 class="font-weight-bold">ทําไมต้องเลือกเรา? (Why Choose Us?)</h2>
+                </div>
+
+                <!-- Bullet Points -->
+                <div class="d-flex justify-content-center">
+                    <ul class="list-unstyled text-left" style="max-width: 900px;">
+                        <li class="mb-3">
+                            <span style="color: #007bff; font-size: 18px;">&#9670;</span>
+                            <span style="color: #666; font-size: 18px;"> Data-Driven Strategy –
+                                เราใช้ข้อมูลเป็นหัวใจหลักในการวางแผน เพื่อให้ทุกการลงทุนโฆษณาคุ้มค่าที่สุด</span>
+                        </li>
+                        <li class="mb-3">
+                            <span style="color: #007bff; font-size: 18px;">&#9670;</span>
+                            <span style="color: #666; font-size: 18px;"> Result-Oriented Approach –
+                                เน้นผลลัพธ์ที่จับต้องได้ เช่น ยอดขาย การเติบโตของแบรนด์ และ ROI</span>
+                        </li>
+                        <li class="mb-3">
+                            <span style="color: #007bff; font-size: 18px;">&#9670;</span>
+                            <span style="color: #666; font-size: 18px;"> ทีมงานมืออาชีพ – ผู้เชี่ยวชาญด้าน Digital
+                                Marketing ที่มีประสบการณ์มากกว่า 10 ปี</span>
+                        </li>
+                        <li class="mb-3">
+                            <span style="color: #007bff; font-size: 18px;">&#9670;</span>
+                            <span style="color: #666; font-size: 18px;"> โซลูชันครบวงจร – จากการสร้างแบรนด์, SEO, Social
+                                Media, ไปจนถึง Web Development</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Highlight Section -->
+                <div class="mt-5">
+                    <h3 class="font-weight-bold">
+
+                        พร้อมให้ธุรกิจของคุณเติบโตไปกับเรา!
+                    </h3>
+                </div>
+
+            </div>
+        </section>
+        <!-- Why Choose Us Section End -->
+
 
 
 
@@ -689,18 +856,27 @@
                         <a class="footer-brand mr-lg-5 d-flex" href="index.html">
                             <img src="assets/img/logo-white.png" class="mr-3" alt="Footer logo">
                         </a>
-                        <p class="my-4">Interactively unleash interactive best practices before technically sound portals.</p>
+                        <p class="my-4">Interactively unleash interactive best practices before technically sound
+                            portals.</p>
                         <div class="btn-wrapper mt-4">
-                            <button class="btn btn-icon-only btn-pill btn-twitter mr-2 icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="40k Followers">
+                            <button class="btn btn-icon-only btn-pill btn-twitter mr-2 icon icon-xs icon-shape"
+                                type="button" data-toggle="tooltip" data-placement="top" title=""
+                                data-original-title="40k Followers">
                                 <span aria-hidden="true" class="fab fa-twitter"></span>
                             </button>
-                            <button class="btn btn-icon-only btn-pill btn-facebook mr-2 icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="50k Like">
+                            <button class="btn btn-icon-only btn-pill btn-facebook mr-2 icon icon-xs icon-shape"
+                                type="button" data-toggle="tooltip" data-placement="top" title=""
+                                data-original-title="50k Like">
                                 <span aria-hidden="true" class="fab fa-facebook-f"></span>
                             </button>
-                            <button class="btn btn-icon-only btn-pill btn-youtube mr-2 icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="25k Subscribe">
+                            <button class="btn btn-icon-only btn-pill btn-youtube mr-2 icon icon-xs icon-shape"
+                                type="button" data-toggle="tooltip" data-placement="top" title=""
+                                data-original-title="25k Subscribe">
                                 <span aria-hidden="true" class="fab fa-youtube"></span>
                             </button>
-                            <button class="btn btn-icon-only btn-pill btn-dribbble icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="2k Project">
+                            <button class="btn btn-icon-only btn-pill btn-dribbble icon icon-xs icon-shape"
+                                type="button" data-toggle="tooltip" data-placement="top" title=""
+                                data-original-title="2k Project">
                                 <span aria-hidden="true" class="fab fa-dribbble"></span>
                             </button>
                         </div>

@@ -38,12 +38,15 @@
         }
 
 
-        body, html {
-  font-family: 'Kanit', sans-serif;
+/* 1. กำหนดฟอนต์หลัก (ไม่ต้อง !important) */
+body {
+  font-family: 'Kanit', sans-serif ;
 }
 
-*:not(i) {
-  font-family: 'Kanit', sans-serif !important;
+/* 2. กำหนดฟอนต์พิเศษสำหรับ Tag ที่ต้องการ */
+i,
+button {
+    font-family: "Open Sans", sans-serif; /* ไม่ต้อง !important */
 }
 
 
@@ -153,7 +156,13 @@
                 padding-left: 170px;
                 padding-right: 170px;
             }
-
+            .custom-container-first {
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+            .custom-information{
+                padding-left: 100px;
+            }
             .custom-container2 {
                 padding-left: 0px;
                 padding-right: 0px;
@@ -171,7 +180,13 @@
                 padding-left: 120px;
                 padding-right: 120px;
             }
-
+            .custom-container-first {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            .custom-information{
+                padding-left: 0px;
+            }
             .custom-container2 {
                 padding-left: 20px;
                 padding-right: 20px;
@@ -403,17 +418,17 @@
         </section>
         <!--promo section end-->
         <!-- section-custom1 -->
-        <section class="section py-5">
-            <div class="container">
+        <section class="section py-5 mt-5">
+            <div class="custom-container-first">
                 <div class="row align-items-center">
                     <!-- รูปภาพ -->
                     <div class="col-md-6 mb-4 mb-md-0">
-                        <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow zoom-effect"
+                        <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow"
                             style="width: 757px; height: 558px; object-fit: cover; border-radius: 20px;">
                     </div>
 
                     <!-- ข้อความ -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 custom-information">
                         <h2 class="display-4 text-dark font-weight-bold mb-3">Marketing Agency</h2>
                         <h3 class="mb-4 text-primary">ให้บริการปรึกษาการตลาดครบวงจร</h3>
                         <p class="lead mb-4">🚀 การตลาดดิจิทัลครบวงจร ที่ช่วยให้ธุรกิจของคุณเติบโต!</p>
@@ -477,60 +492,48 @@
 
         <section class="section py-5">
             <div class="container-fluid custom-container">
-                <!-- First Row: Image on Left, Text on Right -->
                 <div class="row align-items-center mb-4">
-                    <div class="col-md-6">
-                        <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow"
+                    <div class="col-md-6 mb-3 mb-md-0"> <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow"
                             style="max-width: 700px; max-height: 400px; width: 100%; height: auto; border-radius: 20px; object-fit: cover;">
                     </div>
-                    <div class="col-md-6">
-                        <h4>1. เราจะเข้าใจแบรนด์ของคุณอย่างลึกซึ้งไม่ต่างจากคุณ</h4>
+                    <div class="col-md-6 text-center text-md-start"> <h4>1. เราจะเข้าใจแบรนด์ของคุณอย่างลึกซึ้งไม่ต่างจากคุณ</h4>
                         <p>หนึ่งในสิ่งที่น่าหงุดหงิดที่สุดสำหรับเจ้าของแบรนด์
                             คือการทำงานกับพาร์ทเนอร์ที่ไม่พยายามทำความเข้าใจตัวตนของแบรนด์คุณ แต่สำหรับเรา…
                             ก่อนที่โปรเจกต์จะเริ่มต้น เราจะศึกษาธรรมชาติของสินค้าอย่างละเอียด
                             และเข้าใจอย่างแท้จริงว่าทำไมผู้บริโภคถึงต้องการมัน</p>
                     </div>
                 </div>
-
-                <!-- Second Row: Text on Left, Image on Right -->
+        
                 <div class="row align-items-center mb-4">
-                    <div class="col-md-6">
-                        <h4>2. เราจะยกระดับผลลัพธ์ของคุณให้เหนือกว่าที่เคย</h4>
+                    <div class="col-md-6 mb-3 mb-md-0 order-md-1 text-center text-md-start"> <h4>2. เราจะยกระดับผลลัพธ์ของคุณให้เหนือกว่าที่เคย</h4>
                         <p>เราให้ความสำคัญกับการเติบโตอย่างแท้จริง เป้าหมายหลักของเราคือช่วยให้ธุรกิจของคุณก้าวไปอีกขั้น
                             และสร้างผลลัพธ์ที่ดียิ่งขึ้น เราไม่มุ่งเน้นแค่ตัวเลขการเข้าถึงหรือการมีส่วนร่วม
                             แต่ให้ความสำคัญกับปัจจัยที่ขับเคลื่อนยอดขายอย่างแท้จริง</p>
                     </div>
-                    <div class="col-md-6">
-                        <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow"
+                    <div class="col-md-6 order-md-2"> <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow"
                             style="max-width: 700px; max-height: 400px; width: 100%; height: auto; border-radius: 20px; object-fit: cover;">
                     </div>
                 </div>
             </div>
-
+        
             <div class="container-fluid custom-container">
-                <!-- Third Row: Image on Left, Text on Right -->
                 <div class="row align-items-center mb-4">
-                    <div class="col-md-6">
-                        <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow"
+                    <div class="col-md-6 mb-3 mb-md-0"> <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow"
                             style="max-width: 700px; max-height: 400px; width: 100%; height: auto; border-radius: 20px; object-fit: cover;">
                     </div>
-                    <div class="col-md-6">
-                        <h4>3. เราคิดในมุมมองของเจ้าของกิจการ</h4>
+                    <div class="col-md-6 text-center text-md-start"> <h4>3. เราคิดในมุมมองของเจ้าของกิจการ</h4>
                         <p>เราเคยบริหารธุรกิจของเราเอง จึงเข้าใจว่าการตลาดไม่ใช่แค่ส่วนประกอบที่แยกออกมา
                             เราพร้อมที่จะคิดให้ไกลกว่าแค่โฆษณา
                             และทำให้แน่ใจว่ามันสอดคล้องกับเป้าหมายทางธุรกิจประจำปีของคุณอย่างลงตัว</p>
                     </div>
                 </div>
-
-                <!-- Fourth Row: Text on Left, Image on Right -->
+        
                 <div class="row align-items-center mb-4">
-                    <div class="col-md-6">
-                        <h4>4. สร้างความสัมพันธ์ที่ราบรื่นกับเอเจนซี</h4>
+                    <div class="col-md-6 mb-3 mb-md-0 order-md-1 text-center text-md-start"> <h4>4. สร้างความสัมพันธ์ที่ราบรื่นกับเอเจนซี</h4>
                         <p>เราไม่ต้องการสร้างความขัดแย้ง เราต้องการทำให้ชีวิตคุณง่ายขึ้น ช่วยแก้ปัญหา
                             และสนับสนุนการเติบโตของธุรกิจคุณ</p>
                     </div>
-                    <div class="col-md-6">
-                        <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow"
+                    <div class="col-md-6 order-md-2"> <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow"
                             style="max-width: 700px; max-height: 400px; width: 100%; height: auto; border-radius: 20px; object-fit: cover;">
                     </div>
                 </div>
