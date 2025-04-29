@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/main.min.css">
 
     <style>
-              @font-face {
+        @font-face {
             font-family: 'Kanit';
             src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
             font-weight: 400;
@@ -37,18 +37,24 @@
         }
 
 
-/* 1. กำหนดฟอนต์หลัก (ไม่ต้อง !important) */
-body {
-  font-family: 'Kanit', sans-serif ;
-}
+        /* 1. กำหนดฟอนต์หลัก (ไม่ต้อง !important) */
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
 
-/* 2. กำหนดฟอนต์พิเศษสำหรับ Tag ที่ต้องการ */
-i,
-button {
-    font-family: "Open Sans", sans-serif; /* ไม่ต้อง !important */
-}
+        /* 2. กำหนดฟอนต์พิเศษสำหรับ Tag ที่ต้องการ */
+        i,
+        button {
+            font-family: "Open Sans", sans-serif;
+            /* ไม่ต้อง !important */
+        }
 
-
+        .nav-color {
+            background: linear-gradient(90deg,rgba(227, 14, 15, 1) 0%, rgba(246, 66, 41, 1) 100%);
+        }
+        .border-color{
+            border-color: #ffffff !important;
+        }
         @media (min-width: 1200px) {
             .custom-container {
                 padding-left: 0px;
@@ -86,7 +92,7 @@ button {
     <!--preloader end-->
     <!--header section start-->
     <header class="header position-relative z-9">
-        <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-primary fixed-top headroom">
+        <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark nav-color fixed-top headroom">
             <div class="container position-relative">
                 <a class="navbar-brand mr-lg-3" href="index.html">
                     <img class="navbar-brand-dark" src="assets/img/logo-white.png" alt="menuimage">
@@ -229,14 +235,10 @@ button {
                     <div class="row justify-content-center">
                         <div class="col-md-8 col-lg-7">
                             <div class="page-header-content text-center">
-                                <h1>About Us</h1>
-                                <nav aria-label="breadcrumb" class="d-flex justify-content-center">
-                                    <ol class="breadcrumb breadcrumb-transparent breadcrumb-text-light">
-                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">About Us</li>
-                                    </ol>
-                                </nav>
+                                <p style="font-size: 84px;">About Us</p>
+                                <p style="font-size: 33px;">WS.777 Company Limited</p>
+                                    <p style="font-size: 33px;">Marketing Agency</p>
+                          
                             </div>
                         </div>
                     </div>
@@ -849,7 +851,7 @@ button {
 
     <!--footer section start-->
     <footer class="footer-wrap">
-        <div class="footer footer-top section section-md bg-primary text-white">
+        <div class="footer footer-top section section-md nav-color text-white">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-lg-4 mb-4">
@@ -911,7 +913,7 @@ button {
                 </div>
             </div>
         </div>
-        <div class="footer py-3 bg-primary text-white border-top border-variant-default">
+        <div class="footer py-3 nav-color text-white border-top border-color">
             <div class="container">
                 <div class="row">
                     <div class="col p-3">
