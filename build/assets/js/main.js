@@ -435,22 +435,21 @@ $(document).ready(function () {
 
       // ลบข้อความ error ออก
       $("#contactFormNew").find("label.error").remove();
-     
-      // ยิง ajax ไป save
-      // $.ajax({
-      //     url: '',//'save.php', // เปลี่ยน URL ตามที่ต้องการ
-      //     type: 'POST',
-      //     data: formData,
-      //     success: function (response) {
-        submitMSG(true);
-      //         alert('บันทึกสำเร็จ: ' + response);
-      //         $('#contactFormNew')[0].reset();
-      //         $('.selectpicker').selectpicker('refresh');
-      //     },
-      //     error: function () {
-      //         alert('เกิดข้อผิดพลาดในการบันทึกข้อมูล');
-      //     }
-      // });
+      submitMSG(true);
+      
+      // ยิง ajax ไปยังไฟล์ php
+      $.ajax({
+        url: "libs/contact-form-process.php", //'save.php', // เปลี่ยน URL ตามที่ต้องการ
+        type: "POST",
+        data: formData,
+        // data: "name=" + s + "&email=" + a + "&message=" + n,
+        success: function (response) {
+          alert("บันทึกสำเร็จ: " + response);
+        },
+        error: function () {
+          alert("เกิดข้อผิดพลาดในการบันทึกข้อมูล");
+        },
+      });
     } else {
       console.log("Form is not valid");
     }

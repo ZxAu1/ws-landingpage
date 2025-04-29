@@ -6,6 +6,10 @@ $name = $_POST["name"];
 $email = $_POST["email"];
 $message = $_POST["message"];
 
+
+echo json_encode($email);
+exit;
+
 // NAME
 if (empty($name)) {
     $errorMSG = "Name is required ";
