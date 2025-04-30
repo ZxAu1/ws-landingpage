@@ -1,3 +1,5 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800&display=swap");
 :root {
 
     /*
@@ -5,8 +7,8 @@
 ================== Background Colors ====================
 =========================================================
 */
-    --primary-gradient-color: linear-gradient(85deg, rgba(26, 44, 121, 0.8) -10%, rgba(180, 23, 23, 0.9) 100%); 
-    --secondary-gradient-color: linear-gradient(-85deg, rgba(26, 44, 121, 0.8) -10%, rgba(180, 23, 23, 0.9) 100%); 
+    --primary-gradient-color: linear-gradient(85deg, rgba(26, 44, 121, 0.4) -10%, rgba(180, 23, 23, 0.6) 100%); 
+    --secondary-gradient-color: linear-gradient(-85deg, rgba(26, 44, 121, 0.4) -10%, rgba(180, 23, 23, 0.6) 100%); 
     --redges-color-1: #FF3A3A;
     --redges-color-2: #E30E0F;
     --redges-color-3: #F13321;
@@ -33,6 +35,11 @@
     --text-medium: 500;
     --text-bold: 700;
 
+}
+
+
+body {
+    font-family: 'Kanit', sans-serif;
 }
 
 
