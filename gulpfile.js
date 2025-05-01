@@ -109,6 +109,12 @@ function minifyCss() {
         .pipe(dest('build/assets/css'));
 }
 
+function copyCustomCSS() {
+    console.log('---------------COPY CUSTOM TEMPLATE CSS---------------');
+    return src('src/assets/custom-template.css')
+        .pipe(dest('build/assets/'));
+}
+
 // CHANGE TO MINIFIED VERSIONS OF JS AND CSS
 // If you run the build comment second time then JS and CSS replace will not work. 
 // You need to put 
@@ -149,4 +155,4 @@ exports.linters = series(scssLint, jsLint);
 exports.dev = series(parallel(compileJS, compileSCSS), browserSyncInit, watchFiles);
 
 // PRODUCTION VERSION
-exports.build = series(parallel(compileSCSS, compileJS), parallel(minifyScripts, minifyCss), renameSources, browserSyncInit);
+exports.build = series(parallel(compileSCSS, compileJS), parallel(minifyScripts, minifyCss,copyCustomCSS), renameSources, browserSyncInit);
