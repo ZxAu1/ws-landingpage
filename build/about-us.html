@@ -6,13 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--favicon icon-->
-    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
+   
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Select CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css"
+        rel="stylesheet">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/css/custom-global.css">
+    <link rel="stylesheet" href="assets/css/contact-us.css">
+
+    <!-- เพิ่ม script i18n -->
+    <script src="libs/i18n/i18next.min.js"></script>
+    <script src="libs/i18n/i18nextHttpBackend.min.js"></script>
+    <script src="libs/i18n/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="assets/js/i18n.js"></script>
 
     <!--title-->
     <title>About Us - Corporate and Business HTML Template</title>
 
-    <link rel="stylesheet" href="assets/css/main.min.css">
+   
 
     <style>
         @font-face {
@@ -90,13 +108,15 @@
         </div>
     </div>
     <!--preloader end-->
+
     <!--header section start-->
     <header class="header position-relative z-9">
-        <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark nav-color fixed-top headroom">
+        <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-primary fixed-top headroom">
             <div class="container position-relative">
                 <a class="navbar-brand mr-lg-3" href="index.html">
                     <img class="navbar-brand-dark" src="assets/img/logo-white.png" alt="menuimage">
                     <img class="navbar-brand-light" src="assets/img/logo-color.png" alt="menuimage">
+                    <span class="text-ct-light ml-2" style="text-transform: capitalize;">WS.777 Company Limited</span>
                 </a>
                 <div class="navbar-collapse collapse" id="navbar-default-primary">
                     <div class="navbar-collapse-header">
@@ -113,107 +133,40 @@
                             </div>
                         </div>
                     </div>
-                    <ul class="navbar-nav navbar-nav-hover ml-auto">
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                                <span class="nav-link-inner-text">Home</span>
-                                <i class="fas fa-angle-down nav-link-arrow ml-1"></i>
-                            </a>
-                            <ul class="sub-menu dropdown-menu">
-                                <li><a class="dropdown-item" href="index.html">Home Page 01</a></li>
-                                <li><a class="dropdown-item" href="index-2.html">Home Page 02</a></li>
-                                <li><a class="dropdown-item" href="index-3.html">Home Page 03</a></li>
-                                <li><a class="dropdown-item" href="index-4.html">Home Page 04</a></li>
-                                <li><a class="dropdown-item" href="index-5.html">Home Page 05</a></li>
-                                <li><a class="dropdown-item" href="index-6.html">Home Page 06</a></li>
-                                <li><a class="dropdown-item" href="index-7.html">Home Page 07</a></li>
-                                <li><a class="dropdown-item" href="index-8.html">Home Page 08 <span
-                                            class="badge badge-danger ml-2">New</span></a></li>
-                                <li><a class="dropdown-item" href="index-9.html">Home Page 09 <span
-                                            class="badge badge-danger ml-2">New</span></a></li>
-                                <li><a class="dropdown-item" href="index-10.html">Home Page 10 <span
-                                            class="badge badge-danger ml-2">New</span></a></li>
-                            </ul>
+                    <ul class="header-nav navbar-nav navbar-nav-hover ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about-us.html">About Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-toggle="dropdown" role="button">
-                                <span class="nav-link-inner-text">Pages </span>
-                                <i class="fas fa-angle-down nav-link-arrow ml-1"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-submenu">
-                                    <a href="#"
-                                        class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
-                                        aria-haspopup="true" aria-expanded="false">Login & Signup <i
-                                            class="fas fa-angle-right nav-link-arrow"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="basic-login.html">Login Page 1</a></li>
-                                        <li><a class="dropdown-item" href="login.html">Login Page 2</a></li>
-                                        <li><a class="dropdown-item" href="basic-sign-up.html">Signup Page 1</a></li>
-                                        <li><a class="dropdown-item" href="sign-up.html">Signup Page 2</a></li>
-                                        <li><a class="dropdown-item" href="password-reset.html">Reset Password</a></li>
-                                        <li><a class="dropdown-item" href="change-password.html">Change Password</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a href="#"
-                                        class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
-                                        aria-haspopup="true" aria-expanded="false">Utilities <i
-                                            class="fas fa-angle-right nav-link-arrow"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="download.html">Download Page</a></li>
-                                        <li><a class="dropdown-item" href="review.html">Review Page</a></li>
-                                        <li><a class="dropdown-item" href="faq.html">FAQ Page</a></li>
-                                        <li><a class="dropdown-item" href="404.html">404 Page</a></li>
-                                        <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-                                        <li><a class="dropdown-item" href="thank-you.html">Thank You Page</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a href="#"
-                                        class="dropdown-toggle dropdown-item d-flex justify-content-between align-items-center"
-                                        aria-haspopup="true" aria-expanded="false">Team <i
-                                            class="fas fa-angle-right nav-link-arrow"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="team.html">Our Team Members</a></li>
-                                        <li><a class="dropdown-item" href="team-single.html">Team Member Profile</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a class="dropdown-item" href="project-details.html">Project Details </a></li>
-                                <li><a class="dropdown-item" href="services-details.html">Services Details</a></li>
-                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="project.html">Project</a>
+                            <a class="nav-link" href="blog.html">Blog</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                                <span class="nav-link-inner-text">Blog</span>
-                                <i class="fas fa-angle-down nav-link-arrow ml-1"></i>
-                            </a>
-                            <ul class="sub-menu dropdown-menu">
-                                <li><a class="dropdown-item" href="blog-default.html">Blog Grid</a></li>
-                                <li><a class="dropdown-item" href="blog-no-sidebar.html">Blog No Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-single-left-sidebar.html">Details Left
-                                        Sidebar</a></li>
-                                <li><a class="dropdown-item" href="blog-single-right-sidebar.html">Details Right
-                                        Sidebar</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact-us.html">Contact Us</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="d-flex align-items-center">
+                    <a href="#" class="btn btn-contact-you-back">
+                        <span class="mr-2 text-bold">ให้เราติดต่อกลับ</span>
+                        <i class="bi bi-arrow-up-right-circle-fill"></i>
+                    </a>
+                    <!-- ปุ่ม dropdown -->
+                    <div class="dropdown ml-md-2">
+                        <button class="btn btn-change-language dropdown-toggle" type="button" id="languageDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img id="current-flag" src="https://flagcdn.com/w40/th.png" alt="TH" class="flag-icon mr-2">
+                            <span id="current-lang">TH</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown" id="language-dropdown">
+                            <!-- dropdown จะถูก generate ใหม่จาก i18n.js -->
+                        </ul>
+                    </div>
                     <button class="navbar-toggler ml-2" type="button" data-toggle="collapse"
                         data-target="#navbar-default-primary" aria-controls="navbar-default-primary"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -849,71 +802,58 @@
 
     </div>
 
+
     <!--footer section start-->
     <footer class="footer-wrap">
-        <div class="footer footer-top section section-md nav-color text-white">
+        <div class="footer footer-top section section-md bg-primary text-white py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-lg-4 mb-4">
-                        <a class="footer-brand mr-lg-5 d-flex" href="index.html">
-                            <img src="assets/img/logo-white.png" class="mr-3" alt="Footer logo">
-                        </a>
-                        <p class="my-4">Interactively unleash interactive best practices before technically sound
-                            portals.</p>
-                        <div class="btn-wrapper mt-4">
-                            <button class="btn btn-icon-only btn-pill btn-twitter mr-2 icon icon-xs icon-shape"
-                                type="button" data-toggle="tooltip" data-placement="top" title=""
-                                data-original-title="40k Followers">
-                                <span aria-hidden="true" class="fab fa-twitter"></span>
-                            </button>
-                            <button class="btn btn-icon-only btn-pill btn-facebook mr-2 icon icon-xs icon-shape"
-                                type="button" data-toggle="tooltip" data-placement="top" title=""
-                                data-original-title="50k Like">
-                                <span aria-hidden="true" class="fab fa-facebook-f"></span>
-                            </button>
-                            <button class="btn btn-icon-only btn-pill btn-youtube mr-2 icon icon-xs icon-shape"
-                                type="button" data-toggle="tooltip" data-placement="top" title=""
-                                data-original-title="25k Subscribe">
-                                <span aria-hidden="true" class="fab fa-youtube"></span>
-                            </button>
-                            <button class="btn btn-icon-only btn-pill btn-dribbble icon icon-xs icon-shape"
-                                type="button" data-toggle="tooltip" data-placement="top" title=""
-                                data-original-title="2k Project">
-                                <span aria-hidden="true" class="fab fa-dribbble"></span>
-                            </button>
+                <div class="row align-items-start">
+                    <!-- Logo and Company Info -->
+                    <div class="col-sm-6 col-lg-4 mb-4 text-center text-lg-start">
+                        <div class="mb-3">
+                            <img src="assets/img/logo-white.png" alt="WS Logo" style="height: 60px;">
+                        </div>
+                        <h5 class="text-ct-light">บริษัท ดับบลิวเอส.777 จำกัด</h5>
+                        <div class="mt-3">
+                            <i class="fas fa-envelope mx-2"></i>
+                            <i class="fab fa-facebook mx-2"></i>
+                            <a href="#"><i class="fab fa-line mx-2"></i></a>
+                            <a href="#"><i class="fab fa-youtube mx-2"></i></a>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                        <h5 class="mb-4">Company</h5>
-                        <ul class="links-vertical">
-                            <li><a target="_blank" href="#">About Us</a></li>
-                            <li><a target="_blank" href="#">Careers</a></li>
-                            <li><a target="_blank" href="#">Customers</a></li>
-                            <li><a target="_blank" href="#">Community</a></li>
-                        </ul>
+    
+                    <!-- Address and Contact -->
+                    <div class="col-sm-6 col-lg-4 mb-4 text-center text-lg-start " >
+                        <p class="text-ct-light"><i class="fas fa-map-marker-alt me-2"></i>189/174 บ้านกลางเมือง พหลฯโยธิน รามอินทรา ถนนเทพรักษ์ ตำบลแขวงอนุสาวรีย์ เขตบางเขน กรุงเทพฯ 10220</p>
+                        <p class="text-ct-light"><i class="fas fa-phone me-2"></i>095 424 4409</p>
                     </div>
-                    <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                        <h5 class="mb-4">Resources</h5>
-                        <ul class="links-vertical">
-                            <li><a target="_blank" href="#">Help</a></li>
-                            <li><a target="_blank" href="#">Events</a></li>
-                            <li><a target="_blank" href="#">Live sessions</a></li>
-                            <li><a target="_blank" href="#">Open sources</a></li>
-                        </ul>
+    
+                    <!-- Links -->
+                    <div class="col-sm-12 col-lg-4 text-center text-lg-start" >
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-unstyled d-flex flex-directional flex-column text-ct-light" >
+                                    <li><a href="#" class="text-white">Branding</a></li>
+                                    <li><a href="#" class="text-white">Digital</a></li>
+                                    <li><a href="#" class="text-white">Marketing</a></li>
+                                    <li><a href="#" class="text-white">Case Study</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled d-flex flex-directional flex-column text-ct-light" >
+                                    <li><a href="#" class="text-white">About</a></li>
+                                    <li><a href="#" class="text-white">Contact</a></li>
+                                    <li><a href="#" class="text-white">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-6 col-lg-2">
-                        <h5 class="mb-4">Support</h5>
-                        <ul class="links-vertical">
-                            <li><a target="_blank" href="#">Help</a></li>
-                            <li><a target="_blank" href="#">Tech Support</a></li>
-                            <li><a target="_blank" href="#">Network Status</a></li>
-                            <li><a target="_blank" href="#">Contact Support</a></li>
-                        </ul>
-                    </div>
+    
                 </div>
             </div>
         </div>
-        <div class="footer py-3 nav-color text-white border-top border-color">
+    
+        <div class="footer py-3 bg-primary text-white border-top border-variant-default">
             <div class="container">
                 <div class="row">
                     <div class="col p-3">
@@ -929,6 +869,8 @@
         </div>
     </footer>
     <!--footer section end-->
+     <!-- Modal container (จะสร้าง Modal มาใส่ตรงนี้ด้วย JS) -->
+     <div id="contactModalContainer"></div>
     <!--scroll bottom to top button start-->
     <button class="scroll-top scroll-to-target" data-target="html">
         <span class="fas fa-hand-point-up"></span>
@@ -949,6 +891,16 @@
     <script src="assets/js/vendors/jquery.jquery.countdown.min.js"></script>
     <script src="assets/js/vendors/validator.min.js"></script>
     <script src="assets/js/app.min.js"></script>
+    <!-- Bootstrap Select JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+    <!-- jQuery Validate Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+    <!-- Boostrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
