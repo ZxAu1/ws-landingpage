@@ -1,5 +1,6 @@
 // The require statement tells Node to look into the node_modules folder for a package
 // Importing specific gulp API functions lets us write them below as series() instead of gulp.series()
+
 'use strict';
 const {src, dest, watch, series, parallel } = require('gulp');
 const browserSync = require('browser-sync').create();
