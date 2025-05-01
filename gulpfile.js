@@ -100,7 +100,11 @@ function minifyCss() {
     console.log('---------------MINIFY CSS---------------');
     return src([
         'src/assets/vendor/css/**/*',
-        'build/assets/css/main.css'
+        'build/assets/css/main.css',
+        'build/assets/css/blog.css',
+        'build/assets/css/contact-us.css',
+        'build/assets/css/custom-global.css',
+        'build/assets/css/custom-template.css'
     ])
         .pipe(sourcemaps.init())
         .pipe(concat('main.css'))
