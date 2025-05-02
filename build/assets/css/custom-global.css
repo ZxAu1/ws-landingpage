@@ -1,4 +1,7 @@
 /* ============== button ให้เราติดต่อกลับ ======= */
+.navbar-dark .navbar-nav .nav-link.active{
+    color: var(--text-ct-yellow);
+}
 .btn-contact-you-back {
     display: flex;
     flex-direction: row;

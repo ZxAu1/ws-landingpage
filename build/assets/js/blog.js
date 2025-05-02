@@ -123,7 +123,7 @@ function renderPosts(page) {
             <div class="card-body">
                 <h3 class="h6 card-title mt-3">${post.title}<span class="icon icon-xs font-small "><i class="ti-star"></i></span></h3>
                 <p class="card-text">${post.sub_title}</p>
-                <a class="link-with-icon text-default font-small font-weight-bold read-more" target="_blank">Read more 
+                <a href="services-details.html" class="link-with-icon text-default font-small font-weight-bold read-more" target="_blank">Read more 
                         <span> <i class="fas fa-angle-right"></i></span>
                 </a>
             </div>
