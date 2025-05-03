@@ -1,7 +1,8 @@
 /* ============== button ให้เราติดต่อกลับ ======= */
-.navbar-dark .navbar-nav .nav-link.active{
+.navbar-dark .navbar-nav .nav-link.active {
     color: var(--text-ct-yellow);
 }
+
 .btn-contact-you-back {
     display: flex;
     flex-direction: row;
@@ -14,6 +15,11 @@
     border-radius: 50px;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
+}
+
+.icon-nav {
+    width: 46px;
+    height: 39px;
 }
 
 .btn-contact-you-back span {
@@ -68,7 +74,8 @@
     height: 45px;
 
 }
-.dropdown.select-country-code .dropdown-toggle{
+
+.dropdown.select-country-code .dropdown-toggle {
     background: transparent;
     padding: 8px 15px;
     border-style: none;
@@ -76,22 +83,24 @@
     height: 45px;
     box-shadow: none;
 }
+
 .dropdown.select-country-code .dropdown-toggle:hover,
 .dropdown.select-country-code .dropdown-toggle:focus,
-.dropdown.select-country-code .dropdown-toggle:active{
+.dropdown.select-country-code .dropdown-toggle:active {
     color: var(--text-ct-drak);
 }
 
-.dropdown.select-country-code.for-modal .dropdown-menu.show{
+.dropdown.select-country-code.for-modal .dropdown-menu.show {
     transform: none !important;
-    top: 50px !important; 
+    top: 50px !important;
 }
-.dropdown.select-country-code.for-modal .dropdown-menu.show .inner.show{
-    max-height: 200px !important; 
+
+.dropdown.select-country-code.for-modal .dropdown-menu.show .inner.show {
+    max-height: 200px !important;
 }
 
 
-.btn-closed{
+.btn-closed {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -108,7 +117,7 @@
     margin-top: 0.25rem;
 }
 
-.footer p ,
+.footer p,
 .footer ul li a {
     opacity: 1;
 }

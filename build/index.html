@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--favicon icon-->
-    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
+ <!--favicon icon-->
+ <link rel="icon" href="assets/img/icon-ws/title-icon.png" type="image/png" sizes="16x16">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Bootstrap Icons CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Required for carousel to work -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!--title-->
     <title>Corporx - Corporate and Business HTML Template</title>
@@ -18,6 +22,7 @@
     <link rel="stylesheet" href="assets/css/custom-global.css">
     <link rel="stylesheet" href="assets/css/contact-us.css">
     <link rel="stylesheet" href="assets/css/custom-template.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
     <!-- เพิ่ม script i18n -->
     <script src="libs/i18n/i18next.min.js"></script>
     <script src="libs/i18n/i18nextHttpBackend.min.js"></script>
@@ -47,16 +52,17 @@
         }
 
 
-/* 1. กำหนดฟอนต์หลัก (ไม่ต้อง !important) */
-body {
-  font-family: 'Kanit', sans-serif ;
-}
+        /* 1. กำหนดฟอนต์หลัก (ไม่ต้อง !important) */
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
 
-/* 2. กำหนดฟอนต์พิเศษสำหรับ Tag ที่ต้องการ */
-i,
-button {
-    font-family: "Kanit", sans-serif; /* ไม่ต้อง !important */
-}
+        /* 2. กำหนดฟอนต์พิเศษสำหรับ Tag ที่ต้องการ */
+        i,
+        button {
+            font-family: "Kanit", sans-serif;
+            /* ไม่ต้อง !important */
+        }
 
 
         .promo-flex-wrapper {
@@ -124,13 +130,33 @@ button {
             width: fit-content;
             transition: background 0.3s, transform 0.3s;
         }
+
         .nav-color {
-            background: linear-gradient(90deg,rgba(227, 14, 15, 1) 0%, rgba(246, 66, 41, 1) 100%);
+            background: linear-gradient(90deg, rgba(227, 14, 15, 1) 0%, rgba(246, 66, 41, 1) 100%);
         }
-        .border-color{
+
+        .border-color {
             border-color: #ffffff !important;
         }
-        
+
+        .custom-carousel-wrapper {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .custom-carousel-img {
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .custom-carousel-wrapper {
+                padding: 0 15px;
+            }
+        }
+
         @keyframes zoomInOut {
             0% {
                 transform: scale(1);
@@ -171,18 +197,22 @@ button {
                 padding-left: 170px;
                 padding-right: 170px;
             }
+
             .custom-container-first {
                 padding-left: 100px;
                 padding-right: 100px;
             }
-            .custom-information{
+
+            .custom-information {
                 padding-left: 100px;
             }
+
             .custom-container2 {
                 padding-left: 0px;
                 padding-right: 0px;
             }
-            .custom-containerMarget{
+
+            .custom-containerMarget {
                 padding-left: 0px;
                 padding-right: 0px;
             }
@@ -195,18 +225,27 @@ button {
                 padding-left: 120px;
                 padding-right: 120px;
             }
+
+            .custom-container-sec {
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+
             .custom-container-first {
                 padding-left: 50px;
                 padding-right: 50px;
             }
-            .custom-information{
+
+            .custom-information {
                 padding-left: 0px;
             }
+
             .custom-container2 {
                 padding-left: 20px;
                 padding-right: 20px;
             }
-            .custom-containerMarget{
+
+            .custom-containerMarget {
                 padding-left: 40px;
                 padding-right: 40px;
             }
@@ -233,8 +272,8 @@ button {
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-primary fixed-top headroom">
             <div class="container position-relative">
                 <a class="navbar-brand mr-lg-3" href="index.html">
-                    <img class="navbar-brand-dark" src="assets/img/logo-white.png" alt="menuimage">
-                    <img class="navbar-brand-light" src="assets/img/logo-color.png" alt="menuimage">
+                    <img class="navbar-brand-dark icon-nav " src="assets/img/icon-ws/ws.png " alt="menuimage">
+                    <img class="navbar-brand-light icon-nav" src="assets/img/icon-ws/ws.png" alt="menuimage">
                     <span class="text-ct-light ml-2" style="text-transform: capitalize;">WS.777 Company Limited</span>
                 </a>
                 <div class="navbar-collapse collapse" id="navbar-default-primary">
@@ -254,7 +293,7 @@ button {
                     </div>
                     <ul class="header-nav navbar-nav navbar-nav-hover ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about-us.html">About Us</a>
@@ -266,7 +305,7 @@ button {
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contact-us.html">Contact Us</a>
+                            <a class="nav-link " href="contact-us.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -440,74 +479,107 @@ button {
                 <div class="row">
                     <div class="col-md-12">
                         <!-- หัวข้อหลัก -->
-                        <h2 class="display-4 text-white font-weight-bold mb-3" style="font-size:2.86vw;">
+                        <h2 class="display-4 text-white font-weight-bold mb-3" style="font-size:2rem;">
                             ทำไมต้องใช้บริการจากเรา ?</h2>
 
                         <!-- หัวข้อรอง -->
-                        <h3 class="text-white mb-4" style="font-size: 1.82vw;">4 Reasons to work together</h3>
+                        <h3 class="text-white mb-4" style="font-size: 1.5rem">4 Reasons to work together</h3>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="section py-5">
-            <div class="container-fluid custom-container">
+            <div class="container-fluid custom-container-sec">
                 <div class="row align-items-center mb-4">
-                    <div class="col-md-6 mb-3 mb-md-0"> <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow"
+                    <div class="col-md-6 mb-3 mb-md-0"> <img src="assets/img/index/sec/2sec.jpg" alt="Image"
+                            class="img-fluid shadow"
                             style="max-width: 700px; max-height: 400px; width: 100%; height: auto; border-radius: 20px; object-fit: cover;">
                     </div>
-                    <div class="col-md-6 text-center text-md-start"> <h4>1. เราจะเข้าใจแบรนด์ของคุณอย่างลึกซึ้งไม่ต่างจากคุณ</h4>
+                    <div class="col-md-6 text-center text-md-start">
+                        <h4>1. เราจะเข้าใจแบรนด์ของคุณอย่างลึกซึ้งไม่ต่างจากคุณ</h4>
                         <p>หนึ่งในสิ่งที่น่าหงุดหงิดที่สุดสำหรับเจ้าของแบรนด์
                             คือการทำงานกับพาร์ทเนอร์ที่ไม่พยายามทำความเข้าใจตัวตนของแบรนด์คุณ แต่สำหรับเรา…
                             ก่อนที่โปรเจกต์จะเริ่มต้น เราจะศึกษาธรรมชาติของสินค้าอย่างละเอียด
                             และเข้าใจอย่างแท้จริงว่าทำไมผู้บริโภคถึงต้องการมัน</p>
                     </div>
                 </div>
-        
+
                 <div class="row align-items-center mb-4">
-                    <div class="col-md-6 mb-3 mb-md-0 order-md-1 text-center text-md-start"> <h4>2. เราจะยกระดับผลลัพธ์ของคุณให้เหนือกว่าที่เคย</h4>
+                    <div class="col-md-6 mb-3 mb-md-0 order-md-1 text-center text-md-start">
+                        <h4>2. เราจะยกระดับผลลัพธ์ของคุณให้เหนือกว่าที่เคย</h4>
                         <p>เราให้ความสำคัญกับการเติบโตอย่างแท้จริง เป้าหมายหลักของเราคือช่วยให้ธุรกิจของคุณก้าวไปอีกขั้น
                             และสร้างผลลัพธ์ที่ดียิ่งขึ้น เราไม่มุ่งเน้นแค่ตัวเลขการเข้าถึงหรือการมีส่วนร่วม
                             แต่ให้ความสำคัญกับปัจจัยที่ขับเคลื่อนยอดขายอย่างแท้จริง</p>
                     </div>
-                    <div class="col-md-6 order-md-2"> <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow"
+                    <div class="col-md-6 order-md-2"> <img src="assets/img/index/sec/sec3.jpg" alt="Image"
+                            class="img-fluid shadow"
                             style="max-width: 700px; max-height: 400px; width: 100%; height: auto; border-radius: 20px; object-fit: cover;">
                     </div>
                 </div>
             </div>
-        
-            <div class="container-fluid custom-container">
+
+            <div class="container-fluid custom-container-sec">
                 <div class="row align-items-center mb-4">
-                    <div class="col-md-6 mb-3 mb-md-0"> <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow"
+                    <div class="col-md-6 mb-3 mb-md-0"> <img src="assets/img/index/sec/sec4.jpg" alt="Image"
+                            class="img-fluid shadow"
                             style="max-width: 700px; max-height: 400px; width: 100%; height: auto; border-radius: 20px; object-fit: cover;">
                     </div>
-                    <div class="col-md-6 text-center text-md-start"> <h4>3. เราคิดในมุมมองของเจ้าของกิจการ</h4>
+                    <div class="col-md-6 text-center text-md-start">
+                        <h4>3. เราคิดในมุมมองของเจ้าของกิจการ</h4>
                         <p>เราเคยบริหารธุรกิจของเราเอง จึงเข้าใจว่าการตลาดไม่ใช่แค่ส่วนประกอบที่แยกออกมา
                             เราพร้อมที่จะคิดให้ไกลกว่าแค่โฆษณา
                             และทำให้แน่ใจว่ามันสอดคล้องกับเป้าหมายทางธุรกิจประจำปีของคุณอย่างลงตัว</p>
                     </div>
                 </div>
-        
+
                 <div class="row align-items-center mb-4">
-                    <div class="col-md-6 mb-3 mb-md-0 order-md-1 text-center text-md-start"> <h4>4. สร้างความสัมพันธ์ที่ราบรื่นกับเอเจนซี</h4>
+                    <div class="col-md-6 mb-3 mb-md-0 order-md-1 text-center text-md-start">
+                        <h4>4. สร้างความสัมพันธ์ที่ราบรื่นกับเอเจนซี</h4>
                         <p>เราไม่ต้องการสร้างความขัดแย้ง เราต้องการทำให้ชีวิตคุณง่ายขึ้น ช่วยแก้ปัญหา
                             และสนับสนุนการเติบโตของธุรกิจคุณ</p>
                     </div>
-                    <div class="col-md-6 order-md-2"> <img src="assets/img/imghome-1.png" alt="Image" class="img-fluid shadow"
+                    <div class="col-md-6 order-md-2"> <img src="assets/img/index/sec/sec5.png" alt="Image"
+                            class="img-fluid shadow"
                             style="max-width: 700px; max-height: 400px; width: 100%; height: auto; border-radius: 20px; object-fit: cover;">
                     </div>
                 </div>
             </div>
         </section>
+
+
         <section class="section py-0">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <img src="assets/img/section4-img.png" alt="Responsive Image" class="img-fluid w-100">
+            <div class="container-fluid px-0">
+              <div class="custom-carousel-wrapper">
+                <div id="autoCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/img/index/slide/Carousel-01.jpg" class="custom-carousel-img" alt="Slide 1">
                     </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/index/slide/Carousel-02.jpg" class="custom-carousel-img" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/index/slide/Carousel-03.jpg" class="custom-carousel-img" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/img/index/slide/Carousel-04.jpg" class="custom-carousel-img" alt="Slide 4">
+                    </div>
+                  </div>
+          
+                  <!-- Optional controls -->
+                  <a class="carousel-control-prev" href="#autoCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#autoCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </a>
                 </div>
+              </div>
             </div>
-        </section>
+          </section>
+
+
         <section class="section py-5">
             <div class="container-fluid custom-container2">
                 <!-- Title -->
@@ -721,10 +793,12 @@ button {
                         </div>
                     </div>
 
-                    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev" style="color: #b5b5b5;">
+                    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev"
+                        style="color: #b5b5b5;">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     </a>
-                    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next" style="color: #b5b5b5;">
+                    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next"
+                        style="color: #b5b5b5;">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </a>
                 </div>
@@ -745,78 +819,59 @@ button {
 
 
 
-        <!--blog section start-->
-        <section class="section section-lg bg-soft">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-heading text-center mb-5">
-                            <h2>Our Latest News</h2>
-                            <p class="lead">Dynamically pursue reliable convergence rather than 24/7 process
-                                improvements
-                                develop end-to-end customer service.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-lg-0 mb-4">
-                        <div class="card bg-white border-variant-soft shadow-soft">
-                            <div class="blog-img position-relative">
-                                <img src="assets/img/blog/4.jpg" class="card-img-top rounded-top"
-                                    alt="themetags office">
-                                <a href="#" class="position-absolute category-text small badge badge-secondary">SEO,
-                                    Analytics</a>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="h5 card-title mt-3"><a href="#">Holisticly promote enabled</a></h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="services-details.html"
-                                    class="link-with-icon text-default font-small font-weight-bold" target="_blank">Read
-                                    more <span> <i class="fas fa-angle-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-lg-0 mb-4">
-                        <div class="card bg-white border-variant-soft shadow-soft">
-                            <div class="blog-img position-relative">
-                                <img src="assets/img/blog/2.jpg" class="card-img-top rounded-top"
-                                    alt="themetags office">
-                                <a href="#"
-                                    class="position-absolute category-text small badge badge-secondary">Marketing</a>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="h5 card-title mt-3"><a href="#">Authoritatively unleash fully</a></h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="services-details.html"
-                                    class="link-with-icon text-default font-small font-weight-bold" target="_blank">Read
-                                    more <span> <i class="fas fa-angle-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-4 mb-lg-0 mb-4">
-                        <div class="card bg-white border-variant-soft shadow-soft">
-                            <div class="blog-img position-relative">
-                                <img src="assets/img/blog/1.jpg" class="card-img-top rounded-top"
-                                    alt="themetags office">
-                                <a href="#"
-                                    class="position-absolute category-text small badge badge-secondary">Business</a>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="h5 card-title mt-3"><a href="#">We partnered up with Google</a></h3>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="services-details.html"
-                                    class="link-with-icon text-default font-small font-weight-bold" target="_blank">Read
-                                    more <span> <i class="fas fa-angle-right"></i></span></a>
+    <!--header section end-->
+
+    <div class="main">
+
+        <!--page header section start-->
+        <section class="" style="background: url('assets/img/blog/blog-Cover.jpg')no-repeat center center / cover">
+            <div class="section-lg bg-gradient-custom-primary text-white section-header">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-7">
+                            <div class="page-header-content text-center">
+                                <h1>Blog</h1>
+                                <p data-i18n="blog.sub_header" class="lead">
+                                    ศูนย์กลางความรู้และแรงบันดาลใจด้านการตลาดดิจิทัลของเรา:<br>
+                                    ติดตามบล็อกของเราเพื่อรับข้อมูลอันมีค่า<br>
+                                    ไอเดียสร้างสรรค์ และกรณีศึกษาที่น่าสนใจ<br>
+                                    เพื่อยกระดับกลยุทธ์การตลาดของคุณ
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--blog section end-->
+        <!--page header section end-->
+
+        <!--blog section start-->
+        <section class="section section-lg ">
+            <div class="container">
+                <div class="row pb-4 justify-content-center justify-content-lg-start">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="section-heading">
+                            <h2>blog</h2>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row" id="blog-container">
+                    <!-- Blog posts จะถูกแสดงที่นี่ -->
+                </div>
+
+                <!-- Pagination -->
+                <nav class="mt-4">
+                    <ul class="pagination justify-content-center mt-4" id="pagination">
+                        <!-- ปุ่ม pagination จะถูกเพิ่มที่นี่ -->
+                    </ul>
+                </nav>
+
+            </div>
+    </div>
+    </section>
+    <!--blog section end-->
 
         <!-- Contact Section Start -->
         <section
@@ -891,7 +946,7 @@ button {
                     <!-- Logo and Company Info -->
                     <div class="col-sm-6 col-lg-4 mb-4 text-center text-lg-start">
                         <div class="mb-3">
-                            <img src="assets/img/logo-white.png" alt="WS Logo" style="height: 60px;">
+                            <img  src="assets/img/icon-ws/ws.png "  alt="WS Logo" style="height: 60px;">
                         </div>
                         <h5 class="text-ct-light">บริษัท ดับบลิวเอส.777 จำกัด</h5>
                         <div class="mt-3">
@@ -901,18 +956,19 @@ button {
                             <a href="#"><i class="fab fa-youtube mx-2"></i></a>
                         </div>
                     </div>
-    
+
                     <!-- Address and Contact -->
-                    <div class="col-sm-6 col-lg-4 mb-4 text-center text-lg-start " >
-                        <p class="text-ct-light"><i class="fas fa-map-marker-alt me-2"></i>189/174 บ้านกลางเมือง พหลฯโยธิน รามอินทรา ถนนเทพรักษ์ ตำบลแขวงอนุสาวรีย์ เขตบางเขน กรุงเทพฯ 10220</p>
+                    <div class="col-sm-6 col-lg-4 mb-4 text-center text-lg-start ">
+                        <p class="text-ct-light"><i class="fas fa-map-marker-alt me-2"></i>189/174 บ้านกลางเมือง
+                            พหลฯโยธิน รามอินทรา ถนนเทพรักษ์ ตำบลแขวงอนุสาวรีย์ เขตบางเขน กรุงเทพฯ 10220</p>
                         <p class="text-ct-light"><i class="fas fa-phone me-2"></i>095 424 4409</p>
                     </div>
-    
+
                     <!-- Links -->
-                    <div class="col-sm-12 col-lg-4 text-center text-lg-start" >
+                    <div class="col-sm-12 col-lg-4 text-center text-lg-start">
                         <div class="row">
                             <div class="col-6">
-                                <ul class="list-unstyled d-flex flex-directional flex-column text-ct-light" >
+                                <ul class="list-unstyled d-flex flex-directional flex-column text-ct-light">
                                     <li><a href="#" class="text-white">Branding</a></li>
                                     <li><a href="#" class="text-white">Digital</a></li>
                                     <li><a href="#" class="text-white">Marketing</a></li>
@@ -920,7 +976,7 @@ button {
                                 </ul>
                             </div>
                             <div class="col-6">
-                                <ul class="list-unstyled d-flex flex-directional flex-column text-ct-light" >
+                                <ul class="list-unstyled d-flex flex-directional flex-column text-ct-light">
                                     <li><a href="#" class="text-white">About</a></li>
                                     <li><a href="#" class="text-white">Contact</a></li>
                                     <li><a href="#" class="text-white">Blog</a></li>
@@ -928,11 +984,11 @@ button {
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
         </div>
-    
+
         <div class="footer py-3 bg-primary text-white border-top border-variant-default">
             <div class="container">
                 <div class="row">
@@ -969,15 +1025,17 @@ button {
     <script src="assets/js/vendors/jquery.jquery.countdown.min.js"></script>
     <script src="assets/js/vendors/validator.min.js"></script>
     <script src="assets/js/app.min.js"></script>
-        <!-- Bootstrap Select JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
-        <!-- jQuery Validate Plugin -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-    
-        <!-- Boostrap Bundle JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
+
+    <script src="assets/js/blog.js"></script>
+    <!-- Bootstrap Select JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+    <!-- jQuery Validate Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+    <!-- Boostrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
