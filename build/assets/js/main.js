@@ -231,33 +231,49 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // **  submit form handler  **
-    $(document).on("submit", "#contactFormModal", function (e) {
-      e.preventDefault();
-      if ($(this).valid()) {
-        console.log("modal Form is valid");
-        let $form = $("#contactFormModal"); // <-- scope form ตัว modal
-        let formData = {
-          contact_name: $form.find('input[name="contact_name"]').val(),
-          business_type: $form.find('select[name="business_type"]').val(),
-          email: $form.find('input[name="email"]').val(),
-          country_code: $form.find('select[name="country_code"]').val(),
-          phone: $form.find('input[name="phone"]').val(),
-          message: $form.find('textarea[name="message"]').val(),
-          notRobot: $form.find('input[name="notRobot"]').is(":checked") ? 1 : 0,
-        };
-        console.log("modal Form Data:", formData);
+// submit form handler
+$(document).on("submit", "#contactFormModal", function (e) {
+  e.preventDefault();
+  if ($(this).valid()) {
+    console.log("modal Form is valid");
+    let $form = $("#contactFormModal");
+    let formData = {
+      contact_name: $form.find('input[name="contact_name"]').val(),
+      business_type: $form.find('select[name="business_type"]').val(),
+      email: $form.find('input[name="email"]').val(),
+      country_code: $form.find('select[name="country_code"]').val(),
+      phone: $form.find('input[name="phone"]').val(),
+      message: $form.find('textarea[name="message"]').val(),
+      notRobot: $form.find('input[name="notRobot"]').is(":checked") ? 1 : 0,
+    };
+    console.log("modal Form Data:", formData);
 
-        // setTimeout(() => {
-        $("#contactFormModal")[0].reset();
-        myModal.hide();
-        submitMSG(true);
-        // }, 2000);
-
-        // ต่อด้วย ajax หรืออะไรก็ได้
-      } else {
-        console.log("Form is not valid");
-      }
+    // ********* เพิ่ม AJAX ตรงนี้ **********
+    $.ajax({
+     url: "http://150.95.24.39/contact-form-process.php",
+      type: "POST",
+      data: formData,
+      success: function (response) {
+        console.log("Response:", response);
+        if (response === "success") {
+          $("#contactFormModal")[0].reset();
+          submitMSG(true);
+          myModal.hide();
+        } else {
+          alert("Error: " + response);
+        }
+      },
+      error: function () {
+        alert("เกิดข้อผิดพลาดในการส่งข้อมูล");
+      },
     });
+    // *************************************
+
+  } else {
+    console.log("Form is not valid");
+  }
+});
+
   }
 
   // Event Click ปุ่ม
@@ -439,7 +455,7 @@ $(document).ready(function () {
       
       // ยิง ajax ไปยังไฟล์ php
       $.ajax({
-        url: "libs/contact-form-process.php", //'save.php', // เปลี่ยน URL ตามที่ต้องการ
+        url: "http://150.95.24.39/contact-form-process.php", //'save.php', // เปลี่ยน URL ตามที่ต้องการ
         type: "POST",
         data: formData,
         // data: "name=" + s + "&email=" + a + "&message=" + n,

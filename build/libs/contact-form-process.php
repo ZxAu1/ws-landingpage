@@ -1,57 +1,74 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+
+require 'vendor/autoload.php'; // เรียกใช้ PHPMailer
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 $errorMSG = "";
 
-$name = $_POST["name"];
+// รับค่าจาก form
+$contact_name = $_POST["contact_name"];
+$business_type = $_POST["business_type"];
 $email = $_POST["email"];
+$country_code = $_POST["country_code"];
+$phone = $_POST["phone"];
 $message = $_POST["message"];
+$notRobot = isset($_POST["notRobot"]) ? $_POST["notRobot"] : 0;
 
-
-echo json_encode($email);
-exit;
-
-// NAME
-if (empty($name)) {
-    $errorMSG = "Name is required ";
+// ====== Validation ======
+if (empty($contact_name)) {
+    $errorMSG .= "Name is required. ";
 }
-
-// EMAIL
+if (empty($business_type)) {
+    $errorMSG .= "Business type is required. ";
+}
 if (empty($email)) {
-    $errorMSG .= "Email is required ";
+    $errorMSG .= "Email is required. ";
+}
+if (empty($country_code) || empty($phone)) {
+    $errorMSG .= "Phone number is required. ";
+}
+if ($notRobot != 1) {
+    $errorMSG .= "Please confirm you are not a robot. ";
 }
 
-// MESSAGE
-if (empty($message)) {
-    $errorMSG .= "Message is required ";
+if (!empty($errorMSG)) {
+    echo $errorMSG;
+    exit;
 }
 
-// change email with your email
-$EmailTo = "hellothemetags@gmail.com";
-$Subject = "CorporX:: New Message Received form contact";
-
-// prepare email body text
 $Body = "";
-$Body .= "Name: ";
-$Body .= $name;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $email;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $message;
-$Body .= "\n";
+$Body .= "Contact Name: " . $contact_name . "\n";
+$Body .= "Business Type: " . $business_type . "\n";
+$Body .= "Email: " . $email . "\n";
+$Body .= "Phone: " . $country_code . " " . $phone . "\n";
+$Body .= "Message: " . $message . "\n";
 
-// send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$mail = new PHPMailer(true);
 
-// redirect to success page
-if ($success && $errorMSG == ""){
-   echo "success";
-}else{
-    if($errorMSG == ""){
-        echo "Something went wrong :(";
-    } else {
-        echo $errorMSG;
-    }
+try {
+    $mail->isSMTP();
+    $mail->Host = 'win07-mail.zth.netdesignhost.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'admin@ws777.co.th';
+    $mail->Password = 'Ws11223344!';
+    $mail->SMTPSecure = 'ssl';   // เปลี่ยนจาก 'tls' เป็น 'ssl'
+    $mail->Port = 465;  
+
+    $mail->setFrom('admin@ws777.co.th', 'Contact Form');
+    $mail->addAddress('augkarapon.au@gmail.com');
+    $mail->addReplyTo($email, $contact_name);
+
+    $mail->Subject = 'Contact Form Submission';
+    $mail->Body    = $Body;
+
+    $mail->send();
+    echo 'success';
+} catch (Exception $e) {
+    echo "Mailer Error: " . $mail->ErrorInfo;
 }
-
+?>
