@@ -154,4 +154,4 @@ exports.linters = series(scssLint, jsLint);
 exports.dev = series(parallel(compileJS, compileSCSS), browserSyncInit, watchFiles);
 
 // PRODUCTION VERSION
-exports.build = series(parallel(compileSCSS, compileJS), parallel(minifyScripts, minifyCss), renameSources, browserSyncInit);
+exports.build = series(parallel(compileSCSS, compileJS), parallel(minifyScripts, minifyCss), renameSources);
