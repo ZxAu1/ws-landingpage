@@ -3,8 +3,120 @@
       "home": "Home",
       "about": "About Us"
     },
-    "home": {
+"home": {
+  "home_title1": "It’s time to elevate your brand and stand out from the competition!",
+  "home_title2": "We are ready to help your business achieve its goals with a digital strategy tailored just for you.",
+  "home_title3": "Contact us now",
+  "section": {
+    "p1": "Digital marketing solutions",
+    "p2": "Develop online marketing strategies for your business to grow sustainably.",
+    "p3": "SEO and Google ranking improvement",
+    "p4": "Enhance brand visibility to effectively rank on Google’s first page.",
+    "p5": "Online Advertising (Facebook Ads, Google Ads)",
+    "p6": "Attract new customers and increase ROI with targeted ads.",
+    "p7": "Website and Application Development",
+    "p8": "Create beautiful, fast-loading, SEO-friendly websites.",
+    "p9": "Comprehensive marketing consultancy services",
+    "p10": "🚀 Comprehensive digital marketing to grow your business!",
+    "p11": "🔹 Online Advertising (Performance Ads) – Increase sales targeting the right audience.",
+    "p12": "🔹 SEO & Content Marketing – Rank first on Google and attract new customers.",
+    "p13": "🔹 Website & Application Development – Beautiful design, easy to use, mobile-friendly.",
+    "p14": "🔹 Social Media Marketing – Make your brand stand out on every platform.",
+    "p15": "📈 Result-driven strategies to help your business grow sustainably.",
+    "p16": "What is a Marketing Agency?",
+    "p17": "A Marketing Agency acts as a representative for businesses with expertise in specific marketing fields. Their goal is to provide consulting and solve marketing challenges for businesses to increase brand recognition, acceptance, and drive sales and profitability.",
+    "p18": "WS.777 Business Consultant – We are a marketing agency specializing in helping businesses succeed across all marketing dimensions, providing strategic consulting and planning tailored to each business.",
+    "p19": "Why choose our services?",
+    "p20": "1. We understand your brand as deeply as you do.",
+    "p21": "One of the most frustrating things for brand owners is working with partners who don’t understand the brand. We thoroughly study your products and genuinely understand why consumers need them.",
+    "p22": "We focus on real growth. Our main goal is to help your business progress and achieve better results, prioritizing factors that truly drive sales.",
+    "p23": "3. We think like business owners.",
+    "p24": "Having run our own businesses, we understand that marketing isn’t just a separate component. We ensure alignment with your annual business goals.",
+    "p25": "4. Building smooth relationships with agencies.",
+    "p26": "We aim to make your life easier, solve problems, and support your business growth.",
+    "p27": "Request personalized advice for your business. Fill out the form and we'll contact you immediately!",
+"p28": "We help you analyze the market, develop strategies, and effectively attract your target customers. Register today for our team to get in touch with tailored recommendations just for you."
+
+  }
+},
+"aboutUs": {
+  "header1": "Who are we?",
+  "header2": "W.S.777 Digital Marketing Agency",
+  "section": {
+    "p1": "Vision",
+    "p2": "\"Committed to becoming a leader in digital marketing that helps businesses of all sizes grow sustainably.\"",
+    "p3": "We believe in an ecosystem where businesses not only compete but also build strong brands and genuinely connect with customers through effective insights.",
+    "p4": "Mission",
+    "p5": "Develop targeted marketing strategies – Analyze insights and use appropriate tools to maximize marketing ROI.",
+    "p6": "Help clients' businesses grow – Focus on measurable results, not just engagement numbers but sales and ROI.",
+    "p7": "Innovate and apply new technologies – Use AI, automation, and new platforms to enhance marketing efficiency.",
+    "p8": "Provide professional services – Our team drives strategies to deliver continuous positive outcomes."
+  },
+  "section2": {
+    "header1": "Why Choose Us?",
+    "p1": "Data-Driven Strategy – We use data as the core of planning to ensure every advertising investment is most worthwhile.",
+    "p2": "Result-Oriented Approach – Focus on tangible results such as sales, brand growth, and ROI.",
+    "p3": "Professional Team – Digital Marketing experts with over 10 years of experience.",
+    "p4": "Comprehensive Solutions – From branding, SEO, social media, to web development.",
+    "footer": "Ready to grow your business with us!"
+  }
+},
+
+"service": {
+    "section1": {
+        "p1": "Our Services",
+        "p2": "Drive your business forward with powerful digital strategies. We offer comprehensive digital marketing services to help your business grow and generate effective sales.",
+        "p3": "Digital Marketing Strategy",
+        "p4": "Plan targeted digital marketing strategies for the best results. We create strategies tailored to your business, whether B2B or B2C, to accurately reach your target audience.",
+        "p5": "SEO & Search Marketing",
+        "p6": "Get your website on Google’s first page and sustainably increase traffic. We help improve your site rankings, increasing sales opportunities and customer reach.",
+        "p7": "Social Media Marketing",
+        "p8": "Build your brand’s presence across all social platforms. We help your business reach customers and effectively create engagement.",
+        "p9": "Paid Advertising",
+        "p10": "Boost sales with precise and measurable advertising. We ensure your ad spend delivers maximum value and high returns.",
+        "p11": "Website Dev & Optimization",
+        "p12": "Create beautiful, user-friendly websites that drive sales. Our websites not only look great but also perform efficiently and support digital marketing.",
+        "p13": "Content Marketing",
+        "p14": "Create strong content and brand identity. Good content helps make your business memorable and trustworthy."
     },
+    "section2": {
+        "p1": "Plan targeted digital marketing strategies for the best results. We create tailored strategies for your business, whether B2B or B2C, to accurately reach your target audience.",
+        "p2": "",
+        "p3": "Get your website on Google’s first page and sustainably increase traffic. We help improve your site rankings, increasing sales opportunities and customer reach.",
+        "p4": "",
+        "p5": "📌 Analyze and optimize website structure for SEO.",
+        "p6": "📌 Create high-quality content to boost rankings.",
+        "p7": "📌 Develop backlink strategies to increase credibility.",
+        "p8": "[Increase your website’s ranking]",
+        "p9": "Service 3",
+        "p10": "Social Media Marketing",
+        "p11": "Build your brand’s presence across all social platforms. We help your business reach customers and effectively create engagement.",
+        "p12": "📌 Manage Facebook, Instagram, TikTok, LinkedIn.",
+        "p13": "📌 Plan and create engaging content.",
+        "p14": "📌 Analyze and adjust strategies for optimal results.",
+        "p15": "[Start building your brand]",
+        "p16": "Boost sales with precise and measurable advertising. We ensure your ad spend delivers maximum value and high returns.",
+        "p17": "📌 Create and manage ad campaigns.",
+        "p18": "📌 Define accurate targeting to increase conversions.",
+        "p19": "📌 Analyze and optimize strategies for the best outcomes.",
+        "p20": "[Boost sales with effective advertising]",
+        "p21": "Create beautiful, user-friendly websites that drive sales. Our websites not only look great but also perform efficiently and support digital marketing.",
+        "p22": "📌 Design modern, user-friendly UX/UI.",
+        "p23": "📌 Develop fast-loading, SEO-friendly websites.",
+        "p24": "📌 Improve existing websites for better performance.",
+        "p25": "Create strong content and brand identity. Good content helps make your business memorable and trustworthy.",
+        "p26": "📌 Create and manage engaging content.",
+        "p27": "📌 Develop branding strategies to stand out.",
+        "p28": "📌 Tell brand stories through articles and videos.",
+        "p29": "[Build a strong brand]",
+        "p30": "[Contact us for a free consultation]",
+        "p31": "🚀 Ready to take your business to the next level?",
+        "p32": "Let us help you plan and execute effective strategies."
+    }
+},
+
+
+
     "blog": {
       "title": "BBB",
       "sub_header":"our Hub for Digital Marketing Knowledge and Inspiration: Follow our blog for valuable information, creative ideas, and insightful case studies to elevate your marketing efforts"
