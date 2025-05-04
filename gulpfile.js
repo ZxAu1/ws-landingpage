@@ -7,7 +7,7 @@ const browserSync = require('browser-sync').create();
 const sassCompiler = require('sass'); // 👈 import sass จากแพ็กเกจใหม่
 const sass = require('gulp-sass')(sassCompiler); // 👈 สร้าง instance ให้ gulp-sass ใช้
 const bourbon = require('node-bourbon').includePaths;
-const cssmin = require('gulp-cssmin');
+const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
@@ -75,10 +75,16 @@ function watchFiles() {
 function browserSyncInit(done) {
     console.log('---------------BROWSER SYNC---------------');
     browserSync.init({
-        server: './build'
+        server: './build',
+        ghostMode: {
+            clicks: false,
+            forms: false,
+            scroll: false
+        }
     });
     return done();
 }
+
 
 // ------------ PRODUCTION TASKS -------------
 
@@ -109,7 +115,7 @@ function minifyCss() {
         .pipe(sourcemaps.init())
         .pipe(concat('main.css'))
         .pipe(sourcemaps.write('./'))
-        .pipe(cssmin())
+        .pipe(cleanCSS())
         .pipe(rename('main.min.css'))
         .pipe(dest('build/assets/css'));
 }
@@ -154,4 +160,4 @@ exports.linters = series(scssLint, jsLint);
 exports.dev = series(parallel(compileJS, compileSCSS), browserSyncInit, watchFiles);
 
 // PRODUCTION VERSION
-exports.build = series(parallel(compileSCSS, compileJS), parallel(minifyScripts, minifyCss), renameSources);
+exports.build = series(parallel(compileSCSS, compileJS), parallel(minifyScripts, minifyCss), renameSources, browserSyncInit);
