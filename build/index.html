@@ -32,7 +32,7 @@
     <meta name="theme-color" content="#e50914">
     <meta property="og:site_name" content="WS777">
     <meta property="og:locale" content="th_TH">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="WS777 | การตลาดดิจิทัลครบวงจร - SEO & Ads">
@@ -922,7 +922,7 @@
         <!-- Contact Section Start -->
         <section
             style="width: 100vw; margin-left: calc(-50vw + 50%); background: linear-gradient(90deg,rgba(184, 0, 0, 1) 9%, rgba(253, 29, 29, 0.76) 42%, rgba(29, 40, 253, 1) 100%), url('assets/img/background.png') center center/cover no-repeat; padding: 100px 0;">
-            <div class="container">
+            <div class="container-fluid px-5">
                 <div class="row align-items-center">
 
                     <!-- Left Content -->
@@ -937,42 +937,8 @@
 
                     <!-- Right Card Form -->
                     <div class="col-lg-5 offset-lg-1">
-                        <div class="bg-white p-5 rounded shadow">
-                            <h4 class="mb-3">Contact us</h4>
-                            <p class="text-muted small mb-4">Let's start your own brokerage with us.</p>
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Contact Name">
-                                </div>
-                                <div class="form-group">
-                                    <select class="form-control">
-                                        <option selected disabled>Select business type</option>
-                                        <option>Business 1</option>
-                                        <option>Business 2</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="form-group d-flex">
-                                    <select class="form-control" style="max-width: 120px;">
-                                        <option>+66</option>
-                                    </select>
-                                    <input type="text" class="form-control ml-2" placeholder="098 129 9734">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="3"
-                                        placeholder="Message or Question (Optional)"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <div class="g-recaptcha" data-sitekey="your-site-key"></div>
-                                </div>
-                                <button type="submit" class="btn btn-danger btn-block mt-3">Send</button>
-                            </form>
-                            <div class="text-center small mt-3">
-                                <a href="#">Privacy</a> - <a href="#">Terms</a>
-                            </div>
-                        </div>
+                        <!-- ที่จะแสดงฟอร์มทันที -->
+                        <div id="contactFormInlineContainer"></div>
                     </div>
 
                 </div>
@@ -1086,6 +1052,197 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const inlineFormHTML = `
+                <div class="modal-content p-0" style="border-radius: 1rem; overflow: hidden;">
+                  <div class="modal-body px-3 py-0">
+                    <div class="row custom-box-contact-us shadow justify-content-around">
+                      <div class="col-md-5 p-0">
+                        <div class="contact-us-form bg-white rounded p-4">
+                          <h2 class="mb-3">Contact us</h2>
+                          <h6>Let’s start your own brokerage with us.</h6>
+                          <form id="contactFormInline" class="contact-us-form mt-4">
+                            <div class="form-row">
+                              <div class="col-12 mb-3">
+                                <input type="text" class="form-control rounded-3" name="contact_name" placeholder="Contact name" required>
+                              </div>
+                              <div class="col-12 mb-3">
+                                <select class="form-select rounded-3" name="business_type" style="border: .0625rem solid #D1D3E0;height: 45px;">
+                                  <option value="">Select business type</option>
+                                  <option value="Type1">Type 1</option>
+                                  <option value="Type2">Type 2</option>
+                                </select>
+                              </div>
+                              <div class="col-12 mb-3">
+                                <input type="email" class="form-control rounded-3" name="email" placeholder="Email" required>
+                              </div>
+                              <div class="col-12 mb-3 input-group">
+                                <select class="form-select selectpicker select-country-code for-modal rounded-3" name="country_code" id="inlineCountrySelect" data-live-search="true" style="max-width: 300px;"></select>
+                                <input type="text" class="form-control rounded-3" name="phone" placeholder="Enter phone number">
+                              </div>
+                              <div class="col-12 mt-3">
+                                <div class="form-group">
+                                  <div class="d-flex align-items-center justify-content-between mb-1" style="font-size: 13px;">
+                                    <span style="color:  #75809D;">Optional</span>
+                                    <span style="color: #1492E6;text-decoration: underline;">What You Can Ask</span>
+                                  </div>
+                                  <textarea name="message" class="form-control rounded-3" placeholder="Message" rows="3"></textarea>
+                                </div>
+                              </div>
+                              <div class="col-12 mb-3">
+                                <div class="form-group rounded-3 d-flex justify-content-between align-items-center" style="padding: 10px; border: .0625rem solid #D1D3E0; padding-left: 40px;">
+                                  <div>
+                                    <input type="checkbox" class="form-check-input" name="notRobot">
+                                    <label class="form-check-label ml-2" style="color: #75809D;">I'm not a robot</label>
+                                  </div>
+                                  <img src="assets/img/RecaptchaLogo.svg.png" alt="" height="30">
+                                </div>
+                              </div>
+                              <div class="col-12 d-flex justify-content-between align-items-center">
+                                <span style="text-decoration: underline; font-size: 0.875rem; color: #75809D;">Privacy - Terms</span>
+                                <button type="submit" class="btn btn-secondary rounded-3" style="background: var(--redges-color-2);width: 130px;height: 40px;">Send</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="col-md-7 d-flex justify-content-center align-items-center" style="background: url('assets/img/contact-us/contact-us-footer.png') no-repeat center center / cover;">
+                        <div class="contact-us-content text-center text-white">
+                          <h1>Unlock</h1><br>
+                          <h2 style="line-height: 2;">Your Business<br>Potential<br>With Us</h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              `;
+            
+              const container = document.getElementById("contactFormInlineContainer");
+              if (!container) return;
+              container.innerHTML = inlineFormHTML;
+            
+              $(".selectpicker").selectpicker();
+              renderCountrySelect("#inlineCountrySelect");
+            
+              // Validate & Submit
+              $("#contactFormInline").validate({
+                rules: {
+                  contact_name: { required: true },
+                  business_type: { required: true },
+                  email: { required: true, email: true },
+                  country_code: { required: true },
+                  phone: { required: true, minlength: 6, maxlength: 15 },
+                  notRobot: { required: true },
+                },
+                messages: {
+                  contact_name: { required: "Please enter your name" },
+                  business_type: { required: "Please select your business type" },
+                  email: {
+                    required: "Please enter your email",
+                    email: "Please enter a valid email address",
+                  },
+                  country_code: { required: "Please select country code" },
+                  phone: {
+                    required: "Please enter your phone number",
+                    minlength: "Phone number must be at least 6 digits",
+                    maxlength: "Phone number must not exceed 15 digits",
+                  },
+                  notRobot: { required: "Please confirm you're not a robot" },
+                },
+                submitHandler: function (form) {
+                  const $form = $(form);
+                  const formData = {
+                    contact_name: $form.find('input[name="contact_name"]').val(),
+                    business_type: $form.find('select[name="business_type"]').val(),
+                    email: $form.find('input[name="email"]').val(),
+                    country_code: $form.find('select[name="country_code"]').val(),
+                    phone: $form.find('input[name="phone"]').val(),
+                    message: $form.find('textarea[name="message"]').val(),
+                    notRobot: $form.find('input[name="notRobot"]').is(":checked") ? 1 : 0,
+                  };
+            
+                  $.ajax({
+                    url: "https://150.95.24.39/contact-form-process.php",
+                    type: "POST",
+                    data: formData,
+                    success: function (response) {
+                      alert("บันทึกสำเร็จ: " + response);
+                      $form[0].reset();
+                      submitMSG(true);
+                      setTimeout(() => location.reload(), 1000);
+                    },
+                    error: function () {
+                      alert("เกิดข้อผิดพลาดในการส่งข้อมูล");
+                    },
+                  });
+                },
+              });
+            
+              // Phone formatter
+              $(document).on("input", 'input[name="phone"]', function () {
+                var phone = $(this).val().replace(/\D/g, "");
+                if (phone.length > 3 && phone.length <= 6) {
+                  phone = phone.replace(/(\d{3})(\d+)/, "$1 $2");
+                } else if (phone.length > 6) {
+                  phone = phone.replace(/(\d{3})(\d{3})(\d+)/, "$1 $2 $3");
+                }
+                $(this).val(phone);
+              });
+            
+              function renderCountrySelect(selector) {
+                const countries = [
+                  { code: "+1", short: "US", flag: "us" },
+                  { code: "+44", short: "GB", flag: "gb" },
+                  { code: "+61", short: "AU", flag: "au" },
+                  { code: "+81", short: "JP", flag: "jp" },
+                  { code: "+82", short: "KR", flag: "kr" },
+                  { code: "+66", short: "TH", flag: "th" },
+                  { code: "+86", short: "CN", flag: "cn" },
+                  { code: "+852", short: "HK", flag: "hk" },
+                  { code: "+49", short: "DE", flag: "de" },
+                  { code: "+33", short: "FR", flag: "fr" },
+                  { code: "+39", short: "IT", flag: "it" },
+                  { code: "+34", short: "ES", flag: "es" },
+                  { code: "+7", short: "RU", flag: "ru" },
+                  { code: "+971", short: "AE", flag: "ae" },
+                  { code: "+91", short: "IN", flag: "in" },
+                  { code: "+63", short: "PH", flag: "ph" },
+                  { code: "+62", short: "ID", flag: "id" },
+                  { code: "+60", short: "MY", flag: "my" },
+                  { code: "+65", short: "SG", flag: "sg" },
+                  { code: "+95", short: "MM", flag: "mm" },
+                  { code: "+84", short: "VN", flag: "vn" },
+                  { code: "+855", short: "KH", flag: "kh" },
+                  { code: "+856", short: "LA", flag: "la" },
+                ];
+                const select = document.querySelector(selector);
+                countries.forEach((c) => {
+                  const opt = document.createElement("option");
+                  opt.value = c.code;
+                  opt.setAttribute("data-content", `<img src="https://flagcdn.com/w40/${c.flag}.png" class="flag-icon"> ${c.short}`);
+                  opt.innerHTML = c.short;
+                  if (c.code === "+66") opt.selected = true;
+                  select.appendChild(opt);
+                });
+                $(".selectpicker").selectpicker("refresh");
+              }
+            
+              function submitMSG(valid) {
+                let alertBox = $('<div class="message-box d-block" style="position: fixed;top: 80px;z-index: 9999;width: 90%;transform: translateX(5%);"></div>');
+                let alertContent = $('<div class="alert"></div>');
+                alertContent
+                  .addClass(valid ? "alert-success" : "alert-danger")
+                  .text(valid ? "Form submitted successfully" : "Found error in the form. Please check again.");
+                alertBox.append(alertContent);
+                $("body").append(alertBox);
+                setTimeout(() => alertBox.fadeOut(300, () => alertBox.remove()), 3000);
+              }
+            });
+            </script>
+            
+
 </body>
 
 </html>

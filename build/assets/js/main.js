@@ -259,6 +259,9 @@ $(document).on("submit", "#contactFormModal", function (e) {
           $("#contactFormModal")[0].reset();
           submitMSG(true);
           myModal.hide();
+          setTimeout(() => {
+            location.reload();
+          }, 1000);
         } else {
           alert("Error: " + response);
         }
@@ -461,6 +464,9 @@ $(document).ready(function () {
         // data: "name=" + s + "&email=" + a + "&message=" + n,
         success: function (response) {
           alert("บันทึกสำเร็จ: " + response);
+          setTimeout(() => {
+            location.reload();
+          }, 1000);
         },
         error: function () {
           alert("เกิดข้อผิดพลาดในการบันทึกข้อมูล");
