@@ -250,7 +250,7 @@ $(document).on("submit", "#contactFormModal", function (e) {
 
     // ********* เพิ่ม AJAX ตรงนี้ **********
     $.ajax({
-     url: "http://ws777.co.th/contact-form-process.php",
+     url: "https://ws777.co.th/contact-form-process.php",
       type: "POST",
       data: formData,
       success: function (response) {
