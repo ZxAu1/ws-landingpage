@@ -9,7 +9,8 @@
     align-items: center;
     justify-content: end;
     padding: 7px 9px;
-    background: var(--redges-color-1);
+    background: transparent;
+    border: 1px solid #ffffff;
     min-width: 195px;
     height: 52px;
     border-radius: 50px;
@@ -44,7 +45,7 @@
 }
 
 .btn-contact-you-back:hover i {
-    color: var(--redges-color-2);
+    color: var(--dark-green-colors);
     transform: rotate(45deg);
     /* ตอน hover หมุนไป 45 องศา */
 }

@@ -5,11 +5,16 @@
 ================== Background Colors ====================
 =========================================================
 */
-    --primary-gradient-color: linear-gradient(85deg, rgba(26, 44, 121, 0.4) -10%, rgba(180, 23, 23, 0.6) 100%); 
-    --secondary-gradient-color: linear-gradient(-85deg, rgba(26, 44, 121, 0.4) -10%, rgba(180, 23, 23, 0.6) 100%); 
+    --primary-gradient-color: linear-gradient(85deg, rgba(5, 81, 67, 1) 0%, rgba(22, 136, 128, 0.1) 90%);
+
+    --primary-gradient-color-2: linear-gradient(85deg, rgba(26, 44, 121, 0.4) -10%, rgba(180, 23, 23, 0.6) 100%);
+    --secondary-gradient-color: linear-gradient(-85deg, rgba(26, 44, 121, 0.4) -10%, rgba(180, 23, 23, 0.6) 100%);
+
     --redges-color-1: #FF3A3A;
     --redges-color-2: #E30E0F;
     --redges-color-3: #F13321;
+
+    --dark-green-colors:#168880;
     --white-color: #ffffff;
     /* --secondary-color: ; */
 
@@ -34,17 +39,19 @@
     --text-bold: 700;
 
 }
+
 @font-face {
     font-family: 'Kanit';
     /* src: url('assets/fonts/Kanit-Regular.ttf') format('truetype'); */
-      src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
+    src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Kanit';
     /* src: url('assets/fonts/Kanit-Regular.ttf') format('truetype'); */
-      src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
+    src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -52,38 +59,43 @@
 @font-face {
     font-family: 'Kanit';
     /* src: url('assets/fonts/Kanit-Regular.ttf') format('truetype'); */
-      src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
+    src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Kanit';
     /* src: url('assets/fonts/Kanit-Regular.ttf') format('truetype'); */
-      src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
+    src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Kanit';
     /* src: url('assets/fonts/Kanit-Regular.ttf') format('truetype'); */
-      src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
+    src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Kanit';
     /* src: url('assets/fonts/Kanit-Regular.ttf') format('truetype'); */
-      src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
+    src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Kanit';
     /* src: url('assets/fonts/Kanit-Regular.ttf') format('truetype'); */
-      src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
+    src: url('assets/fonts/Kanit-Regular.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
+
 body {
     font-family: 'Kanit', sans-serif !important;
 }
@@ -93,30 +105,33 @@ body {
 .bg-gradient-custom-primary {
     background: var(--primary-gradient-color) !important;
 }
+
 .bg-gradient-custom-secondary {
     background: var(--secondary-gradient-color) !important;
 }
 
 /* text color custom */
-.text-custom-primary{
-color: var(--redges-color-2);
+.text-custom-primary {
+    color: var(--dark-green-colors);
 }
 
 /* font-weight custom  */
 
-.text-ct-light{
-    
+.text-ct-light {
+
     font-weight: var(--text-light) !important;
 }
+
 .text-medium {
     font-weight: var(--text-medium) !important;
 }
+
 .text-bold {
     font-weight: var(--text-bold) !important;
 }
 
 
 /* box-shadow custom */
-.shadow-custom-1{
+.shadow-custom-1 {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
