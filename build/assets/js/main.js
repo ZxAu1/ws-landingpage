@@ -29,8 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <select class="form-select rounded-3" name="business_type"
                                                 style="border: .0625rem solid #D1D3E0;height: 45px;">
                                                 <option value="">Select business type</option>
-                                                <option value="Type1">Type 1</option>
-                                                <option value="Type2">Type 2</option>
+                                                <option value="SME">SME</option>
+                                                <option value="Startup">Startup</option>
+                                                <option value="Enterprise Businesses">Enterprise Businesses</option> 
                                             </select>
                                         </div>
                                     </div>
@@ -45,75 +46,75 @@ document.addEventListener("DOMContentLoaded", function () {
 
                                             <select
                                                 class="form-select selectpicker select-country-code for-modal rounded-3"
-                                                name="country_code" data-live-search="true" style="max-width: 300px;">
+                   name="country_code" data-live-search="true" style="max-width: 300px;">
                                                 <option value="+1"
-                                                    data-content="<img src='https://flagcdn.com/w40/us.png' class='flag-icon'> US">
+                                                    data-content="<img src='https://flagcdn.com/w40/us.png' class='flag-icon'> <span class='name-country'>United States</span>&nbsp;(+1)">
                                                     US</option>
                                                 <option value="+44"
-                                                    data-content="<img src='https://flagcdn.com/w40/gb.png' class='flag-icon'> GB">
+                                                    data-content="<img src='https://flagcdn.com/w40/gb.png' class='flag-icon'> <span class='name-country'>United Kingdom</span>&nbsp;(+44)">
                                                     GB</option>
                                                 <option value="+61"
-                                                    data-content="<img src='https://flagcdn.com/w40/au.png' class='flag-icon'> AU">
+                                                    data-content="<img src='https://flagcdn.com/w40/au.png' class='flag-icon'> <span class='name-country'>Australia</span>&nbsp;(+61)">
                                                     AU</option>
                                                 <option value="+81"
-                                                    data-content="<img src='https://flagcdn.com/w40/jp.png' class='flag-icon'> JP">
+                                                    data-content="<img src='https://flagcdn.com/w40/jp.png' class='flag-icon'> <span class='name-country'>Japan</span>&nbsp;(+81)">
                                                     JP</option>
                                                 <option value="+82"
-                                                    data-content="<img src='https://flagcdn.com/w40/kr.png' class='flag-icon'> KR">
+                                                    data-content="<img src='https://flagcdn.com/w40/kr.png' class='flag-icon'> <span class='name-country'>South Korea</span>&nbsp;(+82)">
                                                     KR</option>
                                                 <option value="+66" selected
-                                                    data-content="<img src='https://flagcdn.com/w40/th.png' class='flag-icon'> TH">
+                                                    data-content="<img src='https://flagcdn.com/w40/th.png' class='flag-icon'> <span class='name-country'>Thailand</span>&nbsp;(+66)">
                                                     TH</option>
                                                 <option value="+86"
-                                                    data-content="<img src='https://flagcdn.com/w40/cn.png' class='flag-icon'> CN">
+                                                    data-content="<img src='https://flagcdn.com/w40/cn.png' class='flag-icon'> <span class='name-country'>China</span>&nbsp;(+86)">
                                                     CN</option>
                                                 <option value="+852"
-                                                    data-content="<img src='https://flagcdn.com/w40/hk.png' class='flag-icon'> HK">
+                                                    data-content="<img src='https://flagcdn.com/w40/hk.png' class='flag-icon'> <span class='name-country'>Hong Kong</span>&nbsp;(+852)">
                                                     HK</option>
                                                 <option value="+49"
-                                                    data-content="<img src='https://flagcdn.com/w40/de.png' class='flag-icon'> DE">
+                                                    data-content="<img src='https://flagcdn.com/w40/de.png' class='flag-icon'> <span class='name-country'>Germany</span>&nbsp;(+49)">
                                                     DE</option>
                                                 <option value="+33"
-                                                    data-content="<img src='https://flagcdn.com/w40/fr.png' class='flag-icon'> FR">
+                                                    data-content="<img src='https://flagcdn.com/w40/fr.png' class='flag-icon'> <span class='name-country'>France</span>&nbsp;(+33)">
                                                     FR</option>
                                                 <option value="+39"
-                                                    data-content="<img src='https://flagcdn.com/w40/it.png' class='flag-icon'> IT">
+                                                    data-content="<img src='https://flagcdn.com/w40/it.png' class='flag-icon'> <span class='name-country'>Italy</span>&nbsp;(+39)">
                                                     IT</option>
                                                 <option value="+34"
-                                                    data-content="<img src='https://flagcdn.com/w40/es.png' class='flag-icon'> ES">
+                                                    data-content="<img src='https://flagcdn.com/w40/es.png' class='flag-icon'> <span class='name-country'>Spain</span>&nbsp;(+34)">
                                                     ES</option>
                                                 <option value="+7"
-                                                    data-content="<img src='https://flagcdn.com/w40/ru.png' class='flag-icon'> RU">
+                                                    data-content="<img src='https://flagcdn.com/w40/ru.png' class='flag-icon'> <span class='name-country'>Russia</span>&nbsp;(+7)">
                                                     RU</option>
                                                 <option value="+971"
-                                                    data-content="<img src='https://flagcdn.com/w40/ae.png' class='flag-icon'> AE">
+                                                    data-content="<img src='https://flagcdn.com/w40/ae.png' class='flag-icon'> <span class='name-country'>United Arab Emirates</span>&nbsp;(+971)">
                                                     AE</option>
                                                 <option value="+91"
-                                                    data-content="<img src='https://flagcdn.com/w40/in.png' class='flag-icon'> IN">
+                                                    data-content="<img src='https://flagcdn.com/w40/in.png' class='flag-icon'> <span class='name-country'>India</span>&nbsp;(+91)">
                                                     IN</option>
                                                 <option value="+63"
-                                                    data-content="<img src='https://flagcdn.com/w40/ph.png' class='flag-icon'> PH">
+                                                    data-content="<img src='https://flagcdn.com/w40/ph.png' class='flag-icon'> <span class='name-country'>Philippines</span>&nbsp;(+63)">
                                                     PH</option>
                                                 <option value="+62"
-                                                    data-content="<img src='https://flagcdn.com/w40/id.png' class='flag-icon'> ID">
+                                                    data-content="<img src='https://flagcdn.com/w40/id.png' class='flag-icon'> <span class='name-country'>Indonesia</span>&nbsp;(+62)">
                                                     ID</option>
                                                 <option value="+60"
-                                                    data-content="<img src='https://flagcdn.com/w40/my.png' class='flag-icon'> MY">
+                                                    data-content="<img src='https://flagcdn.com/w40/my.png' class='flag-icon'> <span class='name-country'>Malaysia</span>&nbsp;(+60)">
                                                     MY</option>
                                                 <option value="+65"
-                                                    data-content="<img src='https://flagcdn.com/w40/sg.png' class='flag-icon'> SG">
+                                                    data-content="<img src='https://flagcdn.com/w40/sg.png' class='flag-icon'> <span class='name-country'>Singapore</span>&nbsp;(+65)">
                                                     SG</option>
                                                 <option value="+95"
-                                                    data-content="<img src='https://flagcdn.com/w40/mm.png' class='flag-icon'> MM">
+                                                    data-content="<img src='https://flagcdn.com/w40/mm.png' class='flag-icon'> <span class='name-country'>Myanmar</span>&nbsp;(+95)">
                                                     MM</option>
                                                 <option value="+84"
-                                                    data-content="<img src='https://flagcdn.com/w40/vn.png' class='flag-icon'> VN">
+                                                    data-content="<img src='https://flagcdn.com/w40/vn.png' class='flag-icon'> <span class='name-country'>Vietnam</span>&nbsp;(+84)">
                                                     VN</option>
                                                 <option value="+855"
-                                                    data-content="<img src='https://flagcdn.com/w40/kh.png' class='flag-icon'> KH">
+                                                    data-content="<img src='https://flagcdn.com/w40/kh.png' class='flag-icon'> <span class='name-country'>Cambodia</span>&nbsp;(+855)">
                                                     KH</option>
                                                 <option value="+856"
-                                                    data-content="<img src='https://flagcdn.com/w40/la.png' class='flag-icon'> LA">
+                                                    data-content="<img src='https://flagcdn.com/w40/la.png' class='flag-icon'> <span class='name-country'>Laos</span>&nbsp;(+856)">
                                                     LA</option>
                                             </select>
 
@@ -127,8 +128,10 @@ document.addEventListener("DOMContentLoaded", function () {
                                             <div class="d-flex align-items-center justify-content-between mb-1"
                                                 style="font-size: 13px;">
                                                 <span style="color:  #75809D;">Optional</span>
-                                                <span style="color: #1492E6;text-decoration: underline;">What You Can
-                                                    Ask</span>
+                                                <span id="askPopover" tabindex="0" class="d-inline-block"
+                                                    style="color: #1492E6; text-decoration: underline; cursor: pointer;">
+                                                    What You Can Ask
+                                                </span>
                                             </div>
                                             <textarea  name="message" class="form-control rounded-3"
                                                 placeholder="Message" rows="3"></textarea>
@@ -166,10 +169,10 @@ document.addEventListener("DOMContentLoaded", function () {
               </form>
             </div>
           </div>
-          <div class="col-md-7 d-flex justify-content-center align-items-center" style="background: url('assets/img/contact-us/contact-us-footer.png') no-repeat center center / cover; margin-right: -1px;">
+          <div class="col-md-7 d-flex justify-content-center align-items-center" style="background: url('assets/img/contact-us/contact-us-footer.png') no-repeat center center / cover; margin-right: -2px;">
             <div class="contact-us-content text-center text-white">
-              <h1>Unlock</h1><br>
-              <h2 style="line-height: 2;">Your Business<br>Potential<br>With Us</h2>
+              <h1 style="font-size: 5.25rem;">Unlock</h1><br>
+              <h2 style="font-size: 3.5rem; line-height: 2;">Your Business<br>Potential<br>With Us</h2>
             </div>
           </div>
         </div>
@@ -185,6 +188,40 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("contactUsModal")
     );
     myModal.show();
+
+    // ✅ ผูก Popover หลังจาก modal ถูก inject แล้ว
+    const askEl = document.querySelector("#contactUsModal #askPopover");
+
+    if (askEl) {
+      new bootstrap.Popover(askEl, {
+        html: true,
+        trigger: "focus",
+        placement: "right", // กำหนดให้เริ่มที่ขวา
+        fallbackPlacements: ["left"], // ถ้าแสดงด้านขวาไม่ได้ ให้แสดงด้านซ้ายเท่านั้น
+        // title: 'Suggestion Questions',
+        content: `
+          <h6>General Inquiries</h6>
+          <ul>
+            <li>I’d like to learn more about your services. Can you provide an overview?</li>
+            <li>Do you offer free consultations or demos for your software solutions?</li>
+            <li>How can I request a proposal for my business?</li>
+          </ul>
+          <h6>Product & Service-Related Questions</h6>
+          <ul>
+            <li>What types of financial technology solutions do you offer?</li>
+            <li>Can your software be customized to fit my company’s needs?</li>
+            <li>Do you provide API integrations with third-party services?</li>
+          </ul>
+          <h6>Pricing & Payment</h6>
+          <ul>
+            <li>How much do your services cost?</li>
+            <li>Are there any additional fees for software updates or maintenance?</li>
+            <li>Do you offer subscription-based pricing or onetime payments?</li>
+          </ul>
+        `,
+      });
+    }
+
 
     // ต้อง init selectpicker หลัง inject
     $(".selectpicker").selectpicker();
@@ -208,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function () {
         business_type: { required: "Please select your business type" },
         email: {
           required: "Please enter your email",
-          email: "Please enter a valid email address",
+          email: "*กรุณากรอกทีอยู่อีเมลให้ถูกต้อง เช่น user@example.com",
         },
         country_code: { required: "Please select country code" },
         phone: {
@@ -231,64 +268,100 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // **  submit form handler  **
-// submit form handler
-$(document).on("submit", "#contactFormModal", function (e) {
-  e.preventDefault();
-  if ($(this).valid()) {
-    console.log("modal Form is valid");
-    let $form = $("#contactFormModal");
-    let formData = {
-      contact_name: $form.find('input[name="contact_name"]').val(),
-      business_type: $form.find('select[name="business_type"]').val(),
-      email: $form.find('input[name="email"]').val(),
-      country_code: $form.find('select[name="country_code"]').val(),
-      phone: $form.find('input[name="phone"]').val(),
-      message: $form.find('textarea[name="message"]').val(),
-      notRobot: $form.find('input[name="notRobot"]').is(":checked") ? 1 : 0,
-    };
-    console.log("modal Form Data:", formData);
+    // submit form handler
+    $(document).on("submit", "#contactFormModal", function (e) {
+      e.preventDefault();
+      if ($(this).valid()) {
+        console.log("modal Form is valid");
+        let $form = $("#contactFormModal");
+        let formData = {
+          contact_name: $form.find('input[name="contact_name"]').val(),
+          business_type: $form.find('select[name="business_type"]').val(),
+          email: $form.find('input[name="email"]').val(),
+          country_code: $form.find('select[name="country_code"]').val(),
+          phone: $form.find('input[name="phone"]').val(),
+          message: $form.find('textarea[name="message"]').val(),
+          notRobot: $form.find('input[name="notRobot"]').is(":checked") ? 1 : 0,
+        };
+        console.log("modal Form Data:", formData);
 
-    // ********* เพิ่ม AJAX ตรงนี้ **********
-    $.ajax({
-     url: "https://150.95.24.39/contact-form-process.php",
-      type: "POST",
-      data: formData,
-      success: function (response) {
-        console.log("Response:", response);
-        if (response === "success") {
-          $("#contactFormModal")[0].reset();
-          submitMSG(true);
-          myModal.hide();
-          setTimeout(() => {
-            location.reload();
-          }, 1000);
-        } else {
-          alert("Error: " + response);
-        }
-      },
-      error: function () {
-        alert("เกิดข้อผิดพลาดในการส่งข้อมูล");
-      },
+        // ********* เพิ่ม AJAX ตรงนี้ **********
+        $.ajax({
+          url: "https://150.95.24.39/contact-form-process.php",
+          type: "POST",
+          data: formData,
+          success: function (response) {
+            console.log("Response:", response);
+            if (response === "success") {
+              $("#contactFormModal")[0].reset();
+              submitMSG(true);
+              myModal.hide();
+              setTimeout(() => {
+                location.reload();
+              }, 1000);
+            } else {
+              alert("Error: " + response);
+            }
+          },
+          error: function () {
+            alert("เกิดข้อผิดพลาดในการส่งข้อมูล");
+          },
+        });
+        // *************************************
+      } else {
+        console.log("Form is not valid");
+      }
     });
-    // *************************************
-
-  } else {
-    console.log("Form is not valid");
-  }
-});
-
   }
 
   // Event Click ปุ่ม
   document.querySelectorAll(".btn-contact-you-back").forEach((btn) => {
+    
     btn.addEventListener("click", function (e) {
       e.preventDefault();
       createContactModal();
     });
   });
 
-  renderCountrySelect();
+  // renderCountrySelect();
 });
+
+const askEl = document.getElementById("askPopover");
+
+const popover = new bootstrap.Popover(askEl, {
+  html: true,
+  trigger: "focus",
+  placement: "right", // กำหนดให้เริ่มที่ขวา
+  fallbackPlacements: ["left"], // ถ้าแสดงด้านขวาไม่ได้ ให้แสดงด้านซ้ายเท่านั้น
+  // title: 'Suggestion Questions',
+  content: `
+    <h6>General Inquiries</h6>
+    <ul>
+      <li>I’d like to learn more about your services. Can you provide an overview?</li>
+      <li>Do you offer free consultations or demos for your software solutions?</li>
+      <li>How can I request a proposal for my business?</li>
+    </ul>
+    <h6>Product & Service-Related Questions</h6>
+    <ul>
+      <li>What types of financial technology solutions do you offer?</li>
+      <li>Can your software be customized to fit my company’s needs?</li>
+      <li>Do you provide API integrations with third-party services?</li>
+    </ul>
+    <h6>Pricing & Payment</h6>
+    <ul>
+      <li>How much do your services cost?</li>
+      <li>Are there any additional fees for software updates or maintenance?</li>
+      <li>Do you offer subscription-based pricing or onetime payments?</li>
+    </ul>
+  `,
+});
+
+function toggleModal() {
+  console.log("toggleModal");
+
+  const modal = document.getElementById("customModal");
+  modal.classList.toggle("show");
+}
 
 function submitMSG(valid) {
   // สร้าง element alert
@@ -384,6 +457,7 @@ $(document).ready(function () {
     $(this).val(phone);
   });
 
+
   // เปิด validate form
   $("#contactFormNew").validate({
     rules: {
@@ -404,7 +478,7 @@ $(document).ready(function () {
       business_type: { required: "Please select your business type" },
       email: {
         required: "Please enter your email",
-        email: "Please enter a valid email address",
+        email: "*กรุณากรอกทีอยู่อีเมลให้ถูกต้อง เช่น user@example.com",
       },
       country_code: { required: "Please select country code" },
       phone: {
@@ -454,8 +528,7 @@ $(document).ready(function () {
 
       // ลบข้อความ error ออก
       $("#contactFormNew").find("label.error").remove();
-      submitMSG(true);
-      
+
       // ยิง ajax ไปยังไฟล์ php
       $.ajax({
         url: "https://150.95.24.39/contact-form-process.php", //'save.php', // เปลี่ยน URL ตามที่ต้องการ
@@ -463,6 +536,7 @@ $(document).ready(function () {
         data: formData,
         // data: "name=" + s + "&email=" + a + "&message=" + n,
         success: function (response) {
+          submitMSG(true);
           alert("บันทึกสำเร็จ: " + response);
           setTimeout(() => {
             location.reload();

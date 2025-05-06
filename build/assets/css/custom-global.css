@@ -68,7 +68,7 @@
 
 .dropdown.select-country-code {
     padding: 0;
-    max-width: 150px;
+    /* max-width: 150px; */
     margin-right: 0.5rem;
     border-radius: 8px;
     height: 45px;
@@ -100,6 +100,21 @@
 }
 
 
+.dropdown.select-country-code .filter-option{
+    display: flex;
+    align-items: center;
+}
+.dropdown.select-country-code .filter-option-inner-inner{
+    display: flex;
+}
+
+.dropdown.select-country-code .filter-option-inner-inner img{
+    margin-right: 5px;
+}
+.dropdown.select-country-code .filter-option-inner-inner span.name-country{
+    display: none;
+}
+
 .btn-closed {
     position: absolute;
     right: 10px;
@@ -121,3 +136,23 @@
 .footer ul li a {
     opacity: 1;
 }
+
+
+/* =================== Custom Popover ================= */
+.popover {
+    padding: 10px;
+    max-width: 400px;
+  }
+  .popover-body {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  /* =================== Custom Modal ================= */
+  .modal-backdrop.show {
+    opacity: 0.9 !important; /* ค่าเริ่มต้นของ Bootstrap คือ 0.5 */
+   background: rgba(0,0,0,0.9) ;
+  }
+
+      
+  
