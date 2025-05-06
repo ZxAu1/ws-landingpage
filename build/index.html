@@ -963,7 +963,181 @@
                     <!-- Right Card Form -->
                     <div class="col-lg-5 offset-lg-1">
                         <!-- ที่จะแสดงฟอร์มทันที -->
-                        <div id="contactFormInlineContainer"></div>
+                        <!-- <div id="contactFormInlineContainer"></div> -->
+                        <div class="row custom-box-contact-us shadow justify-content-around">
+                            <div class="col-md-5">
+                                <div class="contact-us-form bg-white rounded p-5">
+                                    <h2 class="mb-4">Contact us</h2>
+                                    <h6>Let’s start your own brokerage with us.</h6>
+                                    <form id="contactFormNew" class="contact-us-form mt-4">
+                                        <div class="form-row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control rounded-3" name="contact_name"
+                                                        placeholder="Contact name" required="required">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <select class="form-select rounded-3" name="business_type"
+                                                        style="border: .0625rem solid #D1D3E0;height: 45px;">
+                                                        <option value="">Select business type</option>
+                                                        <option value="SME">SME</option>
+                                                        <option value="Startup">Startup</option>
+                                                        <option value="Enterprise Businesses">Enterprise Businesses</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control rounded-3" name="email"
+                                                        placeholder="email" required="required">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="input-group">
+        
+                                                    <select class="form-select selectpicker select-country-code rounded-3"
+                                                        name="country_code" data-live-search="true" style="max-width: 300px;">
+                                                        <option value="+1"
+                                                            data-content="<img src='https://flagcdn.com/w40/us.png' class='flag-icon'> <span class='name-country'>United States</span>&nbsp;(+1)">
+                                                            US</option>
+                                                        <option value="+44"
+                                                            data-content="<img src='https://flagcdn.com/w40/gb.png' class='flag-icon'> <span class='name-country'>United Kingdom</span>&nbsp;(+44)">
+                                                            GB</option>
+                                                        <option value="+61"
+                                                            data-content="<img src='https://flagcdn.com/w40/au.png' class='flag-icon'> <span class='name-country'>Australia</span>&nbsp;(+61)">
+                                                            AU</option>
+                                                        <option value="+81"
+                                                            data-content="<img src='https://flagcdn.com/w40/jp.png' class='flag-icon'> <span class='name-country'>Japan</span>&nbsp;(+81)">
+                                                            JP</option>
+                                                        <option value="+82"
+                                                            data-content="<img src='https://flagcdn.com/w40/kr.png' class='flag-icon'> <span class='name-country'>South Korea</span>&nbsp;(+82)">
+                                                            KR</option>
+                                                        <option value="+66" selected
+                                                            data-content="<img src='https://flagcdn.com/w40/th.png' class='flag-icon'> <span class='name-country'>Thailand</span>&nbsp;(+66)">
+                                                            TH</option>
+                                                        <option value="+86"
+                                                            data-content="<img src='https://flagcdn.com/w40/cn.png' class='flag-icon'> <span class='name-country'>China</span>&nbsp;(+86)">
+                                                            CN</option>
+                                                        <option value="+852"
+                                                            data-content="<img src='https://flagcdn.com/w40/hk.png' class='flag-icon'> <span class='name-country'>Hong Kong</span>&nbsp;(+852)">
+                                                            HK</option>
+                                                        <option value="+49"
+                                                            data-content="<img src='https://flagcdn.com/w40/de.png' class='flag-icon'> <span class='name-country'>Germany</span>&nbsp;(+49)">
+                                                            DE</option>
+                                                        <option value="+33"
+                                                            data-content="<img src='https://flagcdn.com/w40/fr.png' class='flag-icon'> <span class='name-country'>France</span>&nbsp;(+33)">
+                                                            FR</option>
+                                                        <option value="+39"
+                                                            data-content="<img src='https://flagcdn.com/w40/it.png' class='flag-icon'> <span class='name-country'>Italy</span>&nbsp;(+39)">
+                                                            IT</option>
+                                                        <option value="+34"
+                                                            data-content="<img src='https://flagcdn.com/w40/es.png' class='flag-icon'> <span class='name-country'>Spain</span>&nbsp;(+34)">
+                                                            ES</option>
+                                                        <option value="+7"
+                                                            data-content="<img src='https://flagcdn.com/w40/ru.png' class='flag-icon'> <span class='name-country'>Russia</span>&nbsp;(+7)">
+                                                            RU</option>
+                                                        <option value="+971"
+                                                            data-content="<img src='https://flagcdn.com/w40/ae.png' class='flag-icon'> <span class='name-country'>United Arab Emirates</span>&nbsp;(+971)">
+                                                            AE</option>
+                                                        <option value="+91"
+                                                            data-content="<img src='https://flagcdn.com/w40/in.png' class='flag-icon'> <span class='name-country'>India</span>&nbsp;(+91)">
+                                                            IN</option>
+                                                        <option value="+63"
+                                                            data-content="<img src='https://flagcdn.com/w40/ph.png' class='flag-icon'> <span class='name-country'>Philippines</span>&nbsp;(+63)">
+                                                            PH</option>
+                                                        <option value="+62"
+                                                            data-content="<img src='https://flagcdn.com/w40/id.png' class='flag-icon'> <span class='name-country'>Indonesia</span>&nbsp;(+62)">
+                                                            ID</option>
+                                                        <option value="+60"
+                                                            data-content="<img src='https://flagcdn.com/w40/my.png' class='flag-icon'> <span class='name-country'>Malaysia</span>&nbsp;(+60)">
+                                                            MY</option>
+                                                        <option value="+65"
+                                                            data-content="<img src='https://flagcdn.com/w40/sg.png' class='flag-icon'> <span class='name-country'>Singapore</span>&nbsp;(+65)">
+                                                            SG</option>
+                                                        <option value="+95"
+                                                            data-content="<img src='https://flagcdn.com/w40/mm.png' class='flag-icon'> <span class='name-country'>Myanmar</span>&nbsp;(+95)">
+                                                            MM</option>
+                                                        <option value="+84"
+                                                            data-content="<img src='https://flagcdn.com/w40/vn.png' class='flag-icon'> <span class='name-country'>Vietnam</span>&nbsp;(+84)">
+                                                            VN</option>
+                                                        <option value="+855"
+                                                            data-content="<img src='https://flagcdn.com/w40/kh.png' class='flag-icon'> <span class='name-country'>Cambodia</span>&nbsp;(+855)">
+                                                            KH</option>
+                                                        <option value="+856"
+                                                            data-content="<img src='https://flagcdn.com/w40/la.png' class='flag-icon'> <span class='name-country'>Laos</span>&nbsp;(+856)">
+                                                            LA</option>
+                                                    </select>
+        
+        
+                                                    <input type="text" class="form-control rounded-3" name="phone"
+                                                        placeholder="Enter phone number">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-3">
+                                                <div class="form-group">
+                                                    <div class="d-flex align-items-center justify-content-between mb-1"
+                                                        style="font-size: 13px;">
+                                                        <span style="color:  #75809D;">Optional</span>
+                                                        <span id="askPopover" tabindex="0" class="d-inline-block"
+                                                            style="color: #1492E6; text-decoration: underline; cursor: pointer;">
+                                                            What You Can Ask
+                                                        </span>
+                                                    </div>
+                                                    <textarea id="message" name="message" class="form-control rounded-3"
+                                                        placeholder="Message" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group rounded-3" style="display: flex;
+                                                flex-direction: row;
+                                                align-items: center;
+                                                justify-content: space-between;
+                                                padding: 10px;
+                                                border: .0625rem solid #D1D3E0;
+                                                padding-left: 40px;">
+                                                    <div class="">
+                                                        <input type="checkbox" class="form-check-input" id="notRobot"
+                                                            name="notRobot">
+                                                        <label class="form-check-label ml-2" style="color: #75809D;"
+                                                            for="notRobot">I'm not a
+                                                            robot</label>
+                                                    </div>
+                                                    <div class="">
+                                                        <img src="assets/img/RecaptchaLogo.svg.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 mt-3 " style="    display: flex;
+                                                 align-items: center;
+                                                 justify-content: space-between;">
+                                                <span
+                                                    style="text-decoration: underline; font-size: 0.875; color: var(--text-ct-drak);">Privacy
+                                                    - Terms</span>
+                                                <button type="submit" class="btn btn-secondary rounded-3" id="btnContactUs"
+                                                    style=" display: flex; align-items: center; justify-content: center;
+                                                background: var(--redges-color-2);
+                                                width: 180px;
+                                                height: 45px;
+                                                font-size: 20px;">
+                                                    Send
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- Custom Positioned Modal -->
+                                </div>
+                            </div>
+                            <div class="col-md-7 d-flex justify-content-center align-items-center"
+                                style="background: url('assets/img/contact-us/contact-us-footer.jpg')no-repeat center center / cover">
+        
+                                <div class="contact-us-content text-center">
+                                    <h1 class="text-white" style="font-size: 7rem;">Unlock</h1><br>
+                                    <h2 class="text-white" style="font-size: 4rem; line-height: 2.5;">Your Business<br>Potential<br>With Us</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -1078,194 +1252,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const inlineFormHTML = `
-                <div class="modal-content p-0" style="border-radius: 1rem; overflow: hidden;">
-                  <div class="modal-body px-3 py-0">
-                    <div class="row custom-box-contact-us shadow justify-content-around">
-                      <div class="col-md-5 p-0">
-                        <div class="contact-us-form bg-white rounded p-4">
-                          <h2 class="mb-3">Contact us</h2>
-                          <h6>Let’s start your own brokerage with us.</h6>
-                          <form id="contactFormInline" class="contact-us-form mt-4">
-                            <div class="form-row">
-                              <div class="col-12 mb-3">
-                                <input type="text" class="form-control rounded-3" name="contact_name" placeholder="Contact name" required>
-                              </div>
-                              <div class="col-12 mb-3">
-                                <select class="form-select rounded-3" name="business_type" style="border: .0625rem solid #D1D3E0;height: 45px;">
-                                  <option value="">Select business type</option>
-                                  <option value="Type1">Type 1</option>
-                                  <option value="Type2">Type 2</option>
-                                </select>
-                              </div>
-                              <div class="col-12 mb-3">
-                                <input type="email" class="form-control rounded-3" name="email" placeholder="Email" required>
-                              </div>
-                              <div class="col-12 mb-3 input-group">
-                                <select class="form-select selectpicker select-country-code for-modal rounded-3" name="country_code" id="inlineCountrySelect" data-live-search="true" style="max-width: 300px;"></select>
-                                <input type="text" class="form-control rounded-3" name="phone" placeholder="Enter phone number">
-                              </div>
-                              <div class="col-12 mt-3">
-                                <div class="form-group">
-                                  <div class="d-flex align-items-center justify-content-between mb-1" style="font-size: 13px;">
-                                    <span style="color:  #75809D;">Optional</span>
-                                    <span style="color: #1492E6;text-decoration: underline;">What You Can Ask</span>
-                                  </div>
-                                  <textarea name="message" class="form-control rounded-3" placeholder="Message" rows="3"></textarea>
-                                </div>
-                              </div>
-                              <div class="col-12 mb-3">
-                                <div class="form-group rounded-3 d-flex justify-content-between align-items-center" style="padding: 10px; border: .0625rem solid #D1D3E0; padding-left: 40px;">
-                                  <div>
-                                    <input type="checkbox" class="form-check-input" name="notRobot">
-                                    <label class="form-check-label ml-2" style="color: #75809D;">I'm not a robot</label>
-                                  </div>
-                                  <img src="assets/img/RecaptchaLogo.svg.png" alt="" height="30">
-                                </div>
-                              </div>
-                              <div class="col-12 d-flex justify-content-between align-items-center">
-                                <span style="text-decoration: underline; font-size: 0.875rem; color: #75809D;">Privacy - Terms</span>
-                                <button type="submit" class="btn btn-secondary rounded-3" style="background: var(--redges-color-2);width: 130px;height: 40px;">Send</button>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                      <div class="col-md-7 d-flex justify-content-center align-items-center" style="background: url('assets/img/contact-us/contact-us-footer.png') no-repeat center center / cover;">
-                        <div class="contact-us-content text-center text-white">
-                          <h1>Unlock</h1><br>
-                          <h2 style="line-height: 2;">Your Business<br>Potential<br>With Us</h2>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              `;
-
-            const container = document.getElementById("contactFormInlineContainer");
-            if (!container) return;
-            container.innerHTML = inlineFormHTML;
-
-            $(".selectpicker").selectpicker();
-            renderCountrySelect("#inlineCountrySelect");
-
-            // Validate & Submit
-            $("#contactFormInline").validate({
-                rules: {
-                    contact_name: { required: true },
-                    business_type: { required: true },
-                    email: { required: true, email: true },
-                    country_code: { required: true },
-                    phone: { required: true, minlength: 6, maxlength: 15 },
-                    notRobot: { required: true },
-                },
-                messages: {
-                    contact_name: { required: "Please enter your name" },
-                    business_type: { required: "Please select your business type" },
-                    email: {
-                        required: "Please enter your email",
-                        email: "Please enter a valid email address",
-                    },
-                    country_code: { required: "Please select country code" },
-                    phone: {
-                        required: "Please enter your phone number",
-                        minlength: "Phone number must be at least 6 digits",
-                        maxlength: "Phone number must not exceed 15 digits",
-                    },
-                    notRobot: { required: "Please confirm you're not a robot" },
-                },
-                submitHandler: function (form) {
-                    const $form = $(form);
-                    const formData = {
-                        contact_name: $form.find('input[name="contact_name"]').val(),
-                        business_type: $form.find('select[name="business_type"]').val(),
-                        email: $form.find('input[name="email"]').val(),
-                        country_code: $form.find('select[name="country_code"]').val(),
-                        phone: $form.find('input[name="phone"]').val(),
-                        message: $form.find('textarea[name="message"]').val(),
-                        notRobot: $form.find('input[name="notRobot"]').is(":checked") ? 1 : 0,
-                    };
-
-                    $.ajax({
-                        url: "https://150.95.24.39/contact-form-process.php",
-                        type: "POST",
-                        data: formData,
-                        success: function (response) {
-                            alert("บันทึกสำเร็จ: " + response);
-                            $form[0].reset();
-                            submitMSG(true);
-                            setTimeout(() => location.reload(), 1000);
-                        },
-                        error: function () {
-                            alert("เกิดข้อผิดพลาดในการส่งข้อมูล");
-                        },
-                    });
-                },
-            });
-
-            // Phone formatter
-            $(document).on("input", 'input[name="phone"]', function () {
-                var phone = $(this).val().replace(/\D/g, "");
-                if (phone.length > 3 && phone.length <= 6) {
-                    phone = phone.replace(/(\d{3})(\d+)/, "$1 $2");
-                } else if (phone.length > 6) {
-                    phone = phone.replace(/(\d{3})(\d{3})(\d+)/, "$1 $2 $3");
-                }
-                $(this).val(phone);
-            });
-
-            function renderCountrySelect(selector) {
-                const countries = [
-                    { code: "+1", short: "US", flag: "us" },
-                    { code: "+44", short: "GB", flag: "gb" },
-                    { code: "+61", short: "AU", flag: "au" },
-                    { code: "+81", short: "JP", flag: "jp" },
-                    { code: "+82", short: "KR", flag: "kr" },
-                    { code: "+66", short: "TH", flag: "th" },
-                    { code: "+86", short: "CN", flag: "cn" },
-                    { code: "+852", short: "HK", flag: "hk" },
-                    { code: "+49", short: "DE", flag: "de" },
-                    { code: "+33", short: "FR", flag: "fr" },
-                    { code: "+39", short: "IT", flag: "it" },
-                    { code: "+34", short: "ES", flag: "es" },
-                    { code: "+7", short: "RU", flag: "ru" },
-                    { code: "+971", short: "AE", flag: "ae" },
-                    { code: "+91", short: "IN", flag: "in" },
-                    { code: "+63", short: "PH", flag: "ph" },
-                    { code: "+62", short: "ID", flag: "id" },
-                    { code: "+60", short: "MY", flag: "my" },
-                    { code: "+65", short: "SG", flag: "sg" },
-                    { code: "+95", short: "MM", flag: "mm" },
-                    { code: "+84", short: "VN", flag: "vn" },
-                    { code: "+855", short: "KH", flag: "kh" },
-                    { code: "+856", short: "LA", flag: "la" },
-                ];
-                const select = document.querySelector(selector);
-                countries.forEach((c) => {
-                    const opt = document.createElement("option");
-                    opt.value = c.code;
-                    opt.setAttribute("data-content", `<img src="https://flagcdn.com/w40/${c.flag}.png" class="flag-icon"> ${c.short}`);
-                    opt.innerHTML = c.short;
-                    if (c.code === "+66") opt.selected = true;
-                    select.appendChild(opt);
-                });
-                $(".selectpicker").selectpicker("refresh");
-            }
-
-            function submitMSG(valid) {
-                let alertBox = $('<div class="message-box d-block" style="position: fixed;top: 80px;z-index: 9999;width: 90%;transform: translateX(5%);"></div>');
-                let alertContent = $('<div class="alert"></div>');
-                alertContent
-                    .addClass(valid ? "alert-success" : "alert-danger")
-                    .text(valid ? "Form submitted successfully" : "Found error in the form. Please check again.");
-                alertBox.append(alertContent);
-                $("body").append(alertBox);
-                setTimeout(() => alertBox.fadeOut(300, () => alertBox.remove()), 3000);
-            }
-        });
-    </script>
+ 
 
 
 </body>
