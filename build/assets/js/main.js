@@ -287,7 +287,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // ********* เพิ่ม AJAX ตรงนี้ **********
         $.ajax({
-          url: "https://150.95.24.39/contact-form-process.php",
+          url: "https://ws777.co.th/contact-form-process.php",
           type: "POST",
           data: formData,
           success: function (response) {
@@ -531,7 +531,7 @@ $(document).ready(function () {
 
       // ยิง ajax ไปยังไฟล์ php
       $.ajax({
-        url: "https://150.95.24.39/contact-form-process.php", //'save.php', // เปลี่ยน URL ตามที่ต้องการ
+        url: "https://ws777.co.th/contact-form-process.php", //'save.php', // เปลี่ยน URL ตามที่ต้องการ
         type: "POST",
         data: formData,
         // data: "name=" + s + "&email=" + a + "&message=" + n,
