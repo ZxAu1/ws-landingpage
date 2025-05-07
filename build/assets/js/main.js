@@ -7,9 +7,24 @@ document.addEventListener("DOMContentLoaded", function () {
   <div class="modal-dialog modal-lg modal-dialog-centered">
     
     <div class="modal-content p-0" style="border-radius: 1rem; overflow: hidden;">
-    <button type="button" class="btn-closed" data-bs-dismiss="modal" aria-label="Close">
-         <i class="ti-close"></i>
-    </button>
+<button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close" style="  
+position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.4); /* ดำโปร่ง */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1055;
+    transition: background-color 0.3s ease;">
+    &times;
+</button>
       <div class="modal-body px-3 py-0">
         <div class="row custom-box-contact-us shadow justify-content-around">
           <div class="col-md-5 p-0">
