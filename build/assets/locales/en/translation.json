@@ -1,7 +1,8 @@
 {
     "nav": {
       "home": "Home",
-      "about": "About Us"
+      "about": "About Us",
+     "contract": "Contact you back"
     },
 "home": {
   "home_title1": "It’s time to elevate your brand<br>and stand out from the competition!",
@@ -44,6 +45,7 @@
 "aboutUs": {
   "header1": "Who are we?",
   "header2": "W.S.777 Digital Marketing Agency",
+  "content1":"We are the partner that helps your business grow in the digital world. We combine data-driven marketing strategies with outstanding creativity to ensure that your business reaches the right target audience and generates measurable results.",
   "section": {
     "p1": "Vision",
     "p2": "\"Committed to becoming a leader in digital marketing that helps businesses of all sizes grow sustainably.\"",
@@ -65,6 +67,13 @@
 },
 
 "service": {
+  "consultation1": "[Request Free Consultation]",
+  "consultation2": "[Improve Your Website Ranking]",
+  "consultation3": "[Get a Free SEO Audit]",
+  "consultation4": "[Request a Custom Plan]",
+  "consultation5": "[Start Your Digital Strategy]",
+  "consultation6": "[Free Website Analysis]",
+  "consultation7": "[Book a Call with Our Experts]",
     "section1": {
         "p1": "Our Services",
         "p2": "Drive your business forward with powerful digital strategies. We offer comprehensive digital marketing services to help your business grow and generate effective sales.",
@@ -80,6 +89,7 @@
         "p12": "Create beautiful, user-friendly websites that drive sales. Our websites not only look great but also perform efficiently and support digital marketing.",
         "p13": "Content Marketing",
         "p14": "Create strong content and brand identity. Good content helps make your business memorable and trustworthy."
+
     },
     "section2": {
         "p1": "Plan targeted digital marketing strategies for the best results. We create tailored strategies for your business, whether B2B or B2C, to accurately reach your target audience.",
