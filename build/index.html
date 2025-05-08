@@ -1010,39 +1010,38 @@
                     <div class="col-lg-6 offset-lg-0">
                         <!-- ที่จะแสดงฟอร์มทันที -->
                         <!-- <div id="contactFormInlineContainer"></div> -->
-                        <div class="row custom-box-contact-us shadow justify-content-around" style="    background: white;">
+                        <div class="row custom-box-contact-us shadow justify-content-around" style="background: white;">
                             <div class="col-md-7">
                                 <div class="contact-us-form bg-white rounded p-5">
-                                    <h2 class="mb-4">Contact us</h2>
-                                    <h6>Let’s start your own brokerage with us.</h6>
+                                    <h2 class="mb-4">ติดต่อเรา</h2>
+                                    <h6>เริ่มต้นธุรกิจของคุณกับเรา</h6>
                                     <form id="contactFormNew" class="contact-us-form mt-4">
                                         <div class="form-row">
                                             <div class="col-12">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control rounded-3" name="contact_name"
-                                                        placeholder="Contact name" required="required">
+                                                        placeholder="ชื่อผู้ติดต่อ" required="required">
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-group">
                                                     <select class="form-select rounded-3" name="business_type"
                                                         style="border: .0625rem solid #D1D3E0;height: 45px;">
-                                                        <option value="">Select business type</option>
+                                                        <option value="">เลือกประเภทธุรกิจ</option>
                                                         <option value="SME">SME</option>
                                                         <option value="Startup">Startup</option>
-                                                        <option value="Enterprise Businesses">Enterprise Businesses</option>
+                                                        <option value="Enterprise Businesses">ธุรกิจองค์กร</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-group">
                                                     <input type="email" class="form-control rounded-3" name="email"
-                                                        placeholder="email" required="required">
+                                                        placeholder="อีเมล" required="required">
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="input-group">
-        
                                                     <select class="form-select selectpicker select-country-code rounded-3"
                                                         name="country_code" data-live-search="true" style="max-width: 300px;">
                                                         <option value="+1"
@@ -1115,59 +1114,45 @@
                                                             data-content="<img src='https://flagcdn.com/w40/la.png' class='flag-icon'> <span class='name-country'>Laos</span>&nbsp;(+856)">
                                                             LA</option>
                                                     </select>
-        
-        
+                    
                                                     <input type="text" class="form-control rounded-3" name="phone"
-                                                        placeholder="Enter phone number">
+                                                        placeholder="กรุณากรอกหมายเลขโทรศัพท์">
                                                 </div>
                                             </div>
                                             <div class="col-12 mt-3">
                                                 <div class="form-group">
                                                     <div class="d-flex align-items-center justify-content-between mb-1"
                                                         style="font-size: 13px;">
-                                                        <span style="color:  #75809D;">Optional</span>
+                                                        <span style="color:  #75809D;">ตัวเลือก</span>
                                                         <span id="askPopover" tabindex="0" class="d-inline-block"
                                                             style="color: #1492E6; text-decoration: underline; cursor: pointer;">
-                                                            What You Can Ask
+                                                            สิ่งที่คุณสามารถถาม
                                                         </span>
                                                     </div>
                                                     <textarea id="message" name="message" class="form-control rounded-3"
-                                                        placeholder="Message" rows="3"></textarea>
+                                                        placeholder="ข้อความ" rows="3"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <div class="form-group rounded-3" style="display: flex;
-                                                flex-direction: row;
-                                                align-items: center;
-                                                justify-content: space-between;
-                                                padding: 10px;
-                                                border: .0625rem solid #D1D3E0;
-                                                padding-left: 40px;">
+                                                <div class="form-group rounded-3" style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 10px; border: .0625rem solid #D1D3E0; padding-left: 40px;">
                                                     <div class="">
                                                         <input type="checkbox" class="form-check-input" id="notRobot"
                                                             name="notRobot">
-                                                        <label class="form-check-label ml-2" style="color: #75809D;"
-                                                            for="notRobot">I'm not a
-                                                            robot</label>
+                                                        <label class="form-check-label ml-2" style="color: #75809D;" for="notRobot">ฉันไม่ใช่
+                                                            หุ่นยนต์</label>
                                                     </div>
                                                     <div class="">
                                                         <img src="assets/img/RecaptchaLogo.svg.png" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-12 mt-3 " style="    display: flex;
-                                                 align-items: center;
-                                                 justify-content: space-between;">
+                                            <div class="col-sm-12 mt-3" style="display: flex; align-items: center; justify-content: space-between;">
                                                 <span
-                                                    style="text-decoration: underline; font-size: 0.875; color: var(--text-ct-drak);">Privacy
-                                                    - Terms</span>
+                                                    style="text-decoration: underline; font-size: 0.875; color: var(--text-ct-drak);">ความเป็นส่วนตัว
+                                                    - ข้อตกลง</span>
                                                 <button type="submit" class="btn btn-secondary rounded-3" id="btnContactUs"
-                                                    style=" display: flex; align-items: center; justify-content: center;
-                                                background: var(--redges-color-2);
-                                                width: 180px;
-                                                height: 45px;
-                                                font-size: 20px;">
-                                                    Send
+                                                    style="display: flex; align-items: center; justify-content: center; background: var(--redges-color-2); width: 180px; height: 45px; font-size: 20px;">
+                                                    ส่ง
                                                 </button>
                                             </div>
                                         </div>
@@ -1175,16 +1160,16 @@
                                     <!-- Custom Positioned Modal -->
                                 </div>
                             </div>
-                            <div class="col-md-5 d-flex justify-content-center align-items-center" style="background: url('assets/img/contact-us/contact-us-footer.jpg')no-repeat center center / cover">
-
-        
+                            <div class="col-md-5 d-flex justify-content-center align-items-center"
+                                style="background: url('assets/img/contact-us/contact-us-footer.jpg')no-repeat center center / cover">
                                 <div class="contact-us-content text-center">
-                                    <h1 class="text-white" style="font-size: 4rem;">Unlock</h1><br>
-                                    <h2 class="text-white" style="font-size: 4rem; line-height: 2.5;">Your Business<br>Potential<br>With Us</h2>
+                                    <h1 class="text-white" style="font-size: 4rem;">ปลดล็อค</h1><br>
+                                    <h2 class="text-white" style="font-size: 4rem; line-height: 2.5;">ศักยภาพธุรกิจของคุณ<br>กับเรา</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
 
                 </div>
             </div>
@@ -1205,7 +1190,7 @@
                         <div class="mb-3">
                             <img class="logo-footer" src="assets/img/icon-ws/ws.png " alt="WS Logo" style="height: 60px;">
                         </div>
-                        <h5 class="text-ct-light">บริษัท ดับบลิวเอส.777 จำกัด</h5>
+                        <h5 class="text-ct-light" data-i18n="footer.t1">บริษัท ดับบลิวเอส.777 จำกัด</h5>
                         <div class="mt-3">
                             <i class="fas fa-envelope mx-2"></i>
                             <a href="https://www.facebook.com/share/14dMh4FMkZ/?mibextid=wwXIfr" target="_blank" rel="noopener">
@@ -1220,7 +1205,7 @@
                     </div>
 
                     <div class="col-sm-6 col-lg-4 mb-4 text-start">
-                        <p class="text-ct-light"><i class="fas fa-map-marker-alt me-2"></i>189/174 บ้านกลางเมือง
+                        <p class="text-ct-light" data-i18n="footer.t2"><i class="fas fa-map-marker-alt me-2" ></i>189/174 บ้านกลางเมือง
                             พหลฯโยธิน รามอินทรา ถนนเทพรักษ์ ตำบลแขวงอนุสาวรีย์ เขตบางเขน กรุงเทพฯ 10220</p>
                         <p class="text-ct-light"><i class="fas fa-phone me-2"></i>095 424 4409</p>
                     </div>
@@ -1231,17 +1216,11 @@
                         <div class="row">
                             <div class="col-6">
                                 <ul class="list-unstyled d-flex flex-directional flex-column text-ct-light">
-                                    <li><a href="#" class="text-white">Branding</a></li>
-                                    <li><a href="#" class="text-white">Digital</a></li>
-                                    <li><a href="#" class="text-white">Marketing</a></li>
-                                    <li><a href="#" class="text-white">Case Study</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <ul class="list-unstyled d-flex flex-directional flex-column text-ct-light">
-                                    <li><a href="#" class="text-white">About</a></li>
-                                    <li><a href="#" class="text-white">Contact</a></li>
-                                    <li><a href="#" class="text-white">Blog</a></li>
+                                    <li><a href="https://www.ws777.co.th/index.html" class="text-white">Home</a></li>
+                                    <li><a href="https://www.ws777.co.th/about-us.html" class="text-white">About Us</a></li>
+                                    <li><a href="https://www.ws777.co.th/services.html" class="text-white">Service</a></li>
+                                    <li><a href="https://www.ws777.co.th/blog.html" class="text-white">Blog</a></li>
+                                    <li><a href="https://www.ws777.co.th/contact-us.html" class="text-white">Contract Us</a></li>
                                 </ul>
                             </div>
                         </div>

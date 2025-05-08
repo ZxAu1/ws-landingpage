@@ -150,5 +150,10 @@
     "noti":{
       "t1":"What Clients Say About Us",
       "t2":"Curious why clients choose us? See what they have to say."
-    }
+    },
+"footer": {
+  "t1": "W.S.777 Company Limited",
+  "t2": "189/174 Ban Klang Muang, Phahonyothin Road, Ram Inthra, Thep Raksak Road, Anusawari Sub-district, Bang Khen District, Bangkok 10220"
+}
+
   }

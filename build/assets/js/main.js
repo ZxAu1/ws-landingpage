@@ -25,176 +25,176 @@ position: absolute;
     transition: background-color 0.3s ease;">
     &times;
 </button>
-      <div class="modal-body px-3 py-0">
-        <div class="row custom-box-contact-us shadow justify-content-around">
-          <div class="col-md-5 p-0">
+<div class="modal-body px-3 py-0">
+    <div class="row custom-box-contact-us shadow justify-content-around">
+        <div class="col-md-5 p-0">
             <div class="contact-us-form bg-white rounded p-4">
-              <h2 class="mb-3">Contact us</h2>
-              <h6>Let’s start your own brokerage with us.</h6>
-              <form id="contactFormModal" class="contact-us-form mt-4">
-                <div class="form-row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control rounded-3" name="contact_name"
-                                                placeholder="Contact name" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <select class="form-select rounded-3" name="business_type"
-                                                style="border: .0625rem solid #D1D3E0;height: 45px;">
-                                                <option value="">Select business type</option>
-                                                <option value="SME">SME</option>
-                                                <option value="Startup">Startup</option>
-                                                <option value="Enterprise Businesses">Enterprise Businesses</option> 
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control rounded-3" name="email"
-                                                placeholder="email" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="input-group">
+                <h2 class="mb-3">ติดต่อเรา</h2>
+                <h6>เริ่มต้นธุรกิจของคุณกับเรา</h6>
+                <form id="contactFormModal" class="contact-us-form mt-4">
+                    <div class="form-row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control rounded-3" name="contact_name"
+                                    placeholder="ชื่อผู้ติดต่อ" required="required">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <select class="form-select rounded-3" name="business_type"
+                                    style="border: .0625rem solid #D1D3E0;height: 45px;">
+                                    <option value="">เลือกประเภทธุรกิจ</option>
+                                    <option value="SME">SME</option>
+                                    <option value="Startup">Startup</option>
+                                    <option value="Enterprise Businesses">ธุรกิจองค์กร</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="email" class="form-control rounded-3" name="email"
+                                    placeholder="อีเมล" required="required">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group">
+                                <select class="form-select selectpicker select-country-code for-modal rounded-3"
+                                    name="country_code" data-live-search="true" style="max-width: 300px;">
+                                    <option value="+1"
+                                        data-content="<img src='https://flagcdn.com/w40/us.png' class='flag-icon'> <span class='name-country'>United States</span>&nbsp;(+1)">
+                                        US</option>
+                                    <option value="+44"
+                                        data-content="<img src='https://flagcdn.com/w40/gb.png' class='flag-icon'> <span class='name-country'>United Kingdom</span>&nbsp;(+44)">
+                                        GB</option>
+                                    <option value="+61"
+                                        data-content="<img src='https://flagcdn.com/w40/au.png' class='flag-icon'> <span class='name-country'>Australia</span>&nbsp;(+61)">
+                                        AU</option>
+                                    <option value="+81"
+                                        data-content="<img src='https://flagcdn.com/w40/jp.png' class='flag-icon'> <span class='name-country'>Japan</span>&nbsp;(+81)">
+                                        JP</option>
+                                    <option value="+82"
+                                        data-content="<img src='https://flagcdn.com/w40/kr.png' class='flag-icon'> <span class='name-country'>South Korea</span>&nbsp;(+82)">
+                                        KR</option>
+                                    <option value="+66" selected
+                                        data-content="<img src='https://flagcdn.com/w40/th.png' class='flag-icon'> <span class='name-country'>Thailand</span>&nbsp;(+66)">
+                                        TH</option>
+                                    <option value="+86"
+                                        data-content="<img src='https://flagcdn.com/w40/cn.png' class='flag-icon'> <span class='name-country'>China</span>&nbsp;(+86)">
+                                        CN</option>
+                                    <option value="+852"
+                                        data-content="<img src='https://flagcdn.com/w40/hk.png' class='flag-icon'> <span class='name-country'>Hong Kong</span>&nbsp;(+852)">
+                                        HK</option>
+                                    <option value="+49"
+                                        data-content="<img src='https://flagcdn.com/w40/de.png' class='flag-icon'> <span class='name-country'>Germany</span>&nbsp;(+49)">
+                                        DE</option>
+                                    <option value="+33"
+                                        data-content="<img src='https://flagcdn.com/w40/fr.png' class='flag-icon'> <span class='name-country'>France</span>&nbsp;(+33)">
+                                        FR</option>
+                                    <option value="+39"
+                                        data-content="<img src='https://flagcdn.com/w40/it.png' class='flag-icon'> <span class='name-country'>Italy</span>&nbsp;(+39)">
+                                        IT</option>
+                                    <option value="+34"
+                                        data-content="<img src='https://flagcdn.com/w40/es.png' class='flag-icon'> <span class='name-country'>Spain</span>&nbsp;(+34)">
+                                        ES</option>
+                                    <option value="+7"
+                                        data-content="<img src='https://flagcdn.com/w40/ru.png' class='flag-icon'> <span class='name-country'>Russia</span>&nbsp;(+7)">
+                                        RU</option>
+                                    <option value="+971"
+                                        data-content="<img src='https://flagcdn.com/w40/ae.png' class='flag-icon'> <span class='name-country'>United Arab Emirates</span>&nbsp;(+971)">
+                                        AE</option>
+                                    <option value="+91"
+                                        data-content="<img src='https://flagcdn.com/w40/in.png' class='flag-icon'> <span class='name-country'>India</span>&nbsp;(+91)">
+                                        IN</option>
+                                    <option value="+63"
+                                        data-content="<img src='https://flagcdn.com/w40/ph.png' class='flag-icon'> <span class='name-country'>Philippines</span>&nbsp;(+63)">
+                                        PH</option>
+                                    <option value="+62"
+                                        data-content="<img src='https://flagcdn.com/w40/id.png' class='flag-icon'> <span class='name-country'>Indonesia</span>&nbsp;(+62)">
+                                        ID</option>
+                                    <option value="+60"
+                                        data-content="<img src='https://flagcdn.com/w40/my.png' class='flag-icon'> <span class='name-country'>Malaysia</span>&nbsp;(+60)">
+                                        MY</option>
+                                    <option value="+65"
+                                        data-content="<img src='https://flagcdn.com/w40/sg.png' class='flag-icon'> <span class='name-country'>Singapore</span>&nbsp;(+65)">
+                                        SG</option>
+                                    <option value="+95"
+                                        data-content="<img src='https://flagcdn.com/w40/mm.png' class='flag-icon'> <span class='name-country'>Myanmar</span>&nbsp;(+95)">
+                                        MM</option>
+                                    <option value="+84"
+                                        data-content="<img src='https://flagcdn.com/w40/vn.png' class='flag-icon'> <span class='name-country'>Vietnam</span>&nbsp;(+84)">
+                                        VN</option>
+                                    <option value="+855"
+                                        data-content="<img src='https://flagcdn.com/w40/kh.png' class='flag-icon'> <span class='name-country'>Cambodia</span>&nbsp;(+855)">
+                                        KH</option>
+                                    <option value="+856"
+                                        data-content="<img src='https://flagcdn.com/w40/la.png' class='flag-icon'> <span class='name-country'>Laos</span>&nbsp;(+856)">
+                                        LA</option>
+                                </select>
 
-                                            <select
-                                                class="form-select selectpicker select-country-code for-modal rounded-3"
-                   name="country_code" data-live-search="true" style="max-width: 300px;">
-                                                <option value="+1"
-                                                    data-content="<img src='https://flagcdn.com/w40/us.png' class='flag-icon'> <span class='name-country'>United States</span>&nbsp;(+1)">
-                                                    US</option>
-                                                <option value="+44"
-                                                    data-content="<img src='https://flagcdn.com/w40/gb.png' class='flag-icon'> <span class='name-country'>United Kingdom</span>&nbsp;(+44)">
-                                                    GB</option>
-                                                <option value="+61"
-                                                    data-content="<img src='https://flagcdn.com/w40/au.png' class='flag-icon'> <span class='name-country'>Australia</span>&nbsp;(+61)">
-                                                    AU</option>
-                                                <option value="+81"
-                                                    data-content="<img src='https://flagcdn.com/w40/jp.png' class='flag-icon'> <span class='name-country'>Japan</span>&nbsp;(+81)">
-                                                    JP</option>
-                                                <option value="+82"
-                                                    data-content="<img src='https://flagcdn.com/w40/kr.png' class='flag-icon'> <span class='name-country'>South Korea</span>&nbsp;(+82)">
-                                                    KR</option>
-                                                <option value="+66" selected
-                                                    data-content="<img src='https://flagcdn.com/w40/th.png' class='flag-icon'> <span class='name-country'>Thailand</span>&nbsp;(+66)">
-                                                    TH</option>
-                                                <option value="+86"
-                                                    data-content="<img src='https://flagcdn.com/w40/cn.png' class='flag-icon'> <span class='name-country'>China</span>&nbsp;(+86)">
-                                                    CN</option>
-                                                <option value="+852"
-                                                    data-content="<img src='https://flagcdn.com/w40/hk.png' class='flag-icon'> <span class='name-country'>Hong Kong</span>&nbsp;(+852)">
-                                                    HK</option>
-                                                <option value="+49"
-                                                    data-content="<img src='https://flagcdn.com/w40/de.png' class='flag-icon'> <span class='name-country'>Germany</span>&nbsp;(+49)">
-                                                    DE</option>
-                                                <option value="+33"
-                                                    data-content="<img src='https://flagcdn.com/w40/fr.png' class='flag-icon'> <span class='name-country'>France</span>&nbsp;(+33)">
-                                                    FR</option>
-                                                <option value="+39"
-                                                    data-content="<img src='https://flagcdn.com/w40/it.png' class='flag-icon'> <span class='name-country'>Italy</span>&nbsp;(+39)">
-                                                    IT</option>
-                                                <option value="+34"
-                                                    data-content="<img src='https://flagcdn.com/w40/es.png' class='flag-icon'> <span class='name-country'>Spain</span>&nbsp;(+34)">
-                                                    ES</option>
-                                                <option value="+7"
-                                                    data-content="<img src='https://flagcdn.com/w40/ru.png' class='flag-icon'> <span class='name-country'>Russia</span>&nbsp;(+7)">
-                                                    RU</option>
-                                                <option value="+971"
-                                                    data-content="<img src='https://flagcdn.com/w40/ae.png' class='flag-icon'> <span class='name-country'>United Arab Emirates</span>&nbsp;(+971)">
-                                                    AE</option>
-                                                <option value="+91"
-                                                    data-content="<img src='https://flagcdn.com/w40/in.png' class='flag-icon'> <span class='name-country'>India</span>&nbsp;(+91)">
-                                                    IN</option>
-                                                <option value="+63"
-                                                    data-content="<img src='https://flagcdn.com/w40/ph.png' class='flag-icon'> <span class='name-country'>Philippines</span>&nbsp;(+63)">
-                                                    PH</option>
-                                                <option value="+62"
-                                                    data-content="<img src='https://flagcdn.com/w40/id.png' class='flag-icon'> <span class='name-country'>Indonesia</span>&nbsp;(+62)">
-                                                    ID</option>
-                                                <option value="+60"
-                                                    data-content="<img src='https://flagcdn.com/w40/my.png' class='flag-icon'> <span class='name-country'>Malaysia</span>&nbsp;(+60)">
-                                                    MY</option>
-                                                <option value="+65"
-                                                    data-content="<img src='https://flagcdn.com/w40/sg.png' class='flag-icon'> <span class='name-country'>Singapore</span>&nbsp;(+65)">
-                                                    SG</option>
-                                                <option value="+95"
-                                                    data-content="<img src='https://flagcdn.com/w40/mm.png' class='flag-icon'> <span class='name-country'>Myanmar</span>&nbsp;(+95)">
-                                                    MM</option>
-                                                <option value="+84"
-                                                    data-content="<img src='https://flagcdn.com/w40/vn.png' class='flag-icon'> <span class='name-country'>Vietnam</span>&nbsp;(+84)">
-                                                    VN</option>
-                                                <option value="+855"
-                                                    data-content="<img src='https://flagcdn.com/w40/kh.png' class='flag-icon'> <span class='name-country'>Cambodia</span>&nbsp;(+855)">
-                                                    KH</option>
-                                                <option value="+856"
-                                                    data-content="<img src='https://flagcdn.com/w40/la.png' class='flag-icon'> <span class='name-country'>Laos</span>&nbsp;(+856)">
-                                                    LA</option>
-                                            </select>
+                                <input type="text" class="form-control rounded-3" name="phone"
+                                    placeholder="กรุณากรอกหมายเลขโทรศัพท์">
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <div class="form-group">
+                                <div class="d-flex align-items-center justify-content-between mb-1"
+                                    style="font-size: 13px;">
+                                    <span style="color:  #75809D;">ตัวเลือก</span>
+                                    <span id="askPopover" tabindex="0" class="d-inline-block"
+                                        style="color: #1492E6; text-decoration: underline; cursor: pointer;">
+                                        สิ่งที่คุณสามารถถาม
+                                    </span>
+                                </div>
+                                <textarea name="message" class="form-control rounded-3"
+                                    placeholder="ข้อความ" rows="3"></textarea>
+                            </div>
+                        </div>
 
+                        <div class="col-12">
+                            <div class="form-group rounded-3" style="display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 10px;
+                            border: .0625rem solid #D1D3E0;
+                            padding-left: 40px;">
+                                <div class="">
+                                    <input type="checkbox" class="form-check-input"
+                                        name="notRobot">
+                                    <label class="form-check-label ml-2" style="color: #75809D;">
+                                        ฉันไม่ใช่หุ่นยนต์
+                                    </label>
+                                </div>
+                                <div class="">
+                                    <img src="assets/img/RecaptchaLogo.svg.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-between align-items-center">
+                            <span style="text-decoration: underline; font-size: 0.875rem; color: #75809D;">ความเป็นส่วนตัว - ข้อตกลง</span>
+                            <button type="submit" class="btn btn-secondary rounded-3"
+                                style="background: var(--redges-color-2);width: 130px;height: 40px;font-size: 18px;display: flex;align-items: center;justify-content: center;">
+                                ส่ง
+                            </button>
+                        </div>
 
-                                            <input type="text" class="form-control rounded-3" name="phone"
-                                                placeholder="Enter phone number">
-                                        </div>
-                                    </div>
-                                      <div class="col-12 mt-3">
-                                        <div class="form-group">
-                                            <div class="d-flex align-items-center justify-content-between mb-1"
-                                                style="font-size: 13px;">
-                                                <span style="color:  #75809D;">Optional</span>
-                                                <span id="askPopover" tabindex="0" class="d-inline-block"
-                                                    style="color: #1492E6; text-decoration: underline; cursor: pointer;">
-                                                    What You Can Ask
-                                                </span>
-                                            </div>
-                                            <textarea  name="message" class="form-control rounded-3"
-                                                placeholder="Message" rows="3"></textarea>
-                                        </div>
-                                    </div>
-         
-                                    <div class="col-12">
-                                        <div class="form-group rounded-3" style="display: flex;
-                                        flex-direction: row;
-                                        align-items: center;
-                                        justify-content: space-between;
-                                        padding: 10px;
-                                        border: .0625rem solid #D1D3E0;
-                                        padding-left: 40px;">
-                                            <div class="">
-                                                <input type="checkbox" class="form-check-input"
-                                                    name="notRobot">
-                                                <label class="form-check-label ml-2" style="color: #75809D;"
-                                                   >I'm not a
-                                                    robot</label>
-                                            </div>
-                                            <div class="">
-                                                <img src="assets/img/RecaptchaLogo.svg.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                  <div class="col-12 d-flex justify-content-between align-items-center">
-                    <span style="text-decoration: underline; font-size: 0.875rem; color: #75809D;">Privacy - Terms</span>
-                    <button type="submit" class="btn btn-secondary rounded-3" 
-                        style="background: var(--redges-color-2);width: 130px;height: 40px;font-size: 18px;display: flex;align-items: center;justify-content: center;">
-                    Send</button>
-                  </div>
-                  
-                </div>
-              </form>
+                    </div>
+                </form>
             </div>
-          </div>
-          <div class="col-md-7 d-flex justify-content-center align-items-center" style="background: url('assets/img/contact-us/contact-us-footer.png') no-repeat center center / cover; margin-right: -2px;">
-            <div class="contact-us-content text-center text-white">
-              <h1 style="font-size: 5.25rem;">Unlock</h1><br>
-              <h2 style="font-size: 3.5rem; line-height: 2;">Your Business<br>Potential<br>With Us</h2>
-            </div>
-          </div>
         </div>
-      </div>
+        <div class="col-md-7 d-flex justify-content-center align-items-center"
+            style="background: url('assets/img/contact-us/contact-us-footer.png') no-repeat center center / cover; margin-right: -2px;">
+            <div class="contact-us-content text-center text-white">
+                <h1 style="font-size: 5.25rem;">ปลดล็อค</h1><br>
+                <h2 style="font-size: 3.5rem; line-height: 2;">ศักยภาพธุรกิจของคุณ<br>กับเรา</h2>
+            </div>
+        </div>
     </div>
-  </div>
-</div>`;
+
+</div>
+</div>
+</div>
+`;
     // ใส่เข้าไปใน div
     document.getElementById("contactModalContainer").innerHTML = modalHTML;
 
